@@ -14,7 +14,7 @@ import torch
 CUR_DIR = os.path.abspath(os.path.dirname(__file__))
 ROOT_DIR = os.path.abspath(os.path.dirname(CUR_DIR))
 MAX_INPUT_TOKENS = 16384
-DEFAULT_OUTPUT_TOKENS = 8192
+DEFAULT_OUTPUT_TOKENS = 16384
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -325,7 +325,7 @@ def main():
                         help="Default open tokens.")
     parser.add_argument('--max_output_tokens', type=int, default=DEFAULT_OUTPUT_TOKENS,
                         help="Default open tokens.")
-    parser.add_argument('--max_num_seqs', type=int, default=256,
+    parser.add_argument('--max_num_seqs', type=int, default=2048,
                         help="Max num sequence.")
     parser.add_argument('--num_gpus', type=int, default=torch.cuda.device_count(),
                         help="Number of GPUs.")
