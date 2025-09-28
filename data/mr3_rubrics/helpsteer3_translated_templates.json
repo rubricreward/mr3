@@ -1,0 +1,926 @@
+{
+  "pt": {
+    "rubric_list": [
+      {
+        "1": "A Resposta 1 \u00e9 muito superior \u00e0 Resposta 2 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >>> Resposta 2).",
+        "2": "A Resposta 1 \u00e9 claramente melhor do que a Resposta 2 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >> Resposta 2).",
+        "3": "A Resposta 1 \u00e9 um pouco melhor do que a Resposta 2 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 > Resposta 2).",
+        "4": "A Resposta 1 e a Resposta 2 s\u00e3o aproximadamente iguais em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 == Resposta 2).",
+        "5": "A Resposta 2 \u00e9 um pouco melhor do que a Resposta 1 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 < Resposta 2).",
+        "6": "A Resposta 2 \u00e9 claramente melhor do que a Resposta 1 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 << Resposta 2).",
+        "7": "A Resposta 2 \u00e9 muito superior \u00e0 Resposta 1 em termos de utilidade, exatid\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 <<< Resposta 2)."
+      },
+      {
+        "1": "A Resposta 1 \u00e9 esmagadoramente melhor do que a Resposta 2 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >>> Resposta 2).",
+        "2": "A Resposta 1 \u00e9 significativamente melhor do que a Resposta 2 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >> Resposta 2).",
+        "3": "A Resposta 1 \u00e9 ligeiramente melhor do que a Resposta 2 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 > Resposta 2).",
+        "4": "A Resposta 1 e a Resposta 2 s\u00e3o aproximadamente igualmente boas em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 == Resposta 2).",
+        "5": "A Resposta 2 \u00e9 ligeiramente melhor do que a Resposta 1 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 < Resposta 2).",
+        "6": "A Resposta 2 \u00e9 significativamente melhor do que a Resposta 1 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 << Resposta 2).",
+        "7": "A Resposta 2 \u00e9 esmagadoramente melhor do que a Resposta 1 em utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 <<< Resposta 2)."
+      },
+      {
+        "1": "Resposta 1 \u00e9 muito melhor do que Resposta 2 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >>> Resposta 2).",
+        "2": "Resposta 1 \u00e9 melhor do que Resposta 2 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 >> Resposta 2).",
+        "3": "Resposta 1 \u00e9 um pouco melhor do que Resposta 2 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 > Resposta 2).",
+        "4": "Resposta 1 e Resposta 2 s\u00e3o mais ou menos iguais em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 == Resposta 2).",
+        "5": "Resposta 2 \u00e9 um pouco melhor do que Resposta 1 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 < Resposta 2).",
+        "6": "Resposta 2 \u00e9 melhor do que Resposta 1 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 << Resposta 2).",
+        "7": "Resposta 2 \u00e9 muito melhor do que Resposta 1 em termos de utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia (Resposta 1 <<< Resposta 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Entrada (Conversa)",
+      "evaluation_rubric_tag": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "golden_annotation_tag": "Anota\u00e7\u00f5es Douradas",
+      "response_format_tag": "Formato da Resposta",
+      "your_response_tag": "Sua Resposta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Um breve racioc\u00ednio comparando as duas respostas do assistente a partir da conversa de entrada, focando em utilidade, corre\u00e7\u00e3o/completude e clareza."
+        },
+        "score": {
+          "type": "string",
+          "description": "O r\u00f3tulo de veredito da rubrica: um dentre '1', '2', '3', '4', '5', '6' ou '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Sua tarefa \u00e9 avaliar duas respostas candidatas a uma conversa entre um usu\u00e1rio e um assistente.  \nUtilizando o crit\u00e9rio de avalia\u00e7\u00e3o, julgue o quanto cada resposta continua de forma natural a partir da \u00faltima mensagem do usu\u00e1rio, respeitando o contexto geral da conversa.  \nForne\u00e7a uma avalia\u00e7\u00e3o justa e detalhada, priorizando utilidade, corre\u00e7\u00e3o/completude e clareza, nessa ordem de import\u00e2ncia.",
+    "golden_task_description": "Sua tarefa \u00e9 interpretar o processo de racioc\u00ednio detalhado do gpt-oss em portugu\u00eas, com alto n\u00edvel de esfor\u00e7o.  \nVoc\u00ea ver\u00e1 a conversa anterior do usu\u00e1rio, duas respostas candidatas do assistente e um rubrica de avalia\u00e7\u00e3o para comparar ambas as respostas.  \nVoc\u00ea tamb\u00e9m ter\u00e1 acesso a anota\u00e7\u00f5es ouro da avalia\u00e7\u00e3o final (invis\u00edveis para o usu\u00e1rio). Use-as como inspira\u00e7\u00e3o para seu racioc\u00ednio, mas nunca mencione a exist\u00eancia dessas anota\u00e7\u00f5es ouro.  \n\nEscreva seu racioc\u00ednio como se estivesse pensando em voz alta, passo a passo:  \n- Comece considerando a conversa de entrada e o que \u00e9 necess\u00e1rio para uma boa resposta.  \n- Compare em detalhe a resposta do Assistente A e do Assistente B, apontando pontos fortes e fracos de acordo com a rubrica de avalia\u00e7\u00e3o, utilizando inspira\u00e7\u00f5es das anota\u00e7\u00f5es ouro.  \n- Gradualmente, chegue a uma conclus\u00e3o sobre qual resposta do Assistente \u00e9 melhor e por qu\u00ea.  \n\nImportante:  \n- Apresente o racioc\u00ednio como se fosse totalmente seu pensamento pr\u00f3prio.  \n- N\u00e3o fa\u00e7a refer\u00eancia a quaisquer \u201cnotas\u201d, \u201canota\u00e7\u00f5es ouro\u201d ou material oculto.  \n- A sa\u00edda \u00e9 apenas seu processo de racioc\u00ednio, e n\u00e3o uma resposta formal final ao usu\u00e1rio (mas deve, de alguma forma, chegar \u00e0 pontua\u00e7\u00e3o final baseada na rubrica de avalia\u00e7\u00e3o)."
+  },
+  "es": {
+    "rubric_list": [
+      {
+        "1": "La Respuesta 1 es muy superior a la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >>> Respuesta 2).",
+        "2": "La Respuesta 1 es claramente mejor que la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >> Respuesta 2).",
+        "3": "La Respuesta 1 es algo mejor que la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 > Respuesta 2).",
+        "4": "La Respuesta 1 y la Respuesta 2 son aproximadamente iguales en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 == Respuesta 2).",
+        "5": "La Respuesta 2 es algo mejor que la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 < Respuesta 2).",
+        "6": "La Respuesta 2 es claramente mejor que la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 << Respuesta 2).",
+        "7": "La Respuesta 2 es muy superior a la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 <<< Respuesta 2)."
+      },
+      {
+        "1": "La Respuesta 1 es abrumadoramente mejor que la Respuesta 2 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >>> Respuesta 2).",
+        "2": "La Respuesta 1 es significativamente mejor que la Respuesta 2 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >> Respuesta 2).",
+        "3": "La Respuesta 1 es un poco mejor que la Respuesta 2 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 > Respuesta 2).",
+        "4": "La Respuesta 1 y la Respuesta 2 son casi igual de buenas en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 == Respuesta 2).",
+        "5": "La Respuesta 2 es un poco mejor que la Respuesta 1 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 < Respuesta 2).",
+        "6": "La Respuesta 2 es significativamente mejor que la Respuesta 1 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 << Respuesta 2).",
+        "7": "La Respuesta 2 es abrumadoramente mejor que la Respuesta 1 en utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 <<< Respuesta 2)."
+      },
+      {
+        "1": "La Respuesta 1 es mucho mejor que la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >>> Respuesta 2).",
+        "2": "La Respuesta 1 es mejor que la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 >> Respuesta 2).",
+        "3": "La Respuesta 1 es un poco mejor que la Respuesta 2 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 > Respuesta 2).",
+        "4": "La Respuesta 1 y la Respuesta 2 son m\u00e1s o menos iguales en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 == Respuesta 2).",
+        "5": "La Respuesta 2 es un poco mejor que la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 < Respuesta 2).",
+        "6": "La Respuesta 2 es mejor que la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 << Respuesta 2).",
+        "7": "La Respuesta 2 es mucho mejor que la Respuesta 1 en cuanto a utilidad, correcci\u00f3n/completitud y claridad, en ese orden de importancia (Respuesta 1 <<< Respuesta 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Entrada (Conversaci\u00f3n)",
+      "evaluation_rubric_tag": "Criterios de evaluaci\u00f3n",
+      "golden_annotation_tag": "Anotaciones Doradas",
+      "response_format_tag": "Formato de respuesta",
+      "your_response_tag": "Tu respuesta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un razonamiento breve comparando las dos respuestas del asistente tras la conversaci\u00f3n de entrada, centr\u00e1ndose en utilidad, correcci\u00f3n/completitud y claridad."
+        },
+        "score": {
+          "type": "string",
+          "description": "La etiqueta de veredicto de la r\u00fabrica: una de '1', '2', '3', '4', '5', '6' o '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Tu tarea es evaluar dos respuestas candidatas a una conversaci\u00f3n entre un usuario y un asistente.  \nUsando la r\u00fabrica de evaluaci\u00f3n, juzga qu\u00e9 tan bien cada respuesta contin\u00faa de manera natural a partir del mensaje m\u00e1s reciente del usuario, respetando el contexto general de la conversaci\u00f3n.  \nProporciona una evaluaci\u00f3n justa y detallada, priorizando la utilidad, la correcci\u00f3n/completitud y la claridad, en ese orden de importancia.",
+    "golden_task_description": "Tu tarea es interpretar el proceso de pensamiento detallado de gpt-oss con mucho esfuerzo en espa\u00f1ol.  \nSe te mostrar\u00e1 la conversaci\u00f3n previa del usuario, dos respuestas candidatas del asistente y una r\u00fabrica de evaluaci\u00f3n para comparar ambas respuestas.  \nTambi\u00e9n tienes acceso a anotaciones doradas de la evaluaci\u00f3n final (no visibles para el usuario). \u00dasalas como inspiraci\u00f3n para tu razonamiento, pero nunca menciones la existencia de estas anotaciones doradas.  \n\nEscribe tu razonamiento como si estuvieras pensando en voz alta, paso a paso:  \n- Empieza considerando la conversaci\u00f3n de entrada y lo que se necesita para una buena respuesta.  \n- Compara en detalle la respuesta del Asistente A y la del Asistente B, se\u00f1alando fortalezas y debilidades de acuerdo con la r\u00fabrica de evaluaci\u00f3n, tomando inspiraci\u00f3n de las anotaciones doradas.  \n- Llega gradualmente a una conclusi\u00f3n sobre cu\u00e1l respuesta del Asistente es mejor y por qu\u00e9.  \n\nImportante:  \n- Presenta el razonamiento como si fuera completamente tu propio pensamiento.  \n- No hagas referencia a ninguna \u201cnota\u201d, \u201canotaci\u00f3n dorada\u201d o material oculto.  \n- La salida debe ser s\u00f3lo tu proceso de pensamiento, no una respuesta formal final al usuario (pero de alg\u00fan modo debe llegar a la puntuaci\u00f3n final seg\u00fan la r\u00fabrica de evaluaci\u00f3n)."
+  },
+  "ru": {
+    "rubric_list": [
+      {
+        "1": "\u041e\u0442\u0432\u0435\u0442 1 \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043f\u0440\u0435\u0432\u043e\u0441\u0445\u043e\u0434\u0438\u0442 \u041e\u0442\u0432\u0435\u0442 2 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >>> \u041e\u0442\u0432\u0435\u0442 2).",
+        "2": "\u041e\u0442\u0432\u0435\u0442 1 \u044f\u0432\u043d\u043e \u043b\u0443\u0447\u0448\u0435 \u041e\u0442\u0432\u0435\u0442\u0430 2 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >> \u041e\u0442\u0432\u0435\u0442 2).",
+        "3": "\u041e\u0442\u0432\u0435\u0442 1 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043b\u0443\u0447\u0448\u0435 \u041e\u0442\u0432\u0435\u0442\u0430 2 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 > \u041e\u0442\u0432\u0435\u0442 2).",
+        "4": "\u041e\u0442\u0432\u0435\u0442 1 \u0438 \u041e\u0442\u0432\u0435\u0442 2 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0440\u0430\u0432\u043d\u044b \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 == \u041e\u0442\u0432\u0435\u0442 2).",
+        "5": "\u041e\u0442\u0432\u0435\u0442 2 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043b\u0443\u0447\u0448\u0435 \u041e\u0442\u0432\u0435\u0442\u0430 1 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 < \u041e\u0442\u0432\u0435\u0442 2).",
+        "6": "\u041e\u0442\u0432\u0435\u0442 2 \u044f\u0432\u043d\u043e \u043b\u0443\u0447\u0448\u0435 \u041e\u0442\u0432\u0435\u0442\u0430 1 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 << \u041e\u0442\u0432\u0435\u0442 2).",
+        "7": "\u041e\u0442\u0432\u0435\u0442 2 \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043f\u0440\u0435\u0432\u043e\u0441\u0445\u043e\u0434\u0438\u0442 \u041e\u0442\u0432\u0435\u0442 1 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 <<< \u041e\u0442\u0432\u0435\u0442 2)."
+      },
+      {
+        "1": "\u041e\u0442\u0432\u0435\u0442 1 \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >>> \u041e\u0442\u0432\u0435\u0442 2).",
+        "2": "\u041e\u0442\u0432\u0435\u0442 1 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >> \u041e\u0442\u0432\u0435\u0442 2).",
+        "3": "\u041e\u0442\u0432\u0435\u0442 1 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 > \u041e\u0442\u0432\u0435\u0442 2).",
+        "4": "\u041e\u0442\u0432\u0435\u0442 1 \u0438 \u041e\u0442\u0432\u0435\u0442 2 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u043e \u0445\u043e\u0440\u043e\u0448\u0438 \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 == \u041e\u0442\u0432\u0435\u0442 2).",
+        "5": "\u041e\u0442\u0432\u0435\u0442 2 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 < \u041e\u0442\u0432\u0435\u0442 2).",
+        "6": "\u041e\u0442\u0432\u0435\u0442 2 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 << \u041e\u0442\u0432\u0435\u0442 2).",
+        "7": "\u041e\u0442\u0432\u0435\u0442 2 \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u043f\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 <<< \u041e\u0442\u0432\u0435\u0442 2)."
+      },
+      {
+        "1": "\u041e\u0442\u0432\u0435\u0442 1 \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >>> \u041e\u0442\u0432\u0435\u0442 2).",
+        "2": "\u041e\u0442\u0432\u0435\u0442 1 \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 >> \u041e\u0442\u0432\u0435\u0442 2).",
+        "3": "\u041e\u0442\u0432\u0435\u0442 1 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 2, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 > \u041e\u0442\u0432\u0435\u0442 2).",
+        "4": "\u041e\u0442\u0432\u0435\u0442 1 \u0438 \u041e\u0442\u0432\u0435\u0442 2 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u044b \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 == \u041e\u0442\u0432\u0435\u0442 2).",
+        "5": "\u041e\u0442\u0432\u0435\u0442 2 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 < \u041e\u0442\u0432\u0435\u0442 2).",
+        "6": "\u041e\u0442\u0432\u0435\u0442 2 \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 << \u041e\u0442\u0432\u0435\u0442 2).",
+        "7": "\u041e\u0442\u0432\u0435\u0442 2 \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u043b\u0443\u0447\u0448\u0435, \u0447\u0435\u043c \u041e\u0442\u0432\u0435\u0442 1, \u0441 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u044b \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438, \u0432 \u0442\u0430\u043a\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438 (\u041e\u0442\u0432\u0435\u0442 1 <<< \u041e\u0442\u0432\u0435\u0442 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "\u0412\u0432\u043e\u0434 (\u0414\u0438\u0430\u043b\u043e\u0433)",
+      "evaluation_rubric_tag": "\u041a\u0440\u0438\u0442\u0435\u0440\u0438\u0438 \u043e\u0446\u0435\u043d\u043a\u0438",
+      "golden_annotation_tag": "\u0417\u043e\u043b\u043e\u0442\u044b\u0435 \u0410\u043d\u043d\u043e\u0442\u0430\u0446\u0438\u0438",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043e\u0442\u0432\u0435\u0442\u0430",
+      "your_response_tag": "\u0412\u0430\u0448 \u043e\u0442\u0432\u0435\u0442"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u0431\u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435, \u0441\u0440\u0430\u0432\u043d\u0438\u0432\u0430\u044e\u0449\u0435\u0435 \u0434\u0432\u0430 \u043e\u0442\u0432\u0435\u0442\u0430 \u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u0430 \u043f\u043e \u0445\u043e\u0434\u0443 \u043f\u0440\u0438\u0432\u0435\u0434\u0451\u043d\u043d\u043e\u0433\u043e \u0434\u0438\u0430\u043b\u043e\u0433\u0430, \u0441 \u0430\u043a\u0446\u0435\u043d\u0442\u043e\u043c \u043d\u0430 \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u044c, \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e\u0441\u0442\u044c/\u043f\u043e\u043b\u043d\u043e\u0442\u0443 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u044c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u041c\u0435\u0442\u043a\u0430 \u0432\u0435\u0440\u0434\u0438\u043a\u0442\u0430 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0440\u0443\u0431\u0440\u0438\u043a\u0435: \u043e\u0434\u0438\u043d \u0438\u0437 '1', '2', '3', '4', '5', '6' \u0438\u043b\u0438 '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "# \u0412\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435\n\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u043e\u0446\u0435\u043d\u0438\u0442\u044c \u0434\u0432\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430 \u043e\u0442\u0432\u0435\u0442\u0430 \u043d\u0430 \u0431\u0435\u0441\u0435\u0434\u0443 \u043c\u0435\u0436\u0434\u0443 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u043c \u0438 \u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u043e\u043c.\n\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044f \u043a\u0440\u0438\u0442\u0435\u0440\u0438\u0438 \u043e\u0446\u0435\u043d\u043a\u0438, \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u0435, \u043d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0445\u043e\u0440\u043e\u0448\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u043e\u0442\u0432\u0435\u0442 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u0435\u0442 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f, \u043f\u0440\u0438 \u044d\u0442\u043e\u043c \u0443\u0432\u0430\u0436\u0430\u044f \u043e\u0431\u0449\u0438\u0439 \u043a\u043e\u043d\u0442\u0435\u043a\u0441\u0442 \u0440\u0430\u0437\u0433\u043e\u0432\u043e\u0440\u0430.\n\u0414\u0430\u0439\u0442\u0435 \u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u043d\u0443\u044e \u0438 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u0443\u044e \u043e\u0446\u0435\u043d\u043a\u0443, \u043e\u0442\u0434\u0430\u0432\u0430\u044f \u043f\u0440\u0438\u043e\u0440\u0438\u0442\u0435\u0442 \u043f\u043e\u043b\u0435\u0437\u043d\u043e\u0441\u0442\u0438, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u0438/\u043f\u043e\u043b\u043d\u043e\u0442\u0435 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u0438 \u2014 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0435 \u0432\u0430\u0436\u043d\u043e\u0441\u0442\u0438.",
+    "golden_task_description": "\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0441\u0442\u0438 \u0434\u0435\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u043c\u044b\u0448\u043b\u0435\u043d\u0438\u044f gpt-oss \u0441 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u043c\u0438 \u0443\u0441\u0438\u043b\u0438\u044f\u043c\u0438 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435.\n\u0412\u0430\u043c \u0431\u0443\u0434\u0435\u0442 \u043f\u043e\u043a\u0430\u0437\u0430\u043d \u043f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439 \u0434\u0438\u0430\u043b\u043e\u0433 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f, \u0434\u0432\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430 \u043e\u0442\u0432\u0435\u0442\u0430 \u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u0430 \u0438 \u043e\u0446\u0435\u043d\u043e\u0447\u043d\u0430\u044f \u0440\u0443\u0431\u0440\u0438\u043a\u0430 \u0434\u043b\u044f \u0438\u0445 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u044f.\n\u0422\u0430\u043a\u0436\u0435 \u0443 \u0432\u0430\u0441 \u0431\u0443\u0434\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f \u043a \u044d\u0442\u0430\u043b\u043e\u043d\u043d\u044b\u043c \u0430\u043d\u043d\u043e\u0442\u0430\u0446\u0438\u044f\u043c \u0438\u0442\u043e\u0433\u043e\u0432\u043e\u0439 \u043e\u0446\u0435\u043d\u043a\u0438 (\u043d\u0435\u0432\u0438\u0434\u0438\u043c\u044b\u043c \u0434\u043b\u044f \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f). \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0438\u0445 \u043a\u0430\u043a \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u0432\u0434\u043e\u0445\u043d\u043e\u0432\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0441\u0432\u043e\u0438\u0445 \u0440\u0430\u0437\u043c\u044b\u0448\u043b\u0435\u043d\u0438\u0439, \u043d\u043e \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0443\u043f\u043e\u043c\u0438\u043d\u0430\u0439\u0442\u0435 \u043e \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u0438 \u044d\u0442\u0438\u0445 \u044d\u0442\u0430\u043b\u043e\u043d\u043d\u044b\u0445 \u0430\u043d\u043d\u043e\u0442\u0430\u0446\u0438\u0439.\n\n\u041f\u0438\u0448\u0438\u0442\u0435 \u0441\u0432\u043e\u0438 \u0440\u0430\u0441\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u044f \u0442\u0430\u043a, \u043a\u0430\u043a \u0435\u0441\u043b\u0438 \u0431\u044b \u0432\u044b \u0440\u0430\u0437\u043c\u044b\u0448\u043b\u044f\u043b\u0438 \u0432\u0441\u043b\u0443\u0445 \u0448\u0430\u0433 \u0437\u0430 \u0448\u0430\u0433\u043e\u043c:\n- \u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u0441 \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u0438\u044f \u0432\u0445\u043e\u0434\u043d\u043e\u0433\u043e \u0434\u0438\u0430\u043b\u043e\u0433\u0430 \u0438 \u0442\u043e\u0433\u043e, \u0447\u0442\u043e \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u0434\u043b\u044f \u0445\u043e\u0440\u043e\u0448\u0435\u0433\u043e \u043e\u0442\u0432\u0435\u0442\u0430.\n- \u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e \u0441\u0440\u0430\u0432\u043d\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442\u044b \u0410\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u0430 A \u0438 \u0410\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u0430 B, \u043e\u0442\u043c\u0435\u0447\u0430\u044f \u0438\u0445 \u0441\u0438\u043b\u044c\u043d\u044b\u0435 \u0438 \u0441\u043b\u0430\u0431\u044b\u0435 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u043e\u0446\u0435\u043d\u043e\u0447\u043d\u043e\u0439 \u0440\u0443\u0431\u0440\u0438\u043a\u0435, \u0432\u0434\u043e\u0445\u043d\u043e\u0432\u043b\u044f\u044f\u0441\u044c \u044d\u0442\u0430\u043b\u043e\u043d\u043d\u044b\u043c\u0438 \u0430\u043d\u043d\u043e\u0442\u0430\u0446\u0438\u044f\u043c\u0438.\n- \u041f\u043e\u0441\u0442\u0435\u043f\u0435\u043d\u043d\u043e \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442\u0435 \u043a \u0432\u044b\u0432\u043e\u0434\u0443 \u043e \u0442\u043e\u043c, \u043a\u0430\u043a\u043e\u0439 \u0438\u0437 \u043e\u0442\u0432\u0435\u0442\u043e\u0432 \u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u0430 \u043b\u0443\u0447\u0448\u0435 \u0438 \u043f\u043e\u0447\u0435\u043c\u0443.\n\n\u0412\u0430\u0436\u043d\u043e:\n- \u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0440\u0430\u0441\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0438\u0441\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043a\u0430\u043a \u0441\u0432\u043e\u0438 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u043c\u044b\u0441\u043b\u0438.\n- \u041d\u0435 \u0443\u043f\u043e\u043c\u0438\u043d\u0430\u0439\u0442\u0435 \u043d\u0438\u043a\u0430\u043a\u0438\u0435 \u00ab\u0437\u0430\u043c\u0435\u0442\u043a\u0438\u00bb, \u00ab\u044d\u0442\u0430\u043b\u043e\u043d\u043d\u044b\u0435 \u0430\u043d\u043d\u043e\u0442\u0430\u0446\u0438\u0438\u00bb \u0438\u043b\u0438 \u0441\u043a\u0440\u044b\u0442\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b.\n- \u0412 \u0432\u044b\u0432\u043e\u0434\u0435 \u043f\u0438\u0448\u0438\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0432\u043e\u0439 \u043c\u044b\u0441\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441, \u0430 \u043d\u0435 \u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0444\u0438\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u043e\u0442\u0432\u0435\u0442 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044e (\u043d\u043e \u0432 \u0445\u043e\u0434\u0435 \u0440\u0430\u0437\u043c\u044b\u0448\u043b\u0435\u043d\u0438\u0439 \u0441\u043b\u0435\u0434\u0443\u0435\u0442 \u043f\u043e\u0434\u0432\u0435\u0441\u0442\u0438 \u043a \u0438\u0442\u043e\u0433\u043e\u0432\u043e\u0439 \u043e\u0446\u0435\u043d\u043a\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0440\u0443\u0431\u0440\u0438\u043a\u0435)."
+  },
+  "zh": {
+    "rubric_list": [
+      {
+        "1": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e941\u8fdc\u4f18\u4e8e\u56de\u5e942\uff08\u56de\u5e941 >>> \u56de\u5e942\uff09\u3002",
+        "2": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e941\u660e\u663e\u4f18\u4e8e\u56de\u5e942\uff08\u56de\u5e941 >> \u56de\u5e942\uff09\u3002",
+        "3": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e941\u7565\u4f18\u4e8e\u56de\u5e942\uff08\u56de\u5e941 > \u56de\u5e942\uff09\u3002",
+        "4": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e941\u548c\u56de\u5e942\u5927\u81f4\u76f8\u5f53\uff08\u56de\u5e941 == \u56de\u5e942\uff09\u3002",
+        "5": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e942\u7565\u4f18\u4e8e\u56de\u5e941\uff08\u56de\u5e941 < \u56de\u5e942\uff09\u3002",
+        "6": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e942\u660e\u663e\u4f18\u4e8e\u56de\u5e941\uff08\u56de\u5e941 << \u56de\u5e942\uff09\u3002",
+        "7": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u8fd9\u4e09\u4e2a\u65b9\u9762\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\uff0c\u56de\u5e942\u8fdc\u4f18\u4e8e\u56de\u5e941\uff08\u56de\u5e941 <<< \u56de\u5e942\uff09\u3002"
+      },
+      {
+        "1": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d1\u8fdc\u8fdc\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 >>> \u56de\u590d2\uff09\u3002",
+        "2": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d1\u660e\u663e\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 >> \u56de\u590d2\uff09\u3002",
+        "3": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d1\u7565\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 > \u56de\u590d2\uff09\u3002",
+        "4": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d1\u4e0e\u56de\u590d2\u8868\u73b0\u57fa\u672c\u76f8\u540c\uff08\u56de\u590d1 == \u56de\u590d2\uff09\u3002",
+        "5": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d2\u7565\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 < \u56de\u590d2\uff09\u3002",
+        "6": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d2\u660e\u663e\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 << \u56de\u590d2\uff09\u3002",
+        "7": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u4ee5\u53ca\u6e05\u6670\u5ea6\uff08\u6309\u91cd\u8981\u6027\u6392\u5e8f\uff09\u65b9\u9762\uff0c\u56de\u590d2\u8fdc\u8fdc\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 <<< \u56de\u590d2\uff09\u3002"
+      },
+      {
+        "1": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d1\u8fdc\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 >>> \u56de\u590d2\uff09\u3002",
+        "2": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d1\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 >> \u56de\u590d2\uff09\u3002",
+        "3": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d1\u7565\u4f18\u4e8e\u56de\u590d2\uff08\u56de\u590d1 > \u56de\u590d2\uff09\u3002",
+        "4": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d1\u4e0e\u56de\u590d2\u57fa\u672c\u76f8\u540c\uff08\u56de\u590d1 == \u56de\u590d2\uff09\u3002",
+        "5": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d2\u7565\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 < \u56de\u590d2\uff09\u3002",
+        "6": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d2\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 << \u56de\u590d2\uff09\u3002",
+        "7": "\u5728\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u6027\uff08\u6309\u91cd\u8981\u6027\u987a\u5e8f\u6392\u5217\uff09\u65b9\u9762\uff0c\u56de\u590d2\u8fdc\u4f18\u4e8e\u56de\u590d1\uff08\u56de\u590d1 <<< \u56de\u590d2\uff09\u3002"
+      }
+    ],
+    "tags": {
+      "input_tag": "\u8f93\u5165\uff08\u5bf9\u8bdd\uff09",
+      "evaluation_rubric_tag": "\u8bc4\u4f30\u6807\u51c6",
+      "golden_annotation_tag": "\u9ec4\u91d1\u6ce8\u91ca",
+      "response_format_tag": "\u56de\u590d\u683c\u5f0f",
+      "your_response_tag": "\u4f60\u7684\u56de\u590d"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u5bf9\u6bd4\u4e24\u4f4d\u52a9\u624b\u5728\u8f93\u5165\u5bf9\u8bdd\u4e2d\u7684\u56de\u590d\uff0c\u7b80\u8981\u8bf4\u660e\u5176\u63a8\u7406\uff0c\u91cd\u70b9\u5173\u6ce8\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u8868\u8fbe\u6e05\u6670\u5ea6\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u6839\u636e\u8bc4\u5206\u6807\u51c6\u7684\u5224\u5b9a\u6807\u7b7e\uff1a'1', '2', '3', '4', '5', '6', \u6216 '7' \u4e4b\u4e00\u3002",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "\u4f60\u7684\u4efb\u52a1\u662f\u8bc4\u4f30\u4e24\u4e2a\u5019\u9009\u56de\u590d\uff0c\u8fd9\u4e9b\u56de\u590d\u662f\u9488\u5bf9\u7528\u6237\u4e0e\u52a9\u624b\u4e4b\u95f4\u5bf9\u8bdd\u7684\u3002\n\u8bf7\u6839\u636e\u8bc4\u4f30\u6807\u51c6\uff0c\u5224\u65ad\u6bcf\u4e2a\u56de\u590d\u5728\u591a\u5927\u7a0b\u5ea6\u4e0a\u81ea\u7136\u5730\u5ef6\u7eed\u4e86\u7528\u6237\u7684\u6700\u65b0\u6d88\u606f\uff0c\u540c\u65f6\u5c0a\u91cd\u5bf9\u8bdd\u7684\u6574\u4f53\u8bed\u5883\u3002\n\u8bf7\u63d0\u4f9b\u516c\u6b63\u4e14\u8be6\u7ec6\u7684\u8bc4\u4ef7\uff0c\u4f9d\u6b21\u4f18\u5148\u8003\u8651\u6709\u7528\u6027\u3001\u6b63\u786e\u6027/\u5b8c\u6574\u6027\u548c\u6e05\u6670\u5ea6\u3002",
+    "golden_task_description": "\u4f60\u7684\u4efb\u52a1\u662f\u7528\u4e2d\u6587\u9ad8\u5f3a\u5ea6\u626e\u6f14 gpt-oss \u7684\u8be6\u7ec6\u601d\u8003\u8fc7\u7a0b\u3002  \n\u4f60\u5c06\u770b\u5230\u5148\u524d\u7528\u6237\u7684\u5bf9\u8bdd\u3001\u4e24\u4f4d\u52a9\u624b\u7684\u5019\u9009\u56de\u590d\u4ee5\u53ca\u7528\u4e8e\u6bd4\u8f83\u4e24\u8005\u7684\u8bc4\u4ef7\u6807\u51c6\u3002  \n\u4f60\u8fd8\u53ef\u4ee5\u770b\u5230\u6700\u7ec8\u8bc4\u4f30\u7684\u9ec4\u91d1\u6807\u6ce8\uff08\u7528\u6237\u4e0d\u53ef\u89c1\uff09\u3002\u53ef\u4ee5\u501f\u9274\u8fd9\u4e9b\u9ec4\u91d1\u6807\u6ce8\u6765\u542f\u53d1\u4f60\u7684\u601d\u8003\uff0c\u4f46\u7edd\u4e0d\u53ef\u63d0\u53ca\u8fd9\u4e9b\u9ec4\u91d1\u6807\u6ce8\u7684\u5b58\u5728\u3002  \n\n\u8bf7\u50cf\u201c\u601d\u8003\u8fc7\u7a0b\u81ea\u8a00\u81ea\u8bed\u201d\u4e00\u6837\u5199\u51fa\u4f60\u7684\u63a8\u7406\u6b65\u9aa4\uff1a  \n- \u5148\u8003\u8651\u8f93\u5165\u5bf9\u8bdd\u4ee5\u53ca\u4ec0\u4e48\u6837\u7684\u7b54\u6848\u624d\u7b97\u4f18\u8d28\u3002  \n- \u8be6\u7ec6\u6bd4\u8f83 Assistant A \u548c Assistant B \u7684\u56de\u590d\uff0c\u4f9d\u636e\u8bc4\u4ef7\u6807\u51c6\uff0c\u501f\u9274\u9ec4\u91d1\u6807\u6ce8\u6307\u51fa\u5404\u81ea\u7684\u4f18\u70b9\u548c\u7f3a\u70b9\u3002  \n- \u9010\u6b65\u5f97\u51fa\u7ed3\u8bba\uff0c\u5224\u65ad\u54ea\u4f4d Assistant \u7684\u56de\u590d\u66f4\u597d\uff0c\u5e76\u8bf4\u660e\u539f\u56e0\u3002  \n\n\u91cd\u8981\u63d0\u793a\uff1a  \n- \u63a8\u7406\u8fc7\u7a0b\u8981\u5b8c\u5168\u4ee5\u4f60\u81ea\u5df1\u7684\u601d\u8003\u4e3a\u8868\u8fbe\u3002  \n- \u4e0d\u8981\u63d0\u53ca\u4efb\u4f55\u201c\u5907\u6ce8\u201d\u3001\u201c\u9ec4\u91d1\u6807\u6ce8\u201d\u6216\u9690\u85cf\u5185\u5bb9\u3002  \n- \u8f93\u51fa\u5185\u5bb9\u4ec5\u4e3a\u4f60\u7684\u601d\u8003\u8fc7\u7a0b\uff0c\u800c\u4e0d\u662f\u6b63\u5f0f\u63d0\u4ea4\u7ed9\u7528\u6237\u7684\u6700\u7ec8\u7b54\u6848\uff08\u4f46\u63a8\u7406\u8fc7\u7a0b\u5e94\u6700\u7ec8\u6839\u636e\u8bc4\u4ef7\u6807\u51c6\u5f97\u51fa\u4e00\u4e2a\u8bc4\u5206\u7ed3\u8bba\uff09\u3002"
+  },
+  "de": {
+    "rubric_list": [
+      {
+        "1": "Antwort 1 ist Antwort 2 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit deutlich \u00fcberlegen, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 >>> Antwort 2).",
+        "2": "Antwort 1 ist eindeutig besser als Antwort 2 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 >> Antwort 2).",
+        "3": "Antwort 1 ist etwas besser als Antwort 2 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 > Antwort 2).",
+        "4": "Antwort 1 und Antwort 2 sind in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit, in genau dieser Reihenfolge der Wichtigkeit, ungef\u00e4hr gleich (Antwort 1 == Antwort 2).",
+        "5": "Antwort 2 ist etwas besser als Antwort 1 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 < Antwort 2).",
+        "6": "Antwort 2 ist eindeutig besser als Antwort 1 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 << Antwort 2).",
+        "7": "Antwort 2 ist Antwort 1 in Bezug auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit deutlich \u00fcberlegen, in genau dieser Reihenfolge der Wichtigkeit (Antwort 1 <<< Antwort 2)."
+      },
+      {
+        "1": "Antwort 1 ist \u00fcberw\u00e4ltigend besser als Antwort 2 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 >>> Antwort 2).",
+        "2": "Antwort 1 ist deutlich besser als Antwort 2 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 >> Antwort 2).",
+        "3": "Antwort 1 ist etwas besser als Antwort 2 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 > Antwort 2).",
+        "4": "Antwort 1 und Antwort 2 sind etwa gleich gut in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 == Antwort 2).",
+        "5": "Antwort 2 ist etwas besser als Antwort 1 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 < Antwort 2).",
+        "6": "Antwort 2 ist deutlich besser als Antwort 1 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 << Antwort 2).",
+        "7": "Antwort 2 ist \u00fcberw\u00e4ltigend besser als Antwort 1 in Bezug auf N\u00fctzlichkeit, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit, in dieser Reihenfolge der Wichtigkeit (Antwort 1 <<< Antwort 2)."
+      },
+      {
+        "1": "Antwort 1 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 wesentlich besser als Antwort 2 (Antwort 1 >>> Antwort 2).",
+        "2": "Antwort 1 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 besser als Antwort 2 (Antwort 1 >> Antwort 2).",
+        "3": "Antwort 1 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 etwas besser als Antwort 2 (Antwort 1 > Antwort 2).",
+        "4": "Antwort 1 und Antwort 2 sind im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 etwa gleich (Antwort 1 == Antwort 2).",
+        "5": "Antwort 2 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 etwas besser als Antwort 1 (Antwort 1 < Antwort 2).",
+        "6": "Antwort 2 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 besser als Antwort 1 (Antwort 1 << Antwort 2).",
+        "7": "Antwort 2 ist im Hinblick auf Hilfsbereitschaft, Richtigkeit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge der Wichtigkeit \u2013 wesentlich besser als Antwort 1 (Antwort 1 <<< Antwort 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Eingabe (Konversation)",
+      "evaluation_rubric_tag": "Bewertungskriterien",
+      "golden_annotation_tag": "Goldene Anmerkungen",
+      "response_format_tag": "Antwortformat",
+      "your_response_tag": "Deine Antwort"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Eine kurze Begr\u00fcndung, die die beiden Assistentenantworten im Anschluss an das Eingabegespr\u00e4ch vergleicht, mit Fokus auf Hilfsbereitschaft, Korrektheit/Vollst\u00e4ndigkeit und Klarheit."
+        },
+        "score": {
+          "type": "string",
+          "description": "Das Urteilsetikett aus dem Bewertungsschema: eines von '1', '2', '3', '4', '5', '6' oder '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Ihre Aufgabe besteht darin, zwei Kandidatenantworten auf ein Gespr\u00e4ch zwischen einem Nutzer und einem Assistenten zu bewerten.  \nVerwenden Sie das Bewertungsraster, um zu beurteilen, wie gut jede Antwort nat\u00fcrlich an die letzte Nachricht des Nutzers ankn\u00fcpft und dabei den Gesamtkontext des Gespr\u00e4chs respektiert.  \nGeben Sie eine faire und detaillierte Bewertung ab, wobei Sie N\u00fctzlichkeit, Korrektheit/Vollst\u00e4ndigkeit und Klarheit \u2013 in dieser Reihenfolge \u2013 priorisieren.",
+    "golden_task_description": "Deine Aufgabe ist es, den detaillierten Denkprozess von gpt-oss mit hohem Aufwand auf Deutsch zu simulieren.\nDu bekommst die vorherige Konversation des Nutzers, zwei m\u00f6gliche Antworten des Assistenten und ein Bewertungsraster, um beide Antworten zu vergleichen.\nZus\u00e4tzlich hast du Zugriff auf Goldannotationen der endg\u00fcltigen Bewertung (diese sind dem Nutzer nicht sichtbar). Nutze sie als Inspiration f\u00fcr dein Denken, aber erw\u00e4hne niemals die Existenz dieser Goldannotationen.\n\nSchreibe deine \u00dcberlegungen so, als w\u00fcrdest du laut Schritt f\u00fcr Schritt denken:\n- Beginne damit, die Eingangskonversation und die Anforderungen an eine gute Antwort zu betrachten.\n- Vergleiche im Detail die Antwort von Assistent A und Assistent B, notiere St\u00e4rken und Schw\u00e4chen gem\u00e4\u00df dem Bewertungsraster und lasse dich dabei von den Goldannotationen inspirieren.\n- Gelange nach und nach zu einem Schluss, welche Antwort des Assistenten besser ist und warum.\n\nWichtig:\n- Pr\u00e4sentiere das Denken so, als w\u00e4ren es ausschlie\u00dflich deine eigenen Gedanken.\n- Erw\u00e4hne keine \u201eNotizen\u201c, \u201eGoldannotationen\u201c oder verstecktes Material.\n- Die Ausgabe besteht nur aus deinem Denkprozess, nicht aus einer formellen Endantwort an den Nutzer (sollte aber dennoch irgendwie auf die endg\u00fcltige Bewertung gem\u00e4\u00df dem Bewertungsraster hinauslaufen)."
+  },
+  "ja": {
+    "rubric_list": [
+      {
+        "1": "\u30ec\u30b9\u30dd\u30f3\u30b91\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b92\u3088\u308a\u3082\u306f\u308b\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 >>> \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "2": "\u30ec\u30b9\u30dd\u30f3\u30b91\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b92\u3088\u308a\u3082\u660e\u3089\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 >> \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "3": "\u30ec\u30b9\u30dd\u30f3\u30b91\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b92\u3088\u308a\u3082\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 > \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "4": "\u30ec\u30b9\u30dd\u30f3\u30b91\u3068\u30ec\u30b9\u30dd\u30f3\u30b92\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u307b\u307c\u540c\u7b49\u3067\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 == \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "5": "\u30ec\u30b9\u30dd\u30f3\u30b92\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b91\u3088\u308a\u3082\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 < \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "6": "\u30ec\u30b9\u30dd\u30f3\u30b92\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b91\u3088\u308a\u3082\u660e\u3089\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 << \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002",
+        "7": "\u30ec\u30b9\u30dd\u30f3\u30b92\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u660e\u77ad\u3055\uff08\u3053\u306e\u9806\u3067\u91cd\u8981\uff09\u306e\u89b3\u70b9\u304b\u3089\u30ec\u30b9\u30dd\u30f3\u30b91\u3088\u308a\u3082\u306f\u308b\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u30ec\u30b9\u30dd\u30f3\u30b91 <<< \u30ec\u30b9\u30dd\u30f3\u30b92\uff09\u3002"
+      },
+      {
+        "1": "\u56de\u7b541\u306f\u3001\u56de\u7b542\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u5727\u5012\u7684\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 >>> \u56de\u7b542\uff09\u3002",
+        "2": "\u56de\u7b541\u306f\u3001\u56de\u7b542\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u5927\u5e45\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 >> \u56de\u7b542\uff09\u3002",
+        "3": "\u56de\u7b541\u306f\u3001\u56de\u7b542\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 > \u56de\u7b542\uff09\u3002",
+        "4": "\u56de\u7b541\u3068\u56de\u7b542\u306f\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u307b\u307c\u540c\u7b49\u3067\u3059\uff08\u56de\u7b541 == \u56de\u7b542\uff09\u3002",
+        "5": "\u56de\u7b542\u306f\u3001\u56de\u7b541\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 < \u56de\u7b542\uff09\u3002",
+        "6": "\u56de\u7b542\u306f\u3001\u56de\u7b541\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u5927\u5e45\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 << \u56de\u7b542\uff09\u3002",
+        "7": "\u56de\u7b542\u306f\u3001\u56de\u7b541\u3088\u308a\u3082\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u7db2\u7f85\u6027\u3001\u660e\u77ad\u6027\u306e\u9806\u3067\u5727\u5012\u7684\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 <<< \u56de\u7b542\uff09\u3002"
+      },
+      {
+        "1": "\u56de\u7b541\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b542\u3088\u308a\u3082\u306f\u308b\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 >>> \u56de\u7b542\uff09\u3002",
+        "2": "\u56de\u7b541\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b542\u3088\u308a\u3082\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 >> \u56de\u7b542\uff09\u3002",
+        "3": "\u56de\u7b541\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b542\u3088\u308a\u3082\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 > \u56de\u7b542\uff09\u3002",
+        "4": "\u56de\u7b541\u3068\u56de\u7b542\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u307b\u307c\u540c\u7b49\u3067\u3059\uff08\u56de\u7b541 == \u56de\u7b542\uff09\u3002",
+        "5": "\u56de\u7b542\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b541\u3088\u308a\u3082\u3084\u3084\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 < \u56de\u7b542\uff09\u3002",
+        "6": "\u56de\u7b542\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b541\u3088\u308a\u3082\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 << \u56de\u7b542\uff09\u3002",
+        "7": "\u56de\u7b542\u306f\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u3055\u306e\u9806\u306b\u91cd\u8981\u3067\u3042\u308a\u3001\u56de\u7b541\u3088\u308a\u3082\u306f\u308b\u304b\u306b\u512a\u308c\u3066\u3044\u307e\u3059\uff08\u56de\u7b541 <<< \u56de\u7b542\uff09\u3002"
+      }
+    ],
+    "tags": {
+      "input_tag": "\u5165\u529b\uff08\u4f1a\u8a71\uff09",
+      "evaluation_rubric_tag": "\u8a55\u4fa1\u57fa\u6e96",
+      "golden_annotation_tag": "\u30b4\u30fc\u30eb\u30c9\u6ce8\u91c8",
+      "response_format_tag": "\u56de\u7b54\u5f62\u5f0f",
+      "your_response_tag": "\u3042\u306a\u305f\u306e\u56de\u7b54"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u5165\u529b\u3055\u308c\u305f\u4f1a\u8a71\u306b\u7d9a\u304f2\u3064\u306e\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8\u5fdc\u7b54\u3092\u6bd4\u8f03\u3057\u3001\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\uff0f\u5b8c\u5168\u6027\u3001\u304a\u3088\u3073\u660e\u78ba\u3055\u306b\u7126\u70b9\u3092\u5f53\u3066\u305f\u7c21\u6f54\u306a\u7406\u7531\u4ed8\u3051\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u8a55\u4fa1\u57fa\u6e96\u306b\u3088\u308b\u5224\u5b9a\u30e9\u30d9\u30eb\uff1a'1', '2', '3', '4', '5', '6', '7' \u306e\u3044\u305a\u308c\u304b\u3002",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "\u3042\u306a\u305f\u306e\u30bf\u30b9\u30af\u306f\u3001\u30e6\u30fc\u30b6\u30fc\u3068\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8\u306e\u4f1a\u8a71\u306b\u5bfe\u3059\u308b2\u3064\u306e\u5019\u88dc\u5fdc\u7b54\u3092\u8a55\u4fa1\u3059\u308b\u3053\u3068\u3067\u3059\u3002  \n\u8a55\u4fa1\u57fa\u6e96\u3092\u7528\u3044\u3066\u3001\u5404\u5fdc\u7b54\u304c\u30e6\u30fc\u30b6\u30fc\u306e\u6700\u65b0\u30e1\u30c3\u30bb\u30fc\u30b8\u304b\u3089\u3069\u308c\u3060\u3051\u81ea\u7136\u306b\u4f1a\u8a71\u3092\u7d9a\u3051\u3066\u3044\u308b\u304b\u3001\u307e\u305f\u4f1a\u8a71\u5168\u4f53\u306e\u6587\u8108\u3092\u3069\u308c\u3060\u3051\u5c0a\u91cd\u3057\u3066\u3044\u308b\u304b\u3092\u5224\u65ad\u3057\u3066\u304f\u3060\u3055\u3044\u3002  \n\u6709\u7528\u6027\u3001\u6b63\u78ba\u6027\u30fb\u7db2\u7f85\u6027\u3001\u660e\u78ba\u6027\u306e\u9806\u306b\u91cd\u8996\u3057\u306a\u304c\u3089\u3001\u516c\u5e73\u304b\u3064\u8a73\u7d30\u306a\u8a55\u4fa1\u3092\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+    "golden_task_description": "\u3042\u306a\u305f\u306e\u30bf\u30b9\u30af\u306f\u3001\u65e5\u672c\u8a9e\u3067gpt-oss\u306e\u8a73\u7d30\u306a\u601d\u8003\u30d7\u30ed\u30bb\u30b9\u3092\u30ed\u30fc\u30eb\u30d7\u30ec\u30a4\u3059\u308b\u3053\u3068\u3067\u3059\u3002  \n\u524d\u56de\u306e\u30e6\u30fc\u30b6\u30fc\u306e\u4f1a\u8a71\u30012\u3064\u306e\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8\u56de\u7b54\u3001\u305d\u3057\u3066\u4e21\u56de\u7b54\u3092\u6bd4\u8f03\u3059\u308b\u8a55\u4fa1\u57fa\u6e96\u304c\u8868\u793a\u3055\u308c\u307e\u3059\u3002  \n\u307e\u305f\u3001\u6700\u7d42\u8a55\u4fa1\u306e\u30b4\u30fc\u30eb\u30c9\u30a2\u30ce\u30c6\u30fc\u30b7\u30e7\u30f3\u306b\u3082\u30a2\u30af\u30bb\u30b9\u3067\u304d\u307e\u3059\uff08\u305f\u3060\u3057\u30e6\u30fc\u30b6\u30fc\u306b\u306f\u898b\u3048\u307e\u305b\u3093\uff09\u3002\u3053\u308c\u3089\u3092\u81ea\u8eab\u306e\u601d\u8003\u306e\u53c2\u8003\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u305f\u3060\u3057\u3001\u3053\u308c\u3089\u30b4\u30fc\u30eb\u30c9\u30a2\u30ce\u30c6\u30fc\u30b7\u30e7\u30f3\u306e\u5b58\u5728\u306b\u8a00\u53ca\u3057\u3066\u306f\u3044\u3051\u307e\u305b\u3093\u3002  \n\n\u81ea\u5206\u304c\u8003\u3048\u3092\u58f0\u306b\u51fa\u3057\u3066\u9806\u3092\u8ffd\u3063\u3066\u3044\u308b\u304b\u306e\u3088\u3046\u306b\u63a8\u8ad6\u3092\u66f8\u3044\u3066\u304f\u3060\u3055\u3044\uff1a  \n- \u307e\u305a\u3001\u5165\u529b\u3055\u308c\u305f\u4f1a\u8a71\u3068\u826f\u3044\u56de\u7b54\u306b\u5fc5\u8981\u306a\u3053\u3068\u3092\u691c\u8a0e\u3057\u3066\u304f\u3060\u3055\u3044\u3002  \n- \u30a2\u30b7\u30b9\u30bf\u30f3\u30c8A\u3068\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8B\u306e\u56de\u7b54\u3092\u8a73\u7d30\u306b\u6bd4\u8f03\u3057\u3001\u8a55\u4fa1\u57fa\u6e96\u306b\u5f93\u3063\u3066\u5f37\u307f\u30fb\u5f31\u307f\u3092\u30b4\u30fc\u30eb\u30c9\u30a2\u30ce\u30c6\u30fc\u30b7\u30e7\u30f3\u306e\u5185\u5bb9\u304b\u3089\u30a4\u30f3\u30b9\u30d4\u30ec\u30fc\u30b7\u30e7\u30f3\u3092\u5f97\u3066\u6307\u6458\u3057\u3066\u304f\u3060\u3055\u3044\u3002  \n- \u3069\u3061\u3089\u306e\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8\u306e\u56de\u7b54\u304c\u3088\u308a\u826f\u3044\u306e\u304b\u3001\u305d\u306e\u7406\u7531\u3068\u3068\u3082\u306b\u5f90\u3005\u306b\u7d50\u8ad6\u306b\u5230\u9054\u3057\u3066\u304f\u3060\u3055\u3044\u3002  \n\n\u91cd\u8981\uff1a  \n- \u63a8\u8ad6\u306f\u3042\u304f\u307e\u3067\u81ea\u5206\u81ea\u8eab\u306e\u601d\u8003\u3068\u3057\u3066\u63d0\u793a\u3057\u3066\u304f\u3060\u3055\u3044\u3002  \n- \u300c\u30ce\u30fc\u30c8\u300d\u3084\u300c\u30b4\u30fc\u30eb\u30c9\u30a2\u30ce\u30c6\u30fc\u30b7\u30e7\u30f3\u300d\u307e\u305f\u306f\u96a0\u3055\u308c\u305f\u8cc7\u6599\u306e\u5b58\u5728\u306b\u306f\u8a00\u53ca\u3057\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002  \n- \u51fa\u529b\u306f\u3042\u306a\u305f\u81ea\u8eab\u306e\u601d\u8003\u30d7\u30ed\u30bb\u30b9\u306e\u307f\u3067\u3042\u308a\u3001\u30e6\u30fc\u30b6\u30fc\u3078\u306e\u6b63\u5f0f\u306a\u6700\u7d42\u56de\u7b54\u3067\u306f\u3042\u308a\u307e\u305b\u3093\uff08\u305f\u3060\u3057\u3001\u8a55\u4fa1\u57fa\u6e96\u306b\u57fa\u3065\u3044\u305f\u6700\u7d42\u7684\u306a\u8a55\u4fa1\u306b\u306f\u5230\u9054\u3057\u3066\u304f\u3060\u3055\u3044\uff09\u3002"
+  },
+  "vi": {
+    "rubric_list": [
+      {
+        "1": "Ph\u1ea3n h\u1ed3i 1 v\u01b0\u1ee3t tr\u1ed9i h\u01a1n nhi\u1ec1u so v\u1edbi Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >>> Ph\u1ea3n h\u1ed3i 2).",
+        "2": "Ph\u1ea3n h\u1ed3i 1 r\u00f5 r\u00e0ng t\u1ed1t h\u01a1n Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >> Ph\u1ea3n h\u1ed3i 2).",
+        "3": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n ph\u1ea7n n\u00e0o so v\u1edbi Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 > Ph\u1ea3n h\u1ed3i 2).",
+        "4": "Ph\u1ea3n h\u1ed3i 1 v\u00e0 Ph\u1ea3n h\u1ed3i 2 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng nhau v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 == Ph\u1ea3n h\u1ed3i 2).",
+        "5": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n ph\u1ea7n n\u00e0o so v\u1edbi Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 < Ph\u1ea3n h\u1ed3i 2).",
+        "6": "Ph\u1ea3n h\u1ed3i 2 r\u00f5 r\u00e0ng t\u1ed1t h\u01a1n Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 << Ph\u1ea3n h\u1ed3i 2).",
+        "7": "Ph\u1ea3n h\u1ed3i 2 v\u01b0\u1ee3t tr\u1ed9i h\u01a1n nhi\u1ec1u so v\u1edbi Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 <<< Ph\u1ea3n h\u1ed3i 2)."
+      },
+      {
+        "1": "Ph\u1ea3n h\u1ed3i 1 v\u01b0\u1ee3t tr\u1ed9i h\u01a1n h\u1eb3n ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >>> Ph\u1ea3n h\u1ed3i 2).",
+        "2": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n \u0111\u00e1ng k\u1ec3 so v\u1edbi ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >> Ph\u1ea3n h\u1ed3i 2).",
+        "3": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n m\u1ed9t ch\u00fat so v\u1edbi ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 > Ph\u1ea3n h\u1ed3i 2).",
+        "4": "Ph\u1ea3n h\u1ed3i 1 v\u00e0 ph\u1ea3n h\u1ed3i 2 g\u1ea7n nh\u01b0 ngang nhau v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 == Ph\u1ea3n h\u1ed3i 2).",
+        "5": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n m\u1ed9t ch\u00fat so v\u1edbi ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 < Ph\u1ea3n h\u1ed3i 2).",
+        "6": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n \u0111\u00e1ng k\u1ec3 so v\u1edbi ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 << Ph\u1ea3n h\u1ed3i 2).",
+        "7": "Ph\u1ea3n h\u1ed3i 2 v\u01b0\u1ee3t tr\u1ed9i h\u01a1n h\u1eb3n ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7, v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 <<< Ph\u1ea3n h\u1ed3i 2)."
+      },
+      {
+        "1": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n nhi\u1ec1u so v\u1edbi Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >>> Ph\u1ea3n h\u1ed3i 2).",
+        "2": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 >> Ph\u1ea3n h\u1ed3i 2).",
+        "3": "Ph\u1ea3n h\u1ed3i 1 t\u1ed1t h\u01a1n m\u1ed9t ch\u00fat so v\u1edbi Ph\u1ea3n h\u1ed3i 2 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 > Ph\u1ea3n h\u1ed3i 2).",
+        "4": "Ph\u1ea3n h\u1ed3i 1 v\u00e0 Ph\u1ea3n h\u1ed3i 2 g\u1ea7n nh\u01b0 gi\u1ed1ng nhau v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 == Ph\u1ea3n h\u1ed3i 2).",
+        "5": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n m\u1ed9t ch\u00fat so v\u1edbi Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 < Ph\u1ea3n h\u1ed3i 2).",
+        "6": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 << Ph\u1ea3n h\u1ed3i 2).",
+        "7": "Ph\u1ea3n h\u1ed3i 2 t\u1ed1t h\u01a1n nhi\u1ec1u so v\u1edbi Ph\u1ea3n h\u1ed3i 1 v\u1ec1 m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3 (Ph\u1ea3n h\u1ed3i 1 <<< Ph\u1ea3n h\u1ed3i 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Nh\u1eadp (H\u1ed9i tho\u1ea1i)",
+      "evaluation_rubric_tag": "Ti\u00eau ch\u00ed \u0111\u00e1nh gi\u00e1",
+      "golden_annotation_tag": "Ch\u00fa Th\u00edch V\u00e0ng",
+      "response_format_tag": "\u0110\u1ecbnh d\u1ea1ng ph\u1ea3n h\u1ed3i",
+      "your_response_tag": "Ph\u1ea3n h\u1ed3i c\u1ee7a b\u1ea1n"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "M\u1ed9t gi\u1ea3i th\u00edch ng\u1eafn g\u1ecdn so s\u00e1nh hai ph\u1ea3n h\u1ed3i c\u1ee7a tr\u1ee3 l\u00fd d\u1ef1a tr\u00ean \u0111o\u1ea1n h\u1ed9i tho\u1ea1i \u0111\u1ea7u v\u00e0o, t\u1eadp trung v\u00e0o m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, \u0111\u1ed9 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 s\u1ef1 r\u00f5 r\u00e0ng."
+        },
+        "score": {
+          "type": "string",
+          "description": "Nh\u00e3n \u0111\u00e1nh gi\u00e1 cu\u1ed1i c\u00f9ng d\u1ef1a tr\u00ean b\u1ea3ng ti\u00eau ch\u00ed: m\u1ed9t trong c\u00e1c gi\u00e1 tr\u1ecb '1', '2', '3', '4', '5', '6', ho\u1eb7c '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 \u0111\u00e1nh gi\u00e1 hai c\u00e2u tr\u1ea3 l\u1eddi \u1ee9ng vi\u00ean cho m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n gi\u1eefa ng\u01b0\u1eddi d\u00f9ng v\u00e0 tr\u1ee3 l\u00fd.  \nS\u1eed d\u1ee5ng b\u1ea3ng h\u01b0\u1edbng d\u1eabn \u0111\u00e1nh gi\u00e1, h\u00e3y nh\u1eadn x\u00e9t m\u1ee9c \u0111\u1ed9 t\u1ef1 nhi\u00ean c\u1ee7a t\u1eebng c\u00e2u tr\u1ea3 l\u1eddi khi ti\u1ebfp n\u1ed1i tin nh\u1eafn m\u1edbi nh\u1ea5t c\u1ee7a ng\u01b0\u1eddi d\u00f9ng, \u0111\u1ed3ng th\u1eddi t\u00f4n tr\u1ecdng b\u1ed1i c\u1ea3nh chung c\u1ee7a cu\u1ed9c h\u1ed9i tho\u1ea1i.  \nH\u00e3y \u0111\u01b0a ra nh\u1eadn x\u00e9t c\u00f4ng b\u1eb1ng v\u00e0 chi ti\u1ebft, \u01b0u ti\u00ean m\u1ee9c \u0111\u1ed9 h\u1eefu \u00edch, s\u1ef1 ch\u00ednh x\u00e1c/\u0111\u1ea7y \u0111\u1ee7 v\u00e0 s\u1ef1 r\u00f5 r\u00e0ng, theo th\u1ee9 t\u1ef1 quan tr\u1ecdng \u0111\u00f3.",
+    "golden_task_description": "Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 \u0111\u00f3ng vai qu\u00e1 tr\u00ecnh suy ngh\u0129 chi ti\u1ebft c\u1ee7a gpt-oss v\u1edbi n\u1ed7 l\u1ef1c cao b\u1eb1ng ti\u1ebfng Vi\u1ec7t.  \nB\u1ea1n s\u1ebd \u0111\u01b0\u1ee3c xem \u0111o\u1ea1n h\u1ed9i tho\u1ea1i tr\u01b0\u1edbc \u0111\u00f3 c\u1ee7a ng\u01b0\u1eddi d\u00f9ng, hai ph\u1ea3n h\u1ed3i c\u1ee7a tr\u1ee3 l\u00fd \u1ee9ng vi\u00ean, v\u00e0 m\u1ed9t ti\u00eau ch\u00ed \u0111\u00e1nh gi\u00e1 \u0111\u1ec3 so s\u00e1nh c\u1ea3 hai ph\u1ea3n h\u1ed3i.  \nB\u1ea1n c\u0169ng c\u00f3 quy\u1ec1n truy c\u1eadp v\u00e0o c\u00e1c ch\u00fa th\u00edch chu\u1ea9n c\u1ee7a \u0111\u00e1nh gi\u00e1 cu\u1ed1i c\u00f9ng (kh\u00f4ng hi\u1ec3n th\u1ecb cho ng\u01b0\u1eddi d\u00f9ng). H\u00e3y s\u1eed d\u1ee5ng ch\u00fang l\u00e0m ngu\u1ed3n c\u1ea3m h\u1ee9ng cho qu\u00e1 tr\u00ecnh suy ngh\u0129 c\u1ee7a m\u00ecnh, nh\u01b0ng tuy\u1ec7t \u0111\u1ed1i kh\u00f4ng \u0111\u1ec1 c\u1eadp \u0111\u1ebfn s\u1ef1 t\u1ed3n t\u1ea1i c\u1ee7a c\u00e1c ch\u00fa th\u00edch chu\u1ea9n n\u00e0y.\n\nH\u00e3y vi\u1ebft l\u1eadp lu\u1eadn suy ngh\u0129 c\u1ee7a b\u1ea1n nh\u01b0 th\u1ec3 b\u1ea1n \u0111ang suy ngh\u0129 to th\u00e0nh t\u1eebng b\u01b0\u1edbc:  \n- B\u1eaft \u0111\u1ea7u b\u1eb1ng vi\u1ec7c xem x\u00e9t \u0111o\u1ea1n h\u1ed9i tho\u1ea1i \u0111\u1ea7u v\u00e0o v\u00e0 x\u00e1c \u0111\u1ecbnh \u0111i\u1ec1u c\u1ea7n thi\u1ebft cho m\u1ed9t c\u00e2u tr\u1ea3 l\u1eddi t\u1ed1t.  \n- So s\u00e1nh chi ti\u1ebft ph\u1ea3n h\u1ed3i c\u1ee7a Tr\u1ee3 l\u00fd A v\u00e0 Tr\u1ee3 l\u00fd B, ghi ch\u00fa \u0111i\u1ec3m m\u1ea1nh v\u00e0 \u0111i\u1ec3m y\u1ebfu c\u1ee7a t\u1eebng ph\u1ea3n h\u1ed3i d\u1ef1a tr\u00ean ti\u00eau ch\u00ed \u0111\u00e1nh gi\u00e1, l\u1ea5y c\u1ea3m h\u1ee9ng t\u1eeb c\u00e1c ch\u00fa th\u00edch chu\u1ea9n.\n- D\u1ea7n d\u1ea7n \u0111i \u0111\u1ebfn k\u1ebft lu\u1eadn v\u1ec1 ph\u1ea3n h\u1ed3i c\u1ee7a Tr\u1ee3 l\u00fd n\u00e0o t\u1ed1t h\u01a1n v\u00e0 t\u1ea1i sao.  \n\nL\u01b0u \u00fd quan tr\u1ecdng:  \n- Tr\u00ecnh b\u00e0y l\u1eadp lu\u1eadn suy ngh\u0129 nh\u01b0 th\u1ec3 ho\u00e0n to\u00e0n l\u00e0 \u00fd ki\u1ebfn ri\u00eang c\u1ee7a b\u1ea1n.  \n- Kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u1ec1 c\u1eadp \u0111\u1ebfn b\u1ea5t k\u1ef3 \u201cghi ch\u00fa\u201d, \u201cch\u00fa th\u00edch chu\u1ea9n\u201d, ho\u1eb7c t\u00e0i li\u1ec7u \u1ea9n n\u00e0o.  \n- K\u1ebft qu\u1ea3 \u0111\u1ea7u ra ch\u1ec9 l\u00e0 qu\u00e1 tr\u00ecnh suy ngh\u0129 c\u1ee7a b\u1ea1n, kh\u00f4ng ph\u1ea3i l\u00e0 c\u00e2u tr\u1ea3 l\u1eddi ch\u00ednh th\u1ee9c cu\u1ed1i c\u00f9ng cho ng\u01b0\u1eddi d\u00f9ng (nh\u01b0ng v\u1eabn n\u00ean \u0111i \u0111\u1ebfn \u0111i\u1ec3m s\u1ed1 cu\u1ed1i c\u00f9ng d\u1ef1a tr\u00ean ti\u00eau ch\u00ed \u0111\u00e1nh gi\u00e1)."
+  },
+  "it": {
+    "rubric_list": [
+      {
+        "1": "La Risposta 1 \u00e8 di gran lunga superiore alla Risposta 2 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >>> Risposta 2).",
+        "2": "La Risposta 1 \u00e8 chiaramente migliore della Risposta 2 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >> Risposta 2).",
+        "3": "La Risposta 1 \u00e8 in qualche modo migliore della Risposta 2 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 > Risposta 2).",
+        "4": "La Risposta 1 e la Risposta 2 sono grossomodo equivalenti in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 == Risposta 2).",
+        "5": "La Risposta 2 \u00e8 in qualche modo migliore della Risposta 1 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 < Risposta 2).",
+        "6": "La Risposta 2 \u00e8 chiaramente migliore della Risposta 1 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 << Risposta 2).",
+        "7": "La Risposta 2 \u00e8 di gran lunga superiore alla Risposta 1 in termini di utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 <<< Risposta 2)."
+      },
+      {
+        "1": "La Risposta 1 \u00e8 nettamente migliore della Risposta 2 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >>> Risposta 2).",
+        "2": "La Risposta 1 \u00e8 significativamente migliore della Risposta 2 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >> Risposta 2).",
+        "3": "La Risposta 1 \u00e8 leggermente migliore della Risposta 2 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 > Risposta 2).",
+        "4": "La Risposta 1 e la Risposta 2 sono pi\u00f9 o meno ugualmente valide in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 == Risposta 2).",
+        "5": "La Risposta 2 \u00e8 leggermente migliore della Risposta 1 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 < Risposta 2).",
+        "6": "La Risposta 2 \u00e8 significativamente migliore della Risposta 1 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 << Risposta 2).",
+        "7": "La Risposta 2 \u00e8 nettamente migliore della Risposta 1 in utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 <<< Risposta 2)."
+      },
+      {
+        "1": "Risposta 1 \u00e8 molto migliore di Risposta 2 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >>> Risposta 2).",
+        "2": "Risposta 1 \u00e8 migliore di Risposta 2 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 >> Risposta 2).",
+        "3": "Risposta 1 \u00e8 un po\u2019 migliore di Risposta 2 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 > Risposta 2).",
+        "4": "Risposta 1 e Risposta 2 sono pi\u00f9 o meno uguali per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 == Risposta 2).",
+        "5": "Risposta 2 \u00e8 un po\u2019 migliore di Risposta 1 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 < Risposta 2).",
+        "6": "Risposta 2 \u00e8 migliore di Risposta 1 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 << Risposta 2).",
+        "7": "Risposta 2 \u00e8 molto migliore di Risposta 1 per quanto riguarda utilit\u00e0, correttezza/completezza e chiarezza, in quest\u2019ordine di importanza (Risposta 1 <<< Risposta 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Input (Conversazione)",
+      "evaluation_rubric_tag": "Criteri di valutazione",
+      "golden_annotation_tag": "Annotazioni Dorate",
+      "response_format_tag": "Formato di risposta",
+      "your_response_tag": "La tua risposta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un breve ragionamento che confronta le due risposte degli assistenti seguendo la conversazione di input, concentrandosi su utilit\u00e0, correttezza/completezza e chiarezza."
+        },
+        "score": {
+          "type": "string",
+          "description": "L'etichetta di verdetto dalla rubrica: una tra '1', '2', '3', '4', '5', '6', o '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Il tuo compito \u00e8 valutare due possibili risposte a una conversazione tra un utente e un assistente.\nUtilizzando la griglia di valutazione, giudica quanto ciascuna risposta prosegue in modo naturale dal messaggio pi\u00f9 recente dell\u2019utente, rispettando il contesto generale della conversazione.\nFornisci una valutazione equa e dettagliata, dando priorit\u00e0 nell\u2019ordine a utilit\u00e0, correttezza/completezza e chiarezza.",
+    "golden_task_description": "Il tuo compito \u00e8 interpretare il processo di pensiero dettagliato di gpt-oss con grande impegno in italiano.  \nTi verr\u00e0 mostrata la conversazione precedente dell\u2019utente, due risposte candidate dell\u2019assistente e un criterio di valutazione per confrontare entrambe le risposte.  \nHai anche accesso ad annotazioni d\u2019oro della valutazione finale (non visibili all\u2019utente). Usale come ispirazione per il tuo ragionamento, ma non menzionare mai l\u2019esistenza di queste annotazioni d\u2019oro.\n\nScrivi il tuo ragionamento come se stessi pensando ad alta voce passo dopo passo:  \n- Inizia considerando la conversazione di input e cosa \u00e8 necessario per una buona risposta.  \n- Confronta la risposta dell\u2019Assistente A e quella dell\u2019Assistente B in dettaglio, notando punti di forza e di debolezza secondo il criterio di valutazione, prendendo ispirazione dalle annotazioni d\u2019oro.  \n- Arriva gradualmente a una conclusione su quale risposta dell\u2019Assistente sia migliore e perch\u00e9.  \n\nImportante:  \n- Presenta il ragionamento come se fosse interamente frutto dei tuoi pensieri.  \n- Non fare riferimento a nessun \u201cappunto\u201d, \u201cannotazione d\u2019oro\u201d o materiale nascosto.  \n- L\u2019output \u00e8 solo il tuo processo di pensiero, non una risposta formale finale all\u2019utente (ma dovrebbe comunque arrivare al punteggio finale in base al criterio di valutazione)."
+  },
+  "nl": {
+    "rubric_list": [
+      {
+        "1": "Antwoord 1 is veel beter dan Antwoord 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 >>> Antwoord 2).",
+        "2": "Antwoord 1 is duidelijk beter dan Antwoord 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 >> Antwoord 2).",
+        "3": "Antwoord 1 is enigszins beter dan Antwoord 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 > Antwoord 2).",
+        "4": "Antwoord 1 en Antwoord 2 zijn ongeveer gelijk wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 == Antwoord 2).",
+        "5": "Antwoord 2 is enigszins beter dan Antwoord 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 < Antwoord 2).",
+        "6": "Antwoord 2 is duidelijk beter dan Antwoord 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 << Antwoord 2).",
+        "7": "Antwoord 2 is veel beter dan Antwoord 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid (Antwoord 1 <<< Antwoord 2)."
+      },
+      {
+        "1": "Antwoord 1 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, overweldigend beter dan antwoord 2 (Antwoord 1 >>> Antwoord 2).",
+        "2": "Antwoord 1 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, aanzienlijk beter dan antwoord 2 (Antwoord 1 >> Antwoord 2).",
+        "3": "Antwoord 1 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, iets beter dan antwoord 2 (Antwoord 1 > Antwoord 2).",
+        "4": "Antwoord 1 en Antwoord 2 zijn ongeveer even goed wat betreft behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Antwoord 1 == Antwoord 2).",
+        "5": "Antwoord 2 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, iets beter dan antwoord 1 (Antwoord 1 < Antwoord 2).",
+        "6": "Antwoord 2 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, aanzienlijk beter dan antwoord 1 (Antwoord 1 << Antwoord 2).",
+        "7": "Antwoord 2 is op het gebied van behulpzaamheid, correctheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid, overweldigend beter dan antwoord 1 (Antwoord 1 <<< Antwoord 2)."
+      },
+      {
+        "1": "Reactie 1 is veel beter dan Reactie 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 >>> Reactie 2).",
+        "2": "Reactie 1 is beter dan Reactie 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 >> Reactie 2).",
+        "3": "Reactie 1 is iets beter dan Reactie 2 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 > Reactie 2).",
+        "4": "Reactie 1 en Reactie 2 zijn ongeveer gelijk wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 == Reactie 2).",
+        "5": "Reactie 2 is iets beter dan Reactie 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 < Reactie 2).",
+        "6": "Reactie 2 is beter dan Reactie 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 << Reactie 2).",
+        "7": "Reactie 2 is veel beter dan Reactie 1 wat betreft behulpzaamheid, juistheid/volledigheid en duidelijkheid, in die volgorde van belangrijkheid (Reactie 1 <<< Reactie 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Invoer (Gesprek)",
+      "evaluation_rubric_tag": "Beoordelingscriteria",
+      "golden_annotation_tag": "Gouden Annotaties",
+      "response_format_tag": "Antwoordformaat",
+      "your_response_tag": "Jouw Antwoord"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Een korte motivatie waarin de twee assistent-antwoorden worden vergeleken op basis van het voorafgaande gesprek, met nadruk op behulpzaamheid, juistheid/volledigheid en duidelijkheid."
+        },
+        "score": {
+          "type": "string",
+          "description": "Het oordeel-etiket uit het beoordelingskader: \u00e9\u00e9n van '1', '2', '3', '4', '5', '6', of '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Je taak is om twee kandidaat-antwoorden op een gesprek tussen een gebruiker en een assistent te evalueren.\nGebruik de beoordelingsrubriek om te beoordelen hoe goed elk antwoord natuurlijk voortbouwt op het laatste bericht van de gebruiker, terwijl de algehele context van het gesprek gerespecteerd wordt.\nGeef een eerlijke en gedetailleerde beoordeling, waarbij je prioriteit geeft aan behulpzaamheid, juistheid/volledigheid en duidelijkheid, in deze volgorde van belangrijkheid.",
+    "golden_task_description": "Jouw taak is om de gedetailleerde denkproces van gpt-oss met veel inspanning in het Nederlands na te bootsen.  \nJe krijgt het eerdere gesprek van de gebruiker te zien, twee mogelijke assistent-antwoorden, en een beoordelingsrubriek om beide antwoorden te vergelijken.  \nJe hebt ook toegang tot gouden annotaties van de uiteindelijke beoordeling (niet zichtbaar voor de gebruiker). Gebruik deze als inspiratie voor je denkproces, maar noem nooit het bestaan van deze gouden annotaties.  \n\nSchrijf je redenering alsof je hardop stap voor stap nadenkt:  \n- Begin met het overwegen van het gesprek en wat nodig is voor een goed antwoord.  \n- Vergelijk het antwoord van Assistent A en Assistent B in detail, waarbij je sterke en zwakke punten volgens de beoordelingsrubriek benoemt, ge\u00efnspireerd door de gouden annotaties.  \n- Kom geleidelijk tot een conclusie over welk assistent-antwoord beter is en waarom.  \n\nBelangrijk:  \n- Presenteer het denkproces alsof het volledig jouw eigen gedachten zijn.  \n- Verwijs niet naar \u201cnotities\u201d, \u201cgouden annotaties\u201d of verborgen materiaal.  \n- De output is alleen jouw denkproces, niet een formeel definitief antwoord aan de gebruiker (maar het moet wel tot het eindoordeel op basis van de beoordelingsrubriek komen)."
+  },
+  "pl": {
+    "rubric_list": [
+      {
+        "1": "Odpowied\u017a 1 jest zdecydowanie lepsza od Odpowiedzi 2 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >>> Odpowied\u017a 2).",
+        "2": "Odpowied\u017a 1 jest wyra\u017anie lepsza od Odpowiedzi 2 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >> Odpowied\u017a 2).",
+        "3": "Odpowied\u017a 1 jest nieco lepsza od Odpowiedzi 2 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 > Odpowied\u017a 2).",
+        "4": "Odpowied\u017a 1 i Odpowied\u017a 2 s\u0105 w przybli\u017ceniu r\u00f3wne pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 == Odpowied\u017a 2).",
+        "5": "Odpowied\u017a 2 jest nieco lepsza od Odpowiedzi 1 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 < Odpowied\u017a 2).",
+        "6": "Odpowied\u017a 2 jest wyra\u017anie lepsza od Odpowiedzi 1 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 << Odpowied\u017a 2).",
+        "7": "Odpowied\u017a 2 jest zdecydowanie lepsza od Odpowiedzi 1 pod wzgl\u0119dem przydatno\u015bci, poprawno\u015bci/kompletno\u015bci i jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 <<< Odpowied\u017a 2)."
+      },
+      {
+        "1": "Odpowied\u017a 1 jest zdecydowanie lepsza ni\u017c Odpowied\u017a 2 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >>> Odpowied\u017a 2).",
+        "2": "Odpowied\u017a 1 jest znacznie lepsza ni\u017c Odpowied\u017a 2 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >> Odpowied\u017a 2).",
+        "3": "Odpowied\u017a 1 jest nieco lepsza ni\u017c Odpowied\u017a 2 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 > Odpowied\u017a 2).",
+        "4": "Odpowied\u017a 1 i Odpowied\u017a 2 s\u0105 r\u00f3wnie dobre pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 == Odpowied\u017a 2).",
+        "5": "Odpowied\u017a 2 jest nieco lepsza ni\u017c Odpowied\u017a 1 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 < Odpowied\u017a 2).",
+        "6": "Odpowied\u017a 2 jest znacznie lepsza ni\u017c Odpowied\u017a 1 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 << Odpowied\u017a 2).",
+        "7": "Odpowied\u017a 2 jest zdecydowanie lepsza ni\u017c Odpowied\u017a 1 pod wzgl\u0119dem u\u017cyteczno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci, w takiej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 <<< Odpowied\u017a 2)."
+      },
+      {
+        "1": "Odpowied\u017a 1 jest znacznie lepsza od Odpowiedzi 2 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >>> Odpowied\u017a 2).",
+        "2": "Odpowied\u017a 1 jest lepsza od Odpowiedzi 2 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 >> Odpowied\u017a 2).",
+        "3": "Odpowied\u017a 1 jest troch\u0119 lepsza od Odpowiedzi 2 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 > Odpowied\u017a 2).",
+        "4": "Odpowied\u017a 1 i Odpowied\u017a 2 s\u0105 na podobnym poziomie pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 == Odpowied\u017a 2).",
+        "5": "Odpowied\u017a 2 jest troch\u0119 lepsza od Odpowiedzi 1 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 < Odpowied\u017a 2).",
+        "6": "Odpowied\u017a 2 jest lepsza od Odpowiedzi 1 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 << Odpowied\u017a 2).",
+        "7": "Odpowied\u017a 2 jest znacznie lepsza od Odpowiedzi 1 pod wzgl\u0119dem pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz jasno\u015bci \u2014 w tej kolejno\u015bci wa\u017cno\u015bci (Odpowied\u017a 1 <<< Odpowied\u017a 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Wprowadzenie (Rozmowa)",
+      "evaluation_rubric_tag": "Kryteria Oceny",
+      "golden_annotation_tag": "Z\u0142ote Adnotacje",
+      "response_format_tag": "Format Odpowiedzi",
+      "your_response_tag": "Twoja Odpowied\u017a"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Kr\u00f3tka argumentacja por\u00f3wnuj\u0105ca dwie odpowiedzi asystenta po rozmowie wej\u015bciowej, skupiaj\u0105ca si\u0119 na pomocno\u015bci, poprawno\u015bci/kompletno\u015bci oraz klarowno\u015bci."
+        },
+        "score": {
+          "type": "string",
+          "description": "Etykieta werdyktu wed\u0142ug wytycznych: jedna z warto\u015bci '1', '2', '3', '4', '5', '6' lub '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Twoim zadaniem jest oceni\u0107 dwie propozycje odpowiedzi na rozmow\u0119 mi\u0119dzy u\u017cytkownikiem a asystentem.  \nKorzystaj\u0105c z podanej rubryki oceniania, oce\u0144, jak dobrze ka\u017cda odpowied\u017a naturalnie nawi\u0105zuje do ostatniej wiadomo\u015bci u\u017cytkownika, jednocze\u015bnie uwzgl\u0119dniaj\u0105c ca\u0142y kontekst rozmowy.  \nZapewnij uczciw\u0105 i szczeg\u00f3\u0142ow\u0105 ocen\u0119, priorytetowo traktuj\u0105c pomocno\u015b\u0107, poprawno\u015b\u0107/kompletno\u015b\u0107 oraz klarowno\u015b\u0107, w tej kolejno\u015bci wa\u017cno\u015bci.",
+    "golden_task_description": "Twoim zadaniem jest odegranie szczeg\u00f3\u0142owego procesu my\u015blenia gpt-oss w j\u0119zyku polskim, wk\u0142adaj\u0105c w to du\u017co wysi\u0142ku.  \nZostanie Ci pokazana wcze\u015bniejsza rozmowa u\u017cytkownika, dwie propozycje odpowiedzi asystenta oraz rubryka oceny do por\u00f3wnania obu odpowiedzi.  \nMasz r\u00f3wnie\u017c dost\u0119p do ostatecznych ocen (niewidocznych dla u\u017cytkownika). Wykorzystaj je jako inspiracj\u0119 do swojego rozumowania, jednak nigdy nie wspominaj o istnieniu tych ostatecznych ocen.  \n\nZapisz swoje rozumowanie tak, jakby\u015b my\u015bla\u0142 na g\u0142os, krok po kroku:  \n- Na pocz\u0105tku rozwa\u017c rozmow\u0119 i to, czego potrzeba do dobrej odpowiedzi.  \n- Por\u00f3wnaj szczeg\u00f3\u0142owo odpowiedzi Asystenta A i Asystenta B, zauwa\u017caj\u0105c mocne i s\u0142abe strony w odniesieniu do kryteri\u00f3w oceny, inspiruj\u0105c si\u0119 ostatecznymi ocenami.  \n- Stopniowo dochod\u017a do wniosku, kt\u00f3ra odpowied\u017a asystenta jest lepsza i dlaczego.  \n\nWa\u017cne:  \n- Przedstaw rozumowanie tak, jakby by\u0142o ca\u0142kowicie Twoimi w\u0142asnymi przemy\u015bleniami.  \n- Nie odwo\u0142uj si\u0119 do \u017cadnych \u201enotatek\u201d, \u201eocen ko\u0144cowych\u201d ani ukrytych materia\u0142\u00f3w.  \n- Wynikiem jest wy\u0142\u0105cznie Tw\u00f3j proces my\u015blenia, a nie oficjalna odpowied\u017a dla u\u017cytkownika (ale powinien ostatecznie wskazywa\u0107 ocen\u0119 zgodn\u0105 z rubryk\u0105 oceny)."
+  },
+  "id": {
+    "rubric_list": [
+      {
+        "1": "Respons 1 jauh lebih unggul daripada Respons 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 >>> Respons 2).",
+        "2": "Respons 1 jelas lebih baik daripada Respons 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 >> Respons 2).",
+        "3": "Respons 1 agak lebih baik daripada Respons 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 > Respons 2).",
+        "4": "Respons 1 dan Respons 2 kurang lebih setara dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 == Respons 2).",
+        "5": "Respons 2 agak lebih baik daripada Respons 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 < Respons 2).",
+        "6": "Respons 2 jelas lebih baik daripada Respons 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 << Respons 2).",
+        "7": "Respons 2 jauh lebih unggul daripada Respons 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingan tersebut (Respons 1 <<< Respons 2)."
+      },
+      {
+        "1": "Respon 1 jauh lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 >>> Respon 2).",
+        "2": "Respon 1 secara signifikan lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 >> Respon 2).",
+        "3": "Respon 1 sedikit lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 > Respon 2).",
+        "4": "Respon 1 dan Respon 2 hampir sama baiknya dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 == Respon 2).",
+        "5": "Respon 2 sedikit lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 < Respon 2).",
+        "6": "Respon 2 secara signifikan lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 << Respon 2).",
+        "7": "Respon 2 jauh lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, dalam urutan penting tersebut (Respon 1 <<< Respon 2)."
+      },
+      {
+        "1": "Respon 1 jauh lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 >>> Respon 2).",
+        "2": "Respon 1 lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 >> Respon 2).",
+        "3": "Respon 1 sedikit lebih baik daripada Respon 2 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 > Respon 2).",
+        "4": "Respon 1 dan Respon 2 kurang lebih sama dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 == Respon 2).",
+        "5": "Respon 2 sedikit lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 < Respon 2).",
+        "6": "Respon 2 lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 << Respon 2).",
+        "7": "Respon 2 jauh lebih baik daripada Respon 1 dalam hal kegunaan, kebenaran/kelengkapan, dan kejelasan, sesuai urutan kepentingannya (Respon 1 <<< Respon 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Input (Percakapan)",
+      "evaluation_rubric_tag": "Rubrik Evaluasi",
+      "golden_annotation_tag": "Anotasi Emas",
+      "response_format_tag": "Format Respons",
+      "your_response_tag": "Respons Anda"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Penjelasan singkat yang membandingkan dua respons asisten berdasarkan percakapan masukan, dengan fokus pada kegunaan, kebenaran/kelengkapan, dan kejelasan."
+        },
+        "score": {
+          "type": "string",
+          "description": "Label keputusan dari pedoman: salah satu dari '1', '2', '3', '4', '5', '6', atau '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Tugas Anda adalah mengevaluasi dua respons kandidat terhadap percakapan antara pengguna dan asisten.  \nDengan menggunakan rubrik evaluasi, nilai seberapa baik setiap respons melanjutkan percakapan secara alami dari pesan terbaru pengguna sekaligus menghormati konteks keseluruhan percakapan.  \nBerikan penilaian yang adil dan terperinci, dengan memprioritaskan kegunaan, ketepatan/kelengkapan, dan kejelasan, sesuai urutan tingkat kepentingannya.",
+    "golden_task_description": "Tugas Anda adalah memerankan proses berpikir mendalam gpt-oss dengan upaya tinggi dalam bahasa Indonesia.  \nAnda akan diperlihatkan percakapan pengguna sebelumnya, dua kandidat respons asisten, dan rubrik evaluasi untuk membandingkan kedua respons tersebut.  \nAnda juga memiliki akses ke anotasi emas dari evaluasi akhir (tidak terlihat oleh pengguna). Gunakan sebagai inspirasi untuk proses berpikir Anda, namun jangan pernah menyebutkan keberadaan anotasi emas ini.\n\nTuliskan penalaran Anda seolah-olah Anda sedang berpikir keras secara bertahap:  \n- Mulailah dengan mempertimbangkan percakapan masukan dan apa yang dibutuhkan untuk jawaban yang baik.  \n- Bandingkan secara detail respons Asisten A dan respons Asisten B, catat kelebihan dan kekurangan sesuai rubrik evaluasi dengan mengambil inspirasi dari anotasi emas.  \n- Secara bertahap ambil kesimpulan tentang respons Asisten mana yang lebih baik dan alasannya.\n\nPenting:  \n- Sajikan penalaran tersebut seakan-akan benar-benar hasil pemikiran Anda sendiri.  \n- Jangan pernah merujuk pada \u201ccatatan\u201d, \u201canotasi emas\u201d, atau materi tersembunyi apa pun.  \n- Output yang dihasilkan hanyalah proses berpikir Anda, bukan jawaban akhir formal kepada pengguna (namun pada akhirnya tetap harus sampai pada skor akhir berdasarkan rubrik evaluasi)."
+  },
+  "ko": {
+    "rubric_list": [
+      {
+        "1": "\uc751\ub2f5 1\uc740 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 2\ubcf4\ub2e4 \ud6e8\uc52c \ub6f0\uc5b4\ub0a9\ub2c8\ub2e4 (\uc751\ub2f5 1 >>> \uc751\ub2f5 2).",
+        "2": "\uc751\ub2f5 1\uc740 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 2\ubcf4\ub2e4 \uba85\ubc31\ud788 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 >> \uc751\ub2f5 2).",
+        "3": "\uc751\ub2f5 1\uc740 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 2\ubcf4\ub2e4 \ub2e4\uc18c \ub354 \ub0ab\uc2b5\ub2c8\ub2e4 (\uc751\ub2f5 1 > \uc751\ub2f5 2).",
+        "4": "\uc751\ub2f5 1\uacfc \uc751\ub2f5 2\ub294 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uac70\uc758 \ub3d9\uc77c\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 == \uc751\ub2f5 2).",
+        "5": "\uc751\ub2f5 2\ub294 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 1\ubcf4\ub2e4 \ub2e4\uc18c \ub354 \ub0ab\uc2b5\ub2c8\ub2e4 (\uc751\ub2f5 1 < \uc751\ub2f5 2).",
+        "6": "\uc751\ub2f5 2\ub294 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 1\ubcf4\ub2e4 \uba85\ubc31\ud788 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 << \uc751\ub2f5 2).",
+        "7": "\uc751\ub2f5 2\ub294 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uce21\uba74(\uc774 \uc21c\uc11c\uc758 \uc911\uc694\uc131)\uc5d0 \uc788\uc5b4\uc11c \uc751\ub2f5 1\ubcf4\ub2e4 \ud6e8\uc52c \ub6f0\uc5b4\ub0a9\ub2c8\ub2e4 (\uc751\ub2f5 1 <<< \uc751\ub2f5 2)."
+      },
+      {
+        "1": "\uc751\ub2f5 1\uc774 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 2\ubcf4\ub2e4 \uc555\ub3c4\uc801\uc73c\ub85c \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 >>> \uc751\ub2f5 2).",
+        "2": "\uc751\ub2f5 1\uc774 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 2\ubcf4\ub2e4 \uc0c1\ub2f9\ud788 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 >> \uc751\ub2f5 2).",
+        "3": "\uc751\ub2f5 1\uc774 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 2\ubcf4\ub2e4 \uc57d\uac04 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 > \uc751\ub2f5 2).",
+        "4": "\uc751\ub2f5 1\uacfc \uc751\ub2f5 2\uac00 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uac70\uc758 \ub3d9\ub4f1\ud558\uac8c \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 == \uc751\ub2f5 2).",
+        "5": "\uc751\ub2f5 2\uac00 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 1\ubcf4\ub2e4 \uc57d\uac04 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 < \uc751\ub2f5 2).",
+        "6": "\uc751\ub2f5 2\uac00 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 1\ubcf4\ub2e4 \uc0c1\ub2f9\ud788 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 << \uc751\ub2f5 2).",
+        "7": "\uc751\ub2f5 2\uac00 \uc720\uc6a9\uc131, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc5d0\uc11c \uac01\uac01\uc758 \uc911\uc694\ub3c4 \uc21c\uc11c\ub85c \uc751\ub2f5 1\ubcf4\ub2e4 \uc555\ub3c4\uc801\uc73c\ub85c \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4 (\uc751\ub2f5 1 <<< \uc751\ub2f5 2)."
+      },
+      {
+        "1": "\ub2f5\ubcc0 1\uc774 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 2\ubcf4\ub2e4 \ud6e8\uc52c \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 >>> \ub2f5\ubcc0 2).",
+        "2": "\ub2f5\ubcc0 1\uc774 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 2\ubcf4\ub2e4 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 >> \ub2f5\ubcc0 2).",
+        "3": "\ub2f5\ubcc0 1\uc774 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 2\ubcf4\ub2e4 \uc57d\uac04 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 > \ub2f5\ubcc0 2).",
+        "4": "\ub2f5\ubcc0 1\uacfc \ub2f5\ubcc0 2\uac00 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub300\uccb4\ub85c \ube44\uc2b7\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 == \ub2f5\ubcc0 2).",
+        "5": "\ub2f5\ubcc0 2\uac00 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 1\ubcf4\ub2e4 \uc57d\uac04 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 < \ub2f5\ubcc0 2).",
+        "6": "\ub2f5\ubcc0 2\uac00 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 1\ubcf4\ub2e4 \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 << \ub2f5\ubcc0 2).",
+        "7": "\ub2f5\ubcc0 2\uac00 \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131 \uba74\uc5d0\uc11c \ub2f5\ubcc0 1\ubcf4\ub2e4 \ud6e8\uc52c \ub354 \uc6b0\uc218\ud569\ub2c8\ub2e4(\uc911\uc694\ub3c4 \uc21c\uc11c\ub300\ub85c) (\ub2f5\ubcc0 1 <<< \ub2f5\ubcc0 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "\uc785\ub825(\ub300\ud654)",
+      "evaluation_rubric_tag": "\ud3c9\uac00 \uae30\uc900",
+      "golden_annotation_tag": "\uace8\ub4dc \uc8fc\uc11d",
+      "response_format_tag": "\uc751\ub2f5 \ud615\uc2dd",
+      "your_response_tag": "\ub2f9\uc2e0\uc758 \uc751\ub2f5"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\uc785\ub825 \ub300\ud654\ub97c \ubc14\ud0d5\uc73c\ub85c \ub450 \uc5b4\uc2dc\uc2a4\ud134\ud2b8 \uc751\ub2f5\uc744 \ube44\uad50\ud558\uc5ec \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc131\ub3c4, \uba85\ud655\uc131\uc5d0 \uc911\uc810\uc744 \ub450\uace0 \uac04\ub2e8\ud788 reasoning\uc744 \uc791\uc131\ud569\ub2c8\ub2e4."
+        },
+        "score": {
+          "type": "string",
+          "description": "'1', '2', '3', '4', '5', '6', '7' \uc911 \ud558\ub098\uc758 \uae30\uc900 \ub77c\ubca8\uc744 \uc120\ud0dd\ud569\ub2c8\ub2e4.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "\ub2f9\uc2e0\uc758 \uc784\ubb34\ub294 \uc0ac\uc6a9\uc790\uc640 \uc5b4\uc2dc\uc2a4\ud134\ud2b8 \uac04\uc758 \ub300\ud654\uc5d0 \ub300\ud55c \ub450 \uac1c\uc758 \ud6c4\ubcf4 \uc751\ub2f5\uc744 \ud3c9\uac00\ud558\ub294 \uac83\uc785\ub2c8\ub2e4.  \n\ud3c9\uac00 \uae30\uc900\ud45c\ub97c \uc0ac\uc6a9\ud558\uc5ec \uac01 \uc751\ub2f5\uc774 \uc0ac\uc6a9\uc790\uc758 \ucd5c\uc2e0 \uba54\uc2dc\uc9c0\uc5d0\uc11c \uc790\uc5f0\uc2a4\ub7fd\uac8c \uc774\uc5b4\uc9c0\uba74\uc11c \ub300\ud654\uc758 \uc804\uccb4 \ub9e5\ub77d\uc744 \uc5bc\ub9c8\ub098 \uc798 \ubc18\uc601\ud558\ub294\uc9c0 \ud310\ub2e8\ud558\uc138\uc694.  \n\uacf5\uc815\ud558\uace0 \uc0c1\uc138\ud55c \ud3c9\uac00\ub97c \uc81c\uacf5\ud558\ub418, \ub3c4\uc6c0\ub428, \uc815\ud655\uc131/\uc644\uc804\uc131, \uba85\ud655\uc131\uc758 \uc21c\uc11c\ub85c \uc911\uc694\ub3c4\ub97c \ub450\uace0 \ud3c9\uac00\ud558\uc138\uc694.",
+    "golden_task_description": "\ub2f9\uc2e0\uc758 \uc784\ubb34\ub294 gpt-oss\uc758 \uc0c1\uc138\ud55c \uc0ac\uace0 \uacfc\uc815\uc744 \ud55c\uad6d\uc5b4\ub85c \ub192\uc740 \ub178\ub825\ub3c4\ub97c \ub4e4\uc5ec \uc5ed\ud560\uadf9\ud558\ub294 \uac83\uc785\ub2c8\ub2e4.  \n\uc774\uc804\uc5d0 \uc0ac\uc6a9\uc790\uac00 \uc8fc\uace0\ubc1b\uc740 \ub300\ud654, \ub450 \uac1c\uc758 \ud6c4\ubcf4 \uc5b4\uc2dc\uc2a4\ud134\ud2b8 \ub2f5\ubcc0, \uadf8\ub9ac\uace0 \ub450 \ub2f5\ubcc0\uc744 \ube44\uad50 \ud3c9\uac00\ud558\uae30 \uc704\ud55c \ud3c9\uac00 \uae30\uc900\uc774 \uc81c\uc2dc\ub429\ub2c8\ub2e4.  \n\ub610\ud55c \ucd5c\uc885 \ud3c9\uac00\uc758 gold annotation\ub3c4 \ucc38\uace0\uc6a9\uc73c\ub85c \uc81c\uacf5\ub418\uc9c0\ub9cc(\uc0ac\uc6a9\uc790\uc5d0\uac8c\ub294 \ubcf4\uc774\uc9c0 \uc54a\uc74c), \uc0ac\uace0 \uacfc\uc815\uc5d0 \uc601\uac10\uc744 \uc5bb\ub294 \ub370\ub9cc \ud65c\uc6a9\ud558\uace0, gold annotation\uc758 \uc874\uc7ac\ub97c \uc808\ub300\ub85c \uc5b8\uae09\ud558\uc9c0 \ub9c8\uc2ed\uc2dc\uc624.  \n\n\uc0dd\uac01\uc744 \ub2e8\uacc4\uc801\uc73c\ub85c \uc18c\ub9ac \ub0b4\uc5b4 \ub9d0\ud558\ub4ef\uc774 \ucd94\ub860\uc744 \uc791\uc131\ud558\uc138\uc694:  \n- \uba3c\uc800 \uc785\ub825 \ub300\ud654\ub97c \uace0\ub824\ud558\uace0 \uc88b\uc740 \ub2f5\ubcc0\uc5d0 \ud544\uc694\ud55c \uac83\uc774 \ubb34\uc5c7\uc778\uc9c0 \uc0dd\uac01\ud558\uc138\uc694.  \n- \ud3c9\uac00 \uae30\uc900\uc744 \ucc38\uace0\ud558\uba70, gold annotation\uc5d0\uc11c \uc601\uac10\uc744 \uc5bb\uc5b4, \uc5b4\uc2dc\uc2a4\ud134\ud2b8 A\uc640 B\uc758 \ub2f5\ubcc0\uc744 \uc790\uc138\ud788 \ube44\uad50\ud558\uace0 \uac01\uac01\uc758 \uac15\uc810\uacfc \uc57d\uc810\uc744 \uaf3c\uaf3c\ud788 \uc801\uc73c\uc138\uc694.  \n- \uc5b4\ub290 \uc5b4\uc2dc\uc2a4\ud134\ud2b8\uc758 \ub2f5\ubcc0\uc774 \ub354 \ub098\uc740\uc9c0 \uadf8 \uc774\uc720\ub97c \uc810\uc9c4\uc801\uc73c\ub85c \uacb0\ub860\uc9c0\uc73c\uc138\uc694.  \n\n\uc911\uc694:  \n- \uc774 \ucd94\ub860\uc740 \uc804\uc801\uc73c\ub85c \ub2f9\uc2e0\uc758 \uc0dd\uac01\uc778 \uac83\ucc98\ub7fc \uc81c\uc2dc\ud574\uc57c \ud569\ub2c8\ub2e4.  \n- \u201c\ub178\ud2b8\u201d, \u201cgold annotation\u201d, \ub610\ub294 \uc228\uaca8\uc9c4 \uc790\ub8cc\uc758 \uc874\uc7ac\ub97c \uc5b8\uae09\ud558\uc9c0 \ub9c8\uc2ed\uc2dc\uc624.  \n- \ucd9c\ub825\uc740 \uc624\uc9c1 \ub2f9\uc2e0\uc758 \uc0ac\uace0 \uacfc\uc815\uc774\uc5b4\uc57c \ud558\uba70, \uc0ac\uc6a9\uc790\ub97c \uc704\ud55c \uacf5\uc2dd\uc801\uc778 \ucd5c\uc885 \ub2f5\ubcc0\uc774 \uc544\ub2d9\ub2c8\ub2e4(\ud558\uc9c0\ub9cc \ud3c9\uac00 \uae30\uc900\uc5d0 \ub530\ub77c \ucd5c\uc885 \uc810\uc218\uc5d0 \ub3c4\ub2ec\ud574\uc57c \ud569\ub2c8\ub2e4)."
+  },
+  "fr": {
+    "rubric_list": [
+      {
+        "1": "La R\u00e9ponse 1 est bien sup\u00e9rieure \u00e0 la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >>> R\u00e9ponse 2).",
+        "2": "La R\u00e9ponse 1 est clairement meilleure que la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >> R\u00e9ponse 2).",
+        "3": "La R\u00e9ponse 1 est quelque peu meilleure que la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 > R\u00e9ponse 2).",
+        "4": "La R\u00e9ponse 1 et la R\u00e9ponse 2 sont \u00e0 peu pr\u00e8s \u00e9quivalentes en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 == R\u00e9ponse 2).",
+        "5": "La R\u00e9ponse 2 est quelque peu meilleure que la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 < R\u00e9ponse 2).",
+        "6": "La R\u00e9ponse 2 est clairement meilleure que la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 << R\u00e9ponse 2).",
+        "7": "La R\u00e9ponse 2 est bien sup\u00e9rieure \u00e0 la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 <<< R\u00e9ponse 2)."
+      },
+      {
+        "1": "La r\u00e9ponse 1 est nettement meilleure que la r\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >>> R\u00e9ponse 2).",
+        "2": "La r\u00e9ponse 1 est significativement meilleure que la r\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >> R\u00e9ponse 2).",
+        "3": "La r\u00e9ponse 1 est l\u00e9g\u00e8rement meilleure que la r\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 > R\u00e9ponse 2).",
+        "4": "La r\u00e9ponse 1 et la r\u00e9ponse 2 sont \u00e0 peu pr\u00e8s \u00e9quivalentes en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 == R\u00e9ponse 2).",
+        "5": "La r\u00e9ponse 2 est l\u00e9g\u00e8rement meilleure que la r\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 < R\u00e9ponse 2).",
+        "6": "La r\u00e9ponse 2 est significativement meilleure que la r\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 << R\u00e9ponse 2).",
+        "7": "La r\u00e9ponse 2 est nettement meilleure que la r\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 <<< R\u00e9ponse 2)."
+      },
+      {
+        "1": "La R\u00e9ponse 1 est bien meilleure que la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >>> R\u00e9ponse 2).",
+        "2": "La R\u00e9ponse 1 est meilleure que la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 >> R\u00e9ponse 2).",
+        "3": "La R\u00e9ponse 1 est un peu meilleure que la R\u00e9ponse 2 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 > R\u00e9ponse 2).",
+        "4": "La R\u00e9ponse 1 et la R\u00e9ponse 2 sont \u00e0 peu pr\u00e8s \u00e9quivalentes en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 == R\u00e9ponse 2).",
+        "5": "La R\u00e9ponse 2 est un peu meilleure que la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 < R\u00e9ponse 2).",
+        "6": "La R\u00e9ponse 2 est meilleure que la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 << R\u00e9ponse 2).",
+        "7": "La R\u00e9ponse 2 est bien meilleure que la R\u00e9ponse 1 en termes d\u2019utilit\u00e9, de justesse/exhaustivit\u00e9 et de clart\u00e9, dans cet ordre d\u2019importance (R\u00e9ponse 1 <<< R\u00e9ponse 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Entr\u00e9e (Conversation)",
+      "evaluation_rubric_tag": "Grille d\u2019\u00e9valuation",
+      "golden_annotation_tag": "Annotations Dor\u00e9es",
+      "response_format_tag": "Format de r\u00e9ponse",
+      "your_response_tag": "Votre r\u00e9ponse"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un raisonnement bref comparant les deux r\u00e9ponses des assistants \u00e0 la suite de la conversation d'entr\u00e9e, en se concentrant sur l'utilit\u00e9, la justesse/l'exhaustivit\u00e9 et la clart\u00e9."
+        },
+        "score": {
+          "type": "string",
+          "description": "Le label de verdict issu de la grille d'\u00e9valuation : l'un des suivants '1', '2', '3', '4', '5', '6', ou '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Votre t\u00e2che consiste \u00e0 \u00e9valuer deux r\u00e9ponses candidates \u00e0 une conversation entre un utilisateur et un assistant.  \n\u00c0 l\u2019aide de la grille d\u2019\u00e9valuation, jugez dans quelle mesure chaque r\u00e9ponse s\u2019encha\u00eene naturellement \u00e0 partir du dernier message de l\u2019utilisateur tout en respectant le contexte global de la conversation.  \nFournissez une \u00e9valuation juste et d\u00e9taill\u00e9e, en priorisant l\u2019utilit\u00e9, la justesse/l\u2019exhaustivit\u00e9, puis la clart\u00e9, dans cet ordre d\u2019importance.",
+    "golden_task_description": "Votre t\u00e2che consiste \u00e0 simuler le processus de r\u00e9flexion d\u00e9taill\u00e9 de gpt-oss en fran\u00e7ais avec un effort \u00e9lev\u00e9.  \nOn vous pr\u00e9sentera la conversation pr\u00e9c\u00e9dente de l\u2019utilisateur, deux r\u00e9ponses candidates de l\u2019assistant, ainsi qu\u2019une grille d\u2019\u00e9valuation pour comparer les deux r\u00e9ponses.  \nVous aurez \u00e9galement acc\u00e8s \u00e0 des annotations de r\u00e9f\u00e9rence de l\u2019\u00e9valuation finale (non visibles par l\u2019utilisateur). Inspirez-vous-en pour votre r\u00e9flexion, mais ne mentionnez jamais l\u2019existence de ces annotations de r\u00e9f\u00e9rence.\n\nR\u00e9digez votre raisonnement comme si vous pensiez \u00e0 voix haute, \u00e9tape par \u00e9tape :  \n- Commencez par prendre en compte la conversation initiale et ce qui est requis pour une bonne r\u00e9ponse.  \n- Comparez en d\u00e9tail la r\u00e9ponse de l\u2019Assistant A et celle de l\u2019Assistant B, en notant les points forts et faibles selon la grille d\u2019\u00e9valuation, en vous inspirant des annotations de r\u00e9f\u00e9rence.  \n- Parvenez progressivement \u00e0 une conclusion sur la r\u00e9ponse de l\u2019Assistant qui est la meilleure et pourquoi.  \n\nImportant :  \n- Pr\u00e9sentez le raisonnement comme \u00e9tant enti\u00e8rement issu de votre propre r\u00e9flexion.  \n- Ne faites aucune r\u00e9f\u00e9rence \u00e0 des \u00ab notes \u00bb, \u00ab annotations de r\u00e9f\u00e9rence \u00bb ou du mat\u00e9riel cach\u00e9.  \n- La sortie ne doit \u00eatre que votre processus de r\u00e9flexion, et non une r\u00e9ponse finale formelle \u00e0 l\u2019utilisateur (mais elle doit n\u00e9anmoins aboutir au score final selon la grille d\u2019\u00e9valuation)."
+  },
+  "en": {
+    "rubric_list": [
+      {
+        "1": "Response 1 is far superior to Response 2 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >>> Response 2).",
+        "2": "Response 1 is clearly better than Response 2 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >> Response 2).",
+        "3": "Response 1 is somewhat better than Response 2 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 > Response 2).",
+        "4": "Response 1 and Response 2 are roughly equal in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 == Response 2).",
+        "5": "Response 2 is somewhat better than Response 1 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 < Response 2).",
+        "6": "Response 2 is clearly better than Response 1 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 << Response 2).",
+        "7": "Response 2 is far superior to Response 1 in terms of helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 <<< Response 2)."
+      },
+      {
+        "1": "Response 1 is overwhelmingly better than Response 2 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >>> Response 2).",
+        "2": "Response 1 is significantly better than Response 2 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >> Response 2).",
+        "3": "Response 1 is slightly better than Response 2 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 > Response 2).",
+        "4": "Response 1 and Response 2 are about equally good in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 == Response 2).",
+        "5": "Response 2 is slightly better than Response 1 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 < Response 2).",
+        "6": "Response 2 is significantly better than Response 1 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 << Response 2).",
+        "7": "Response 2 is overwhelmingly better than Response 1 in helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 <<< Response 2)."
+      },
+      {
+        "1": "Response 1 is much better than Response 2 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >>> Response 2).",
+        "2": "Response 1 is better than Response 2 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 >> Response 2).",
+        "3": "Response 1 is a little better than Response 2 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 > Response 2).",
+        "4": "Response 1 and Response 2 are about the same regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 == Response 2).",
+        "5": "Response 2 is a little better than Response 1 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 < Response 2).",
+        "6": "Response 2 is better than Response 1 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 << Response 2).",
+        "7": "Response 2 is much better than Response 1 regarding helpfulness, correctness/completeness, and clarity, in that order of importance (Response 1 <<< Response 2)."
+      }
+    ],
+    "tags": {
+      "input_tag": "Input (Conversation)",
+      "golden_annotation_tag": "Gold Annotations",
+      "evaluation_rubric_tag": "Evaluation Rubric",
+      "response_format_tag": "Response Format",
+      "your_response_tag": "Your Response"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "A brief reasoning comparing the two assistant responses following the input conversation, focusing on helpfulness, correctness/completeness, and clarity."
+        },
+        "score": {
+          "type": "string",
+          "description": "The verdict label from the rubric: one of '1', '2', '3', '4', '5', '6', or '7'.",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "task_description": "Your task is to evaluate two candidate responses to a conversation between a user and an assistant.\nUsing the evaluation rubric, judge how well each response continues naturally from the user's latest message while respecting the overall context of the conversation.\nProvide a fair and detailed assessment, prioritizing helpfulness, correctness/completeness, and clarity, in that order of importance.",
+    "golden_task_description": "Your task is to roleplay gpt-oss detailed thinking process with high effort in English. \nYou will be shown previous user's conversation, two candidate assistant responses, and an evaluation rubric to comapre both responses.\nYou also have access to gold annotations of the final evaluation (not visible to the user). Use them as inspiration for your thinking, but never mention the existence of these gold annotations.  \n\nWrite your reasoning as if you are thinking aloud step by step: \n- Start by considering the input conversation and what is needed for a good answer.  \n- Compare Assistant A's response and Assistant B's response in detail, noting strengths and weaknesses according to the evaluation rubric by taking inspirations from the gold annotations.  \n- Gradually come to a conclusion about which Assistant's response is better and why.  \n\nImportant: \n- Present the reasoning as if it is entirely your own thoughts.  \n- Do not reference any \u201cnotes,\u201d \u201cgold annotations,\u201d or hidden material.  \n- The output is only your thinking process, not a formal final answer to the user (but it should somehow arrive at the final score based on the evaluation rubric)."
+  }
+}

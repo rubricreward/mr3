@@ -1,0 +1,853 @@
+{
+  "en": {
+    "rubric_list": [
+      {
+        "true": "The given code solution is correct.",
+        "false": "The given code solution is wrong."
+      }
+    ],
+    "task_description": "Your task is to evaluate whether the given code solution correctly solves the given coding problem specification.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "A brief reasoning whether the provided code solution is correct or incorrect."
+        },
+        "score": {
+          "type": "string",
+          "description": "Whether the code solution is correct or not.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Input (Problem Specification)",
+      "code_solution": "Provided Code Solution",
+      "evaluation_rubric_tag": "Evaluation Rubric",
+      "response_format_tag": "Response Format",
+      "your_response_tag": "Your Response"
+    }
+  },
+  "id": {
+    "rubric_list": [
+      {
+        "true": "Solusi kode yang diberikan benar.",
+        "false": "Solusi kode yang diberikan salah."
+      }
+    ],
+    "task_description": "Tugas Anda adalah mengevaluasi apakah solusi kode yang diberikan telah menyelesaikan spesifikasi masalah pemrograman yang diberikan dengan benar.",
+    "tags": {
+      "input_tag": "Input (Spesifikasi Masalah)",
+      "code_solution": "Solusi Kode yang Disediakan",
+      "evaluation_rubric_tag": "Rubrik Penilaian",
+      "response_format_tag": "Format Respons",
+      "your_response_tag": "Respons Anda"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Penjelasan singkat apakah solusi kode yang diberikan benar atau salah."
+        },
+        "score": {
+          "type": "string",
+          "description": "Apakah solusi kode tersebut benar atau tidak.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "nl": {
+    "rubric_list": [
+      {
+        "true": "De gegeven codeoplossing is correct.",
+        "false": "De gegeven codeoplossing is fout."
+      }
+    ],
+    "task_description": "Jouw taak is om te beoordelen of de gegeven code-oplossing het opgegeven programmeerprobleem correct oplost.",
+    "tags": {
+      "input_tag": "Invoer (Probleemspecificatie)",
+      "code_solution": "Meegeleverde Oplossing",
+      "evaluation_rubric_tag": "Beoordelingscriteria",
+      "response_format_tag": "Antwoordformaat",
+      "your_response_tag": "Jouw Antwoord"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Een korte uitleg of de gegeven codeoplossing correct of incorrect is."
+        },
+        "score": {
+          "type": "string",
+          "description": "Of de codeoplossing correct is of niet.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "it": {
+    "rubric_list": [
+      {
+        "true": "La soluzione di codice fornita \u00e8 corretta.",
+        "false": "La soluzione di codice fornita \u00e8 errata."
+      }
+    ],
+    "task_description": "Il tuo compito \u00e8 valutare se la soluzione di codice fornita risolve correttamente la specifica del problema di programmazione dato.",
+    "tags": {
+      "input_tag": "Input (Specifica del problema)",
+      "code_solution": "Soluzione di codice fornita",
+      "evaluation_rubric_tag": "Criteri di valutazione",
+      "response_format_tag": "Formato della risposta",
+      "your_response_tag": "La tua risposta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Una breve spiegazione sul motivo per cui la soluzione fornita \u00e8 corretta o errata."
+        },
+        "score": {
+          "type": "string",
+          "description": "Se la soluzione del codice \u00e8 corretta o meno.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "et": {
+    "rubric_list": [
+      {
+        "true": "Antud koodilahendus on \u00f5ige.",
+        "false": "Antud koodilahendus on vale."
+      }
+    ],
+    "task_description": "Sinu \u00fclesanne on hinnata, kas antud koodilahendus lahendab korrektselt etteantud programmeerimis\u00fclesande spetsifikatsiooni.",
+    "tags": {
+      "input_tag": "Sisend (probleemi kirjeldus)",
+      "code_solution": "Antud koodilahendus",
+      "evaluation_rubric_tag": "Hindamiskriteeriumid",
+      "response_format_tag": "Vastuse formaat",
+      "your_response_tag": "Sinu vastus"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "L\u00fchike p\u00f5hjendus, kas antud koodilahendus on \u00f5ige v\u00f5i vale."
+        },
+        "score": {
+          "type": "string",
+          "description": "Kas koodilahendus on \u00f5ige v\u00f5i mitte.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ar": {
+    "rubric_list": [
+      {
+        "true": "\u062d\u0644 \u0627\u0644\u0634\u064a\u0641\u0631\u0629 \u0627\u0644\u0645\u0642\u062f\u0645 \u0635\u062d\u064a\u062d.",
+        "false": "\u062d\u0644 \u0627\u0644\u0634\u064a\u0641\u0631\u0629 \u0627\u0644\u0645\u0642\u062f\u0645 \u062e\u0627\u0637\u0626."
+      }
+    ],
+    "task_description": "\u0645\u0647\u0645\u062a\u0643 \u0647\u064a \u062a\u0642\u064a\u064a\u0645 \u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u062d\u0644 \u0627\u0644\u0634\u064a\u0641\u0631\u0629 \u0627\u0644\u0645\u0642\u062f\u0645 \u064a\u062d\u0644 \u0645\u0648\u0627\u0635\u0641\u0627\u062a \u0627\u0644\u0645\u0634\u0643\u0644\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0629 \u0627\u0644\u0645\u0639\u0637\u0627\u0629 \u0628\u0634\u0643\u0644 \u0635\u062d\u064a\u062d.",
+    "tags": {
+      "input_tag": "\u0627\u0644\u0625\u062f\u062e\u0627\u0644 (\u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0645\u0634\u0643\u0644\u0629)",
+      "code_solution": "\u062d\u0644 \u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0642\u062f\u0645",
+      "evaluation_rubric_tag": "\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+      "response_format_tag": "\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0625\u062c\u0627\u0628\u0629",
+      "your_response_tag": "\u0625\u062c\u0627\u0628\u062a\u0643"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u062a\u0641\u0633\u064a\u0631 \u0645\u0648\u062c\u0632 \u062d\u0648\u0644 \u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u062d\u0644 \u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0642\u062f\u0645 \u0635\u062d\u064a\u062d\u064b\u0627 \u0623\u0645 \u063a\u064a\u0631 \u0635\u062d\u064a\u062d."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u062d\u0644 \u0627\u0644\u0643\u0648\u062f \u0635\u062d\u064a\u062d\u064b\u0627 \u0623\u0645 \u0644\u0627.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "de": {
+    "rubric_list": [
+      {
+        "true": "Die gegebene Code-L\u00f6sung ist korrekt.",
+        "false": "Die gegebene Code-L\u00f6sung ist falsch."
+      }
+    ],
+    "task_description": "Ihre Aufgabe besteht darin zu beurteilen, ob die gegebene Code-L\u00f6sung das vorgegebene Programmierproblem korrekt l\u00f6st.",
+    "tags": {
+      "input_tag": "Eingabe (Problembeschreibung)",
+      "code_solution": "Bereitgestellte Code-L\u00f6sung",
+      "evaluation_rubric_tag": "Bewertungskriterien",
+      "response_format_tag": "Antwortformat",
+      "your_response_tag": "Ihre Antwort"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Eine kurze Begr\u00fcndung, ob die bereitgestellte Code-L\u00f6sung korrekt oder inkorrekt ist."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ob die Code-L\u00f6sung korrekt ist oder nicht.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "zh": {
+    "rubric_list": [
+      {
+        "true": "\u7ed9\u51fa\u7684\u4ee3\u7801\u89e3\u51b3\u65b9\u6848\u662f\u6b63\u786e\u7684\u3002",
+        "false": "\u7ed9\u51fa\u7684\u4ee3\u7801\u89e3\u51b3\u65b9\u6848\u662f\u9519\u8bef\u7684\u3002"
+      }
+    ],
+    "task_description": "\u4f60\u7684\u4efb\u52a1\u662f\u8bc4\u4f30\u6240\u7ed9\u7684\u4ee3\u7801\u89e3\u51b3\u65b9\u6848\u662f\u5426\u6b63\u786e\u5730\u89e3\u51b3\u4e86\u6240\u7ed9\u7684\u7f16\u7a0b\u95ee\u9898\u89c4\u8303\u3002",
+    "tags": {
+      "input_tag": "\u8f93\u5165\uff08\u95ee\u9898\u8bf4\u660e\uff09",
+      "code_solution": "\u63d0\u4f9b\u7684\u4ee3\u7801\u89e3\u51b3\u65b9\u6848",
+      "evaluation_rubric_tag": "\u8bc4\u4f30\u6807\u51c6",
+      "response_format_tag": "\u56de\u590d\u683c\u5f0f",
+      "your_response_tag": "\u4f60\u7684\u56de\u590d"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u5bf9\u6240\u63d0\u4f9b\u4ee3\u7801\u89e3\u51b3\u65b9\u6848\u6b63\u786e\u4e0e\u5426\u7684\u7b80\u8981\u89e3\u91ca\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u4ee3\u7801\u89e3\u51b3\u65b9\u6848\u662f\u5426\u6b63\u786e\u3002",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fr": {
+    "rubric_list": [
+      {
+        "true": "La solution de code donn\u00e9e est correcte.",
+        "false": "La solution de code donn\u00e9e est incorrecte."
+      }
+    ],
+    "task_description": "Votre t\u00e2che consiste \u00e0 \u00e9valuer si la solution de code donn\u00e9e r\u00e9sout correctement la sp\u00e9cification du probl\u00e8me de programmation fourni.",
+    "tags": {
+      "input_tag": "Entr\u00e9e (Sp\u00e9cification du probl\u00e8me)",
+      "code_solution": "Solution de code fournie",
+      "evaluation_rubric_tag": "Grille d'\u00e9valuation",
+      "response_format_tag": "Format de la r\u00e9ponse",
+      "your_response_tag": "Votre r\u00e9ponse"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un bref raisonnement indiquant si la solution de code fournie est correcte ou incorrecte."
+        },
+        "score": {
+          "type": "string",
+          "description": "Indique si la solution de code est correcte ou non.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ms": {
+    "rubric_list": [
+      {
+        "true": "Penyelesaian kod yang diberikan adalah betul.",
+        "false": "Penyelesaian kod yang diberikan adalah salah."
+      }
+    ],
+    "task_description": "Tugas anda adalah untuk menilai sama ada penyelesaian kod yang diberikan betul-betul menyelesaikan spesifikasi masalah pengaturcaraan yang diberikan.",
+    "tags": {
+      "input_tag": "Input (Spesifikasi Masalah)",
+      "code_solution": "Penyelesaian Kod Disediakan",
+      "evaluation_rubric_tag": "Rubrik Penilaian",
+      "response_format_tag": "Format Respons",
+      "your_response_tag": "Respons Anda"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Penjelasan ringkas sama ada penyelesaian kod yang diberikan adalah betul atau salah."
+        },
+        "score": {
+          "type": "string",
+          "description": "Sama ada penyelesaian kod adalah betul atau tidak.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "af": {
+    "rubric_list": [
+      {
+        "true": "Die gegewe kode-oplossing is korrek.",
+        "false": "Die gegewe kode-oplossing is verkeerd."
+      }
+    ],
+    "task_description": "Jou taak is om te evalueer of die gegewe kode-oplossing die gegewe kodeerprobleem-spesifikasie korrek oplos.",
+    "tags": {
+      "input_tag": "Invoer (Probleemspesifikasie)",
+      "code_solution": "Verskafde Koderingoplossing",
+      "evaluation_rubric_tag": "Evaluasiekriteria",
+      "response_format_tag": "Responformaat",
+      "your_response_tag": "Jou Respons"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u2019n Kort verduideliking of die verskafde kode-oplossing korrek of onkorrek is."
+        },
+        "score": {
+          "type": "string",
+          "description": "Of die kode-oplossing korrek is of nie.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fa": {
+    "rubric_list": [
+      {
+        "true": "\u0631\u0627\u0647\u200c\u062d\u0644 \u06a9\u062f \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647 \u062f\u0631\u0633\u062a \u0627\u0633\u062a.",
+        "false": "\u0631\u0627\u0647\u200c\u062d\u0644 \u06a9\u062f \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647 \u0627\u0634\u062a\u0628\u0627\u0647 \u0627\u0633\u062a."
+      }
+    ],
+    "task_description": "\u0648\u0638\u06cc\u0641\u0647 \u0634\u0645\u0627 \u0627\u06cc\u0646 \u0627\u0633\u062a \u06a9\u0647 \u0627\u0631\u0632\u06cc\u0627\u0628\u06cc \u06a9\u0646\u06cc\u062f \u0622\u06cc\u0627 \u0631\u0627\u0647\u200c\u062d\u0644 \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647\u200c\u06cc \u06a9\u062f\u060c \u0645\u0633\u0623\u0644\u0647 \u0628\u0631\u0646\u0627\u0645\u0647\u200c\u0646\u0648\u06cc\u0633\u06cc \u0645\u0634\u062e\u0635\u200c\u0634\u062f\u0647 \u0631\u0627 \u0628\u0647 \u062f\u0631\u0633\u062a\u06cc \u062d\u0644 \u0645\u06cc\u200c\u06a9\u0646\u062f \u06cc\u0627 \u0646\u0647.",
+    "tags": {
+      "input_tag": "\u0648\u0631\u0648\u062f\u06cc (\u0634\u0631\u062d \u0645\u0633\u0626\u0644\u0647)",
+      "code_solution": "\u0631\u0627\u0647\u200c\u062d\u0644 \u06a9\u062f \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647",
+      "evaluation_rubric_tag": "\u0634\u0627\u062e\u0635 \u0627\u0631\u0632\u06cc\u0627\u0628\u06cc",
+      "response_format_tag": "\u0641\u0631\u0645\u062a \u067e\u0627\u0633\u062e",
+      "your_response_tag": "\u067e\u0627\u0633\u062e \u0634\u0645\u0627"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u06cc\u06a9 \u062f\u0644\u06cc\u0644 \u0645\u062e\u062a\u0635\u0631 \u062f\u0631\u0628\u0627\u0631\u0647 \u0627\u06cc\u0646\u06a9\u0647 \u0622\u06cc\u0627 \u0631\u0627\u0647\u200c\u062d\u0644 \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647 \u0635\u062d\u06cc\u062d \u0627\u0633\u062a \u06cc\u0627 \u0646\u0627\u062f\u0631\u0633\u062a."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0627\u06cc\u0646\u06a9\u0647 \u0622\u06cc\u0627 \u0631\u0627\u0647\u200c\u062d\u0644 \u06a9\u062f \u0635\u062d\u06cc\u062d \u0627\u0633\u062a \u06cc\u0627 \u062e\u06cc\u0631.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "hu": {
+    "rubric_list": [
+      {
+        "true": "A megadott k\u00f3dmegold\u00e1s helyes.",
+        "false": "A megadott k\u00f3dmegold\u00e1s hib\u00e1s."
+      }
+    ],
+    "task_description": "A feladatod az, hogy eld\u00f6ntsd, hogy az adott k\u00f3dmegold\u00e1s helyesen oldja-e meg a megadott programoz\u00e1si feladat specifik\u00e1ci\u00f3j\u00e1t.",
+    "tags": {
+      "input_tag": "Bemenet (Feladatle\u00edr\u00e1s)",
+      "code_solution": "Megadott k\u00f3dmegold\u00e1s",
+      "evaluation_rubric_tag": "\u00c9rt\u00e9kel\u00e9si szempontok",
+      "response_format_tag": "V\u00e1lasz form\u00e1tuma",
+      "your_response_tag": "A te v\u00e1laszod"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "R\u00f6vid indokl\u00e1s arra vonatkoz\u00f3an, hogy a megadott k\u00f3dmegold\u00e1s helyes vagy helytelen."
+        },
+        "score": {
+          "type": "string",
+          "description": "Hogy a k\u00f3dmegold\u00e1s helyes-e vagy sem.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "el": {
+    "rubric_list": [
+      {
+        "true": "\u0397 \u03b4\u03bf\u03b8\u03b5\u03af\u03c3\u03b1 \u03bb\u03cd\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ae.",
+        "false": "\u0397 \u03b4\u03bf\u03b8\u03b5\u03af\u03c3\u03b1 \u03bb\u03cd\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bb\u03b1\u03bd\u03b8\u03b1\u03c3\u03bc\u03ad\u03bd\u03b7."
+      }
+    ],
+    "task_description": "\u0397 \u03b1\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae \u03c3\u03b1\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bd\u03b1 \u03b1\u03be\u03b9\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03b5\u03c4\u03b5 \u03b1\u03bd \u03b7 \u03b4\u03bf\u03b8\u03b5\u03af\u03c3\u03b1 \u03bb\u03cd\u03c3\u03b7 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1 \u03b5\u03c0\u03b9\u03bb\u03cd\u03b5\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ac \u03c4\u03b7\u03bd \u03ba\u03b1\u03b8\u03bf\u03c1\u03b9\u03c3\u03bc\u03ad\u03bd\u03b7 \u03c0\u03c1\u03bf\u03b4\u03b9\u03b1\u03b3\u03c1\u03b1\u03c6\u03ae \u03c4\u03bf\u03c5 \u03c0\u03c1\u03bf\u03b2\u03bb\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u03c0\u03c1\u03bf\u03b3\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03b9\u03c3\u03bc\u03bf\u03cd.",
+    "tags": {
+      "input_tag": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae (\u03a0\u03b5\u03c1\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03a0\u03c1\u03bf\u03b2\u03bb\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2)",
+      "code_solution": "\u03a0\u03b1\u03c1\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b7 \u039b\u03cd\u03c3\u03b7 \u039a\u03ce\u03b4\u03b9\u03ba\u03b1",
+      "evaluation_rubric_tag": "\u039a\u03c1\u03b9\u03c4\u03ae\u03c1\u03b9\u03b1 \u0391\u03be\u03b9\u03bf\u03bb\u03cc\u03b3\u03b7\u03c3\u03b7\u03c2",
+      "response_format_tag": "\u039c\u03bf\u03c1\u03c6\u03ae \u0391\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7\u03c2",
+      "your_response_tag": "\u0397 \u0391\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03ae \u03a3\u03b1\u03c2"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u039c\u03b9\u03b1 \u03c3\u03cd\u03bd\u03c4\u03bf\u03bc\u03b7 \u03b1\u03b9\u03c4\u03b9\u03bf\u03bb\u03cc\u03b3\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03b1\u03bd \u03b7 \u03c0\u03b1\u03c1\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b7 \u03bb\u03cd\u03c3\u03b7 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ae \u03ae \u03bb\u03b1\u03bd\u03b8\u03b1\u03c3\u03bc\u03ad\u03bd\u03b7."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0391\u03bd \u03b7 \u03bb\u03cd\u03c3\u03b7 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ae \u03ae \u03cc\u03c7\u03b9.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "bg": {
+    "rubric_list": [
+      {
+        "true": "\u0414\u0430\u0434\u0435\u043d\u043e\u0442\u043e \u043a\u043e\u0434\u043e\u0432\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0435 \u0432\u044f\u0440\u043d\u043e.",
+        "false": "\u0414\u0430\u0434\u0435\u043d\u043e\u0442\u043e \u043a\u043e\u0434\u043e\u0432\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0435 \u0433\u0440\u0435\u0448\u043d\u043e."
+      }
+    ],
+    "task_description": "\u0412\u0430\u0448\u0430\u0442\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u0435 \u0434\u0430 \u043e\u0446\u0435\u043d\u0438\u0442\u0435 \u0434\u0430\u043b\u0438 \u0434\u0430\u0434\u0435\u043d\u043e\u0442\u043e \u043a\u043e\u0434\u043e\u0432\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u043e\u0440\u0435\u043a\u0442\u043d\u043e \u0440\u0435\u0448\u0430\u0432\u0430 \u0437\u0430\u0434\u0430\u0434\u0435\u043d\u0430\u0442\u0430 \u0441\u043f\u0435\u0446\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f \u043d\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043d\u0438\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c.",
+    "tags": {
+      "input_tag": "\u0412\u0445\u043e\u0434 (\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043d\u0430 \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430)",
+      "code_solution": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0435\u043d\u043e \u043a\u043e\u0434\u043e\u0432\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435",
+      "evaluation_rubric_tag": "\u041a\u0440\u0438\u0442\u0435\u0440\u0438\u0438 \u0437\u0430 \u043e\u0446\u0435\u043d\u043a\u0430",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043d\u0430 \u043e\u0442\u0433\u043e\u0432\u043e\u0440\u0430",
+      "your_response_tag": "\u0412\u0430\u0448\u0438\u044f\u0442 \u043e\u0442\u0433\u043e\u0432\u043e\u0440"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e \u043e\u0431\u044f\u0441\u043d\u0435\u043d\u0438\u0435 \u0434\u0430\u043b\u0438 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0435\u043d\u043e\u0442\u043e \u043a\u043e\u0434\u043e\u0432\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u043d\u043e \u0438\u043b\u0438 \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u043d\u043e."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0414\u0430\u043b\u0438 \u043a\u043e\u0434\u043e\u0432\u043e\u0442\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u043d\u043e \u0438\u043b\u0438 \u043d\u0435.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "pt": {
+    "rubric_list": [
+      {
+        "true": "A solu\u00e7\u00e3o de c\u00f3digo fornecida est\u00e1 correta.",
+        "false": "A solu\u00e7\u00e3o de c\u00f3digo fornecida est\u00e1 errada."
+      }
+    ],
+    "task_description": "Sua tarefa \u00e9 avaliar se a solu\u00e7\u00e3o de c\u00f3digo fornecida resolve corretamente a especifica\u00e7\u00e3o do problema de programa\u00e7\u00e3o apresentado.",
+    "tags": {
+      "input_tag": "Entrada (Especifica\u00e7\u00e3o do Problema)",
+      "code_solution": "Solu\u00e7\u00e3o de C\u00f3digo Fornecida",
+      "evaluation_rubric_tag": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "response_format_tag": "Formato da Resposta",
+      "your_response_tag": "Sua Resposta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Um breve racioc\u00ednio se a solu\u00e7\u00e3o de c\u00f3digo fornecida est\u00e1 correta ou incorreta."
+        },
+        "score": {
+          "type": "string",
+          "description": "Se a solu\u00e7\u00e3o de c\u00f3digo est\u00e1 correta ou n\u00e3o.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "vi": {
+    "rubric_list": [
+      {
+        "true": "Gi\u1ea3i ph\u00e1p m\u00e3 \u0111\u00e3 cho l\u00e0 \u0111\u00fang.",
+        "false": "Gi\u1ea3i ph\u00e1p m\u00e3 \u0111\u00e3 cho l\u00e0 sai."
+      }
+    ],
+    "task_description": "Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 \u0111\u00e1nh gi\u00e1 li\u1ec7u gi\u1ea3i ph\u00e1p m\u00e3 \u0111\u01b0\u1ee3c \u0111\u01b0a ra c\u00f3 gi\u1ea3i quy\u1ebft \u0111\u00fang theo \u0111\u1eb7c t\u1ea3 c\u1ee7a b\u00e0i to\u00e1n l\u1eadp tr\u00ecnh \u0111\u00e3 cho hay kh\u00f4ng.",
+    "tags": {
+      "input_tag": "\u0110\u1ea7u v\u00e0o (M\u00f4 t\u1ea3 b\u00e0i to\u00e1n)",
+      "code_solution": "Gi\u1ea3i ph\u00e1p m\u00e3 ngu\u1ed3n cung c\u1ea5p",
+      "evaluation_rubric_tag": "Ti\u00eau ch\u00ed \u0111\u00e1nh gi\u00e1",
+      "response_format_tag": "\u0110\u1ecbnh d\u1ea1ng ph\u1ea3n h\u1ed3i",
+      "your_response_tag": "Ph\u1ea3n h\u1ed3i c\u1ee7a b\u1ea1n"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "M\u1ed9t gi\u1ea3i th\u00edch ng\u1eafn g\u1ecdn v\u1ec1 l\u00fd do t\u1ea1i sao gi\u1ea3i ph\u00e1p m\u00e3 \u0111\u01b0\u1ee3c cung c\u1ea5p l\u00e0 \u0111\u00fang ho\u1eb7c sai."
+        },
+        "score": {
+          "type": "string",
+          "description": "Gi\u1ea3i ph\u00e1p m\u00e3 c\u00f3 \u0111\u00fang hay kh\u00f4ng.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ru": {
+    "rubric_list": [
+      {
+        "true": "\u0414\u0430\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u043e\u0434\u0430 \u0432\u0435\u0440\u043d\u043e\u0435.",
+        "false": "\u0414\u0430\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u043e\u0434\u0430 \u043d\u0435\u0432\u0435\u0440\u043d\u043e\u0435."
+      }
+    ],
+    "task_description": "\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u043e\u0446\u0435\u043d\u0438\u0442\u044c, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e \u043b\u0438 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043a\u043e\u0434\u043e\u0432\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0440\u0435\u0448\u0430\u0435\u0442 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u0443\u044e \u0437\u0430\u0434\u0430\u0447\u0443 \u043f\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044e.",
+    "tags": {
+      "input_tag": "\u0412\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 (\u0443\u0441\u043b\u043e\u0432\u0438\u0435 \u0437\u0430\u0434\u0430\u0447\u0438)",
+      "code_solution": "\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435",
+      "evaluation_rubric_tag": "\u041a\u0440\u0438\u0442\u0435\u0440\u0438\u0438 \u043e\u0446\u0435\u043d\u043a\u0438",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043e\u0442\u0432\u0435\u0442\u0430",
+      "your_response_tag": "\u0412\u0430\u0448 \u043e\u0442\u0432\u0435\u0442"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u0431\u044a\u044f\u0441\u043d\u0435\u043d\u0438\u0435, \u043f\u043e\u0447\u0435\u043c\u0443 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u043e\u0434\u0430 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c \u0438\u043b\u0438 \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u042f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043b\u0438 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043a\u043e\u0434\u0430 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c \u0438\u043b\u0438 \u043d\u0435\u0442.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "es": {
+    "rubric_list": [
+      {
+        "true": "La soluci\u00f3n de c\u00f3digo proporcionada es correcta.",
+        "false": "La soluci\u00f3n de c\u00f3digo proporcionada es incorrecta."
+      }
+    ],
+    "task_description": "Tu tarea es evaluar si la soluci\u00f3n de c\u00f3digo proporcionada resuelve correctamente la especificaci\u00f3n del problema de programaci\u00f3n dado.",
+    "tags": {
+      "input_tag": "Entrada (Especificaci\u00f3n del problema)",
+      "code_solution": "Soluci\u00f3n de c\u00f3digo proporcionada",
+      "evaluation_rubric_tag": "Criterios de evaluaci\u00f3n",
+      "response_format_tag": "Formato de respuesta",
+      "your_response_tag": "Tu respuesta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un razonamiento breve sobre si la soluci\u00f3n de c\u00f3digo proporcionada es correcta o incorrecta."
+        },
+        "score": {
+          "type": "string",
+          "description": "Indica si la soluci\u00f3n de c\u00f3digo es correcta o no.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tr": {
+    "rubric_list": [
+      {
+        "true": "Verilen kod \u00e7\u00f6z\u00fcm\u00fc do\u011frudur.",
+        "false": "Verilen kod \u00e7\u00f6z\u00fcm\u00fc yanl\u0131\u015ft\u0131r."
+      }
+    ],
+    "task_description": "G\u00f6reviniz, verilen kod \u00e7\u00f6z\u00fcm\u00fcn\u00fcn belirlenen kodlama problemi \u015fartnamesini do\u011fru bir \u015fekilde \u00e7\u00f6z\u00fcp \u00e7\u00f6zmedi\u011fini de\u011ferlendirmektir.",
+    "tags": {
+      "input_tag": "Girdi (Problem Tan\u0131m\u0131)",
+      "code_solution": "Sa\u011flanan Kod \u00c7\u00f6z\u00fcm\u00fc",
+      "evaluation_rubric_tag": "De\u011ferlendirme Kriterleri",
+      "response_format_tag": "Yan\u0131t Format\u0131",
+      "your_response_tag": "Cevab\u0131n\u0131z"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Verilen kod \u00e7\u00f6z\u00fcm\u00fcn\u00fcn do\u011fru veya yanl\u0131\u015f oldu\u011funa dair k\u0131sa bir gerek\u00e7e."
+        },
+        "score": {
+          "type": "string",
+          "description": "Kod \u00e7\u00f6z\u00fcm\u00fcn\u00fcn do\u011fru olup olmad\u0131\u011f\u0131.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tl": {
+    "rubric_list": [
+      {
+        "true": "Tama ang ibinigay na solusyon sa code.",
+        "false": "Mali ang ibinigay na solusyon sa code."
+      }
+    ],
+    "task_description": "Ang iyong gawain ay suriin kung ang ibinigay na solusyon sa code ay tama at wasto sa paglutas ng ibinigay na espesipikasyon ng problema sa pagko-code.",
+    "tags": {
+      "input_tag": "Input (Paglalarawan ng Problema)",
+      "code_solution": "Ibinigay na Solusyon sa Kodigo",
+      "evaluation_rubric_tag": "Pamantayan sa Pagsusuri",
+      "response_format_tag": "Format ng Sagot",
+      "your_response_tag": "Iyong Sagot"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Maikling paliwanag kung tama o mali ang ibinigay na solusyon sa code."
+        },
+        "score": {
+          "type": "string",
+          "description": "Kung tama o mali ang solusyon sa code.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "he": {
+    "rubric_list": [
+      {
+        "true": "\u05e4\u05ea\u05e8\u05d5\u05df \u05d4\u05e7\u05d5\u05d3 \u05e9\u05e0\u05d9\u05ea\u05df \u05d4\u05d5\u05d0 \u05e0\u05db\u05d5\u05df.",
+        "false": "\u05e4\u05ea\u05e8\u05d5\u05df \u05d4\u05e7\u05d5\u05d3 \u05e9\u05e0\u05d9\u05ea\u05df \u05d4\u05d5\u05d0 \u05e9\u05d2\u05d5\u05d9."
+      }
+    ],
+    "task_description": "\u05d4\u05de\u05e9\u05d9\u05de\u05d4 \u05e9\u05dc\u05da \u05d4\u05d9\u05d0 \u05dc\u05d4\u05e2\u05e8\u05d9\u05da \u05d4\u05d0\u05dd \u05e4\u05ea\u05e8\u05d5\u05df \u05d4\u05e7\u05d5\u05d3 \u05d4\u05e0\u05ea\u05d5\u05df \u05e4\u05d5\u05ea\u05e8 \u05e0\u05db\u05d5\u05df \u05d0\u05ea \u05d3\u05e8\u05d9\u05e9\u05d5\u05ea \u05d1\u05e2\u05d9\u05d9\u05ea \u05d4\u05e7\u05d9\u05d3\u05d5\u05d3 \u05d4\u05e0\u05ea\u05d5\u05e0\u05d4.",
+    "tags": {
+      "input_tag": "\u05e7\u05dc\u05d8 (\u05d4\u05d2\u05d3\u05e8\u05ea \u05d4\u05d1\u05e2\u05d9\u05d4)",
+      "code_solution": "\u05e4\u05ea\u05e8\u05d5\u05df \u05e7\u05d5\u05d3 \u05de\u05e1\u05d5\u05e4\u05e7",
+      "evaluation_rubric_tag": "\u05de\u05d3\u05d3\u05d9 \u05d4\u05e2\u05e8\u05db\u05d4",
+      "response_format_tag": "\u05ea\u05d1\u05e0\u05d9\u05ea \u05ea\u05d2\u05d5\u05d1\u05d4",
+      "your_response_tag": "\u05d4\u05ea\u05e9\u05d5\u05d1\u05d4 \u05e9\u05dc\u05da"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u05e0\u05d9\u05de\u05d5\u05e7 \u05e7\u05e6\u05e8 \u05d4\u05d0\u05dd \u05d4\u05e4\u05ea\u05e8\u05d5\u05df \u05e9\u05e0\u05d9\u05ea\u05df \u05d1\u05e7\u05d5\u05d3 \u05e0\u05db\u05d5\u05df \u05d0\u05d5 \u05dc\u05d0 \u05e0\u05db\u05d5\u05df."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u05d4\u05d0\u05dd \u05d4\u05e4\u05ea\u05e8\u05d5\u05df \u05d1\u05e7\u05d5\u05d3 \u05e0\u05db\u05d5\u05df \u05d0\u05d5 \u05dc\u05d0 \u05e0\u05db\u05d5\u05df.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fi": {
+    "rubric_list": [
+      {
+        "true": "Annettu koodiratkaisu on oikein.",
+        "false": "Annettu koodiratkaisu on v\u00e4\u00e4rin."
+      }
+    ],
+    "task_description": "Teht\u00e4v\u00e4si on arvioida, ratkaiseeko annettu koodiratkaisu annetun ohjelmointiteht\u00e4v\u00e4n m\u00e4\u00e4rittelyn oikein.",
+    "tags": {
+      "input_tag": "Sy\u00f6te (Ongelman kuvaus)",
+      "code_solution": "Annettu koodiratkaisu",
+      "evaluation_rubric_tag": "Arviointikriteerit",
+      "response_format_tag": "Vastausmuoto",
+      "your_response_tag": "Vastauksesi"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Lyhyt perustelu sille, onko annettu koodiratkaisu oikea vai v\u00e4\u00e4r\u00e4."
+        },
+        "score": {
+          "type": "string",
+          "description": "Onko koodiratkaisu oikea vai ei.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  }
+}

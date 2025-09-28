@@ -1,0 +1,1001 @@
+{
+  "en": {
+    "rubric_list": [
+      {
+        "true": "The given math solution is correct.",
+        "false": "The given math solution is wrong."
+      }
+    ],
+    "task_description": "Your task is to evaluate whether the given solution correctly solves the math problem.",
+    "tags": {
+      "input_tag": "Input (Math Problem)",
+      "math_solution": "Provided Math Solution",
+      "evaluation_rubric_tag": "Evaluation Rubric",
+      "response_format_tag": "Response Format",
+      "your_response_tag": "Your Answer"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "A brief reasoning whether the provided math solution is correct or incorrect."
+        },
+        "score": {
+          "type": "string",
+          "description": "Whether the math solution is correct or not.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ln": {
+    "rubric_list": [
+      {
+        "true": "Bitik\u00e1 ya mateya oyo ezali sembo.",
+        "false": "Bitik\u00e1 ya mateya oyo ezali mabe."
+      }
+    ],
+    "task_description": "Mosala na yo ezali koluka soki ndenge epesami ya kosilisa likambo ya mateya ezali mpenza kosilisa likambo wana malamu.",
+    "tags": {
+      "input_tag": "Mokano (Probl\u00e8me ya Matematiki)",
+      "math_solution": "Solision ya Matematiki epesami",
+      "evaluation_rubric_tag": "Mitalisi ya Kotalela",
+      "response_format_tag": "Format ya Eyano",
+      "your_response_tag": "Eyano na yo"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Ntina na mokuse soki eyano ya masolo ezali malamu to mabe."
+        },
+        "score": {
+          "type": "string",
+          "description": "Soki eyano ya masolo ezali malamu to mabe.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "sw": {
+    "rubric_list": [
+      {
+        "true": "Suluhisho la hisabati lililopewa ni sahihi.",
+        "false": "Suluhisho la hisabati lililopewa si sahihi."
+      }
+    ],
+    "task_description": "Kazi yako ni kutathmini kama suluhisho lililotolewa linatatua tatizo la hisabati vizuri.",
+    "tags": {
+      "input_tag": "Hoja ya Hisabati",
+      "math_solution": "Suluhisho la Hisabati Lililotolewa",
+      "evaluation_rubric_tag": "Vigezo vya Tathmini",
+      "response_format_tag": "Muundo wa Majibu",
+      "your_response_tag": "Jibu Lako"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Sababu fupi ikiwa suluhisho la hesabu lililotolewa ni sahihi au si sahihi."
+        },
+        "score": {
+          "type": "string",
+          "description": "Kama suluhisho la hesabu ni sahihi au si sahihi.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ha": {
+    "rubric_list": [
+      {
+        "true": "Amsar lissafin da aka bayar daidai ce.",
+        "false": "Amsar lissafin da aka bayar ba daidai ba ce."
+      }
+    ],
+    "task_description": "Aikinka shine kimanta ko mafitar da aka bayar ta warware matsalar lissafi daidai.",
+    "tags": {
+      "input_tag": "Shigarwa (Matsalar Lissafi)",
+      "math_solution": "Amsa ta Lissafi",
+      "evaluation_rubric_tag": "Ka\u2019idar Bita",
+      "response_format_tag": "Tsarin Amsa",
+      "your_response_tag": "Amsarka"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Takaitaccen dalili ko amsar lissafin da aka bayar dai-dai ce ko ba dai-dai ba."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ko amsar lissafin dai-dai ce ko ba dai-dai ba.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "kin": {
+    "rubric_list": [
+      {
+        "true": "Igisubizo cyatanzwe ku kibazo cy\u2019imibare ni cyo.",
+        "false": "Igisubizo cyatanzwe ku kibazo cy\u2019imibare si cyo."
+      }
+    ],
+    "task_description": "Inshingano yawe ni ugusuzuma niba igisubizo gitanzwe gikemura neza ikibazo cy\u2019imibare.",
+    "tags": {
+      "input_tag": "Ikibazo (Imibare)",
+      "math_solution": "Igisubizo cyatanzwe",
+      "evaluation_rubric_tag": "Uko Bisuzumwa",
+      "response_format_tag": "Uburyo Igisubizo Gitangwa",
+      "your_response_tag": "Igisubizo Cyawe"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Impamvu ngufi igaragaza niba igisubizo cyatanzwe ku mibare ari cyo cyangwa atari cyo."
+        },
+        "score": {
+          "type": "string",
+          "description": "Niba igisubizo cyatanzwe ku mibare ari cyo cyangwa atari cyo.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "sot": {
+    "rubric_list": [
+      {
+        "true": "Karabo e fanweng ya dipalo e nepahetse.",
+        "false": "Karabo e fanweng ya dipalo ha e nepahe."
+      }
+    ],
+    "task_description": "Mosebetsi oa hau ke ho lekola hore na tharollo e fanoeng e rarolla bothata ba lipalo ka nepo.",
+    "tags": {
+      "input_tag": "Potso (Mathata a Lipalo)",
+      "math_solution": "Karabo ea Lipalo e Fanoeng",
+      "evaluation_rubric_tag": "Tataiso ea Tekolo",
+      "response_format_tag": "Foromo ea Karabo",
+      "your_response_tag": "Karabo ea Hao"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Lebaka le lekgutshwane la hore na tharollo ya dipalo e nepahetse kapa e fosahile."
+        },
+        "score": {
+          "type": "string",
+          "description": "Hore na tharollo ya dipalo e nepahetse kapa tjhe.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "sna": {
+    "rubric_list": [
+      {
+        "true": "Mhinduro yapihwa yemubvunzo wechiverengero yakarurama.",
+        "false": "Mhinduro yapihwa yemubvunzo wechiverengero haina kururama."
+      }
+    ],
+    "task_description": "Basa rako nderekuongorora kana mhinduro yakapihwa ichigadzirisa dambudziko remasvomhu nemazvo.",
+    "tags": {
+      "input_tag": "Pinda (Chinetso cheMaths)",
+      "math_solution": "Mhinduro yeMaths Yakapihwa",
+      "evaluation_rubric_tag": "Maitiro Ekuyera",
+      "response_format_tag": "Fomati yeMhinduro",
+      "your_response_tag": "Mhinduro Yako"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Tsananguro pfupi yekuti mhinduro yepamibvunzo yemasvomhu yakarurama here kana kuti kwete."
+        },
+        "score": {
+          "type": "string",
+          "description": "Kana mhinduro yepamibvunzo yemasvomhu yakarurama kana kuti kwete.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "xh": {
+    "rubric_list": [
+      {
+        "true": "Isisombululo semathematika esinikiweyo silungile.",
+        "false": "Isisombululo semathematika esinikiweyo siphosakele."
+      }
+    ],
+    "task_description": "Umsebenzi wakho kukuhlola ukuba isisombululo esinikiweyo sisilungiselele ngempela ingxaki yezibalo.",
+    "tags": {
+      "input_tag": "Ufakelo (Ingxaki yeMath)",
+      "math_solution": "Isisombululo seMath esibonelelweyo",
+      "evaluation_rubric_tag": "Umgaqo wokuvavanya",
+      "response_format_tag": "Ifomathi Yempendulo",
+      "your_response_tag": "Impendulo Yakho"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Isizathu esifutshane sokuba ingaba isisombululo semathematika esinikwe lona silungile okanye asilunganga."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ingaba isisombululo semathematika silungile okanye asilunganga.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ig": {
+    "rubric_list": [
+      {
+        "true": "Ngw\u1ecdta mgbak\u1ecd a nyere ziri ezi.",
+        "false": "Ngw\u1ecdta mgbak\u1ecd a nyere ezighi ezi."
+      }
+    ],
+    "task_description": "\u1eccr\u1ee5 g\u1ecb b\u1ee5 \u1ecbt\u1ee5le ma ngw\u1ecdta e nyere ziri ezi dozie nsogbu mgbak\u1ecd\u1ee5z\u1ee5 ah\u1ee5.",
+    "tags": {
+      "input_tag": "Ntinye (Ihe mgbak\u1ecd-\u1ee5gw\u1ecd)",
+      "math_solution": "Ngw\u1ecdta \u1ecct\u1ee5t\u1ee5 enyere",
+      "evaluation_rubric_tag": "Ulu Nyocha",
+      "response_format_tag": "\u1ee4d\u1ecb Az\u1ecbza",
+      "your_response_tag": "Az\u1ecbza G\u1ecb"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Nk\u1ecdwa d\u1ecb mkpirikpi banyere ma az\u1ecbza mgbak\u1ecd mgbak\u1ecd e nyere ziri ezi ma \u1ecd b\u1ee5 ezighi ezi."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ma az\u1ecbza mgbak\u1ecd mgbak\u1ecd ziri ezi ma \u1ecd b\u1ee5 na \u1ecd b\u1ee5gh\u1ecb.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tw": {
+    "rubric_list": [
+      {
+        "true": "\u0186kwan a w\u0254de b\u025by\u025b\u025b saa nyansakwan no y\u025b p\u025b.",
+        "false": "\u0186kwan a w\u0254de b\u025by\u025b\u025b saa nyansakwan no y\u025b mfomso."
+      }
+    ],
+    "task_description": "Wo sua no ne s\u025b, sua s\u025b \u025bde\u025b w\u0254de no ama no y\u025b p\u025b na \u025bboa m\u025bs\u0254w ho.",
+    "tags": {
+      "input_tag": "\u0190dwadibea (Ns\u025bm Ntomab\u0254)",
+      "math_solution": "Math Siesie a W\u0254de Ama",
+      "evaluation_rubric_tag": "Santwaso Mpanimfo Safoa",
+      "response_format_tag": "Mmuae\u025b F\u0254mat",
+      "your_response_tag": "Wo Mmuae\u025b"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Nt\u0254kwa ketewa bi a \u025bkyer\u025b s\u025b adwene a \u025bw\u0254 \u0254som s\u025b mat\u025bm\u025bt\u025b so no y\u025b p\u025b anaa \u025bny\u025b p\u025b."
+        },
+        "score": {
+          "type": "string",
+          "description": "S\u025b mat\u025bm\u025bt\u025b so no y\u025b p\u025b anaa \u025bny\u025b p\u025b.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "orm": {
+    "rubric_list": [
+      {
+        "true": "Furmaanni herregaa kenname sirrii dha.",
+        "false": "Furmaanni herregaa kenname dogoggora."
+      }
+    ],
+    "task_description": "Hojii kee jechuun furmaanni kenname rakkoo herrega sirriitti furuu danda'aa ta'uu isaa madaaluu dha.",
+    "tags": {
+      "input_tag": "Galmee (Mata Dubbii Herregaa)",
+      "math_solution": "Deebii Herregaa Kenname",
+      "evaluation_rubric_tag": "Qajeelfama Madaallii",
+      "response_format_tag": "Haala Deebii",
+      "your_response_tag": "Deebii Kee"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Sababa gabaabaa furmaanni herregaa kenname sirrii ykn dogogora ta\u2019uu isaa ibsu."
+        },
+        "score": {
+          "type": "string",
+          "description": "Furmaanni herregaa sirrii ta\u2019ee ykn dogogora ta\u02bce agarsiisa.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ee": {
+    "rubric_list": [
+      {
+        "true": "\u0189\u0254w\u0254 \u0256e\u014buwo mekp\u0254na nye nya dzi le ye.",
+        "false": "\u0189\u0254w\u0254 \u0256e\u014buwo mekp\u0254na nye nye \u014but\u0254 \u014bu."
+      }
+    ],
+    "task_description": "W\u00f2 d\u0254w\u0254la nye s\u025b w\u00f2a\u0256o agbal\u1ebd na n\u0254nu a\u0256e menye be agbenya dzi ka \u0192e nyatakaka do math sukuiku la eye w\u00f2wo d\u0254m kple agbal\u1ebd la.",
+    "tags": {
+      "input_tag": "D\u0254dzikp\u0254 (G\u0254medzea \u0192e \u0192omevi)",
+      "math_solution": "G\u0254medzea \u0192e \u0192omevi",
+      "evaluation_rubric_tag": "Lea \u014butik\u025b",
+      "response_format_tag": "\u0189o \u014bk\u0254dzikp\u0254",
+      "your_response_tag": "W\u00f2 \u014ak\u0254dzikp\u0254"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Nusi kple nu si yome le gome be amega to matem\u00e1tika nu vowo la x\u0254e alo x\u0254 \u0256evi."
+        },
+        "score": {
+          "type": "string",
+          "description": "Be amega to matem\u00e1tika nu vowo la x\u0254e alo x\u0254 \u0256evi.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "wo": {
+    "rubric_list": [
+      {
+        "true": "Xeerinu matimatig bi juddoo baax na.",
+        "false": "Xeerinu matimatig bi juddoo baaxul."
+      }
+    ],
+    "task_description": "Sa j\u00ebfandikoo mooy valut\u00e9 bu j\u00e0mm ndax xasida bi nekk ci math bu am solo mooy solute bi.",
+    "tags": {
+      "input_tag": "J\u00ebfandikukat (Xibaari mat) ",
+      "math_solution": "Jubalukaay mat bi",
+      "evaluation_rubric_tag": "Bataaxal woneer",
+      "response_format_tag": "Nataal bi jublu",
+      "your_response_tag": "Sa tontu"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "K\u00e0ddu muy wone lu tax ndam li \u00f1u joxe ci matimatigue ba dafa jot walla du jot."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ndax matimatigue ba joxe ci jot na walla d\u00e9et.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "vai": {
+    "rubric_list": [
+      {
+        "true": "\ua549 \ua602\ua602 \ua52a\ua5f3 \ua609 \ua5e1\ua609.",
+        "false": "\ua549 \ua602\ua602 \ua52a\ua5f3 \ua56f \ua5e1\ua609."
+      }
+    ],
+    "task_description": "\u1c9e\u1ca3\u1c9e\u1ca3\u1c9c \u1ca1\u1c94\u1c96\u1c94 \u1c98\u1c99\u1c9e\u1c9a\u1c9d\u1c97\u1c9d \u1ca8\u1c94 \u1ca1\u1c98 \u1c99\u1ca6\u1c9d\u1ca0\u1c98\u1c9d \u1c98 \u1c9b\u1c90\u1c90 \u1c9e\u1ca0\u1c9d\u1c91\u1c9a\u1ca6\u1c94\u1c9b \u1ca9\u1c98 \u1ca0\u1c98 \u1c99\u1c9e\u1c93\u1c98 \u1c98 \u1c92\u1c9d.",
+    "tags": {
+      "input_tag": "\u1218\u127c \u1218\u127b (\u1218\u127c \u1325\u1295\u12f5)",
+      "math_solution": "\u1218\u127c \u1218\u127b \u12ed\u1245\u122d",
+      "evaluation_rubric_tag": "\u121b\u1230\u1233\u1230\u120d \u1218\u1320\u1295",
+      "response_format_tag": "\u1218\u120d\u1235 \u12d8\u12f4",
+      "your_response_tag": "\u1218\u120d\u1235 \u12a0\u1295\u12f1"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\ua533\ua535 \ua549\ua513\ua547 \ua549 \ua5de\ua538\ua5de\ua503 \ua546\ua543 \ua5de\ua5e1\ua50e\ua56f\ua524 \ua549 \ua56e\ua524\ua5f3\ua546 \ua5e5\ua500 \ua56e\ua524\ua5f3\ua546 \ua602 \ua5e5\ua602."
+        },
+        "score": {
+          "type": "string",
+          "description": "\ua5de\ua5e1\ua50e\ua56f\ua524 \ua56e\ua524\ua5f3\ua546 \ua5e5\ua500 \ua56e\ua524\ua5f3\ua546 \ua602 \ua5e5\ua602.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "am": {
+    "rubric_list": [
+      {
+        "true": "\u12e8\u1270\u1240\u1228\u1260\u12cd \u12e8\u1202\u1233\u1265 \u1218\u134d\u1275\u1204 \u1275\u12ad\u12ad\u120d \u1290\u12cd\u1362",
+        "false": "\u12e8\u1270\u1240\u1228\u1260\u12cd \u12e8\u1202\u1233\u1265 \u1218\u134d\u1275\u1204 \u1275\u120d\u1245 \u1290\u12cd\u1362"
+      }
+    ],
+    "task_description": "\u12e8\u1270\u1308\u1299\u1275\u1295 \u1218\u134d\u1275\u1204 \u12ed\u1205 \u12e8\u1270\u1230\u1320\u12cd\u1295 \u12e8\u1202\u1233\u1265 \u127d\u130d\u129d \u1275\u12ad\u12ad\u1208\u129b \u12a5\u1295\u12f0\u121a\u12eb\u134d\u1273 \u1218\u1308\u121d\u1308\u121d \u1290\u12cd \u1270\u130d\u1263\u122b\u127d\u1201\u1362",
+    "tags": {
+      "input_tag": "\u130d\u1264\u1275 (\u12e8\u1202\u1233\u1265 \u127d\u130d\u129d)",
+      "math_solution": "\u1240\u1228\u1260 \u12e8\u1202\u1233\u1265 \u1218\u134d\u1275\u1214",
+      "evaluation_rubric_tag": "\u12e8\u130d\u121d\u1308\u121b \u1218\u1218\u12dd\u1308\u1262\u12eb",
+      "response_format_tag": "\u12e8\u121d\u120b\u123d \u1245\u122d\u1338\u1275",
+      "your_response_tag": "\u12e8\u12a5\u122d\u1235\u12ce \u121d\u120b\u123d"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u12e8\u1240\u1228\u1260\u12cd \u12e8\u1202\u1233\u1265 \u1218\u134d\u1275\u1214 \u1275\u12ad\u12ad\u120d \u12c8\u12ed\u121d \u1275\u12ad\u12ad\u120d \u12a0\u12ed\u12f0\u1208\u121d \u1265\u120e \u12e8\u121a\u1308\u121d\u1275 \u12a0\u132d\u122d \u121d\u12ad\u1295\u12eb\u1275\u1362"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u12e8\u12da\u1205 \u12e8\u1202\u1233\u1265 \u1218\u134d\u1275\u1214 \u1275\u12ad\u12ad\u120d \u1290\u12cd \u12c8\u12ed\u121d \u12a0\u12ed\u12f0\u1208\u121d\u1362",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "lug": {
+    "rubric_list": [
+      {
+        "true": "Ekyokulabulwa ekyawandiikiddwa mu ngeri y\u2019obusomi kikyamu.",
+        "false": "Ekyokulabulwa ekyawandiikiddwa mu ngeri y\u2019obusomi sikituufu."
+      }
+    ],
+    "task_description": "Omulimu gwo kwekukebera oba ekyokuddamu ekikuwade kirungamya obuzibu bwa math.",
+    "tags": {
+      "input_tag": "Okuyingizibwa (Ekibuuzo ky\u2019Obusomo)",
+      "math_solution": "Eky\u2019okuddamu ku Kibuzo ky\u2019Obusomo",
+      "evaluation_rubric_tag": "Obulungi bw\u2019Okuddamu",
+      "response_format_tag": "Enkola y\u2019Okuddamu",
+      "your_response_tag": "Okuddamu Kwo"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Ensonga entonotono lwaki ekyokulabirako ekyemmath ekibiddwa kikyamu oba kituufu."
+        },
+        "score": {
+          "type": "string",
+          "description": "Obanga ekyokulabirako ekya math kituufu oba kikyamu.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fr": {
+    "rubric_list": [
+      {
+        "true": "La solution math\u00e9matique donn\u00e9e est correcte.",
+        "false": "La solution math\u00e9matique donn\u00e9e est incorrecte."
+      }
+    ],
+    "task_description": "Votre t\u00e2che consiste \u00e0 \u00e9valuer si la solution donn\u00e9e r\u00e9sout correctement le probl\u00e8me de math\u00e9matiques.",
+    "tags": {
+      "input_tag": "Entr\u00e9e (probl\u00e8me math\u00e9matique)",
+      "math_solution": "Solution math\u00e9matique fournie",
+      "evaluation_rubric_tag": "Grille d\u2019\u00e9valuation",
+      "response_format_tag": "Format de la r\u00e9ponse",
+      "your_response_tag": "Votre r\u00e9ponse"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un raisonnement bref indiquant si la solution math\u00e9matique fournie est correcte ou non."
+        },
+        "score": {
+          "type": "string",
+          "description": "Indique si la solution math\u00e9matique est correcte ou non.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "zu": {
+    "rubric_list": [
+      {
+        "true": "Isixazululo sezibalo esinikiwe silungile.",
+        "false": "Isixazululo sezibalo esinikiwe siphambile."
+      }
+    ],
+    "task_description": "Umsebenzi wakho ukuhlola ukuthi ingabe isixazululo esinikeziwe sixazulula kahle inkinga yezibalo.",
+    "tags": {
+      "input_tag": "Okokufaka (Inkinga Yezibalo)",
+      "math_solution": "Isixazululo Sezibalo Esinikeziwe",
+      "evaluation_rubric_tag": "Irubhrikhi Yokuhlola",
+      "response_format_tag": "Ifomethi Yempendulo",
+      "your_response_tag": "Impendulo Yakho"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Incazelo emfushane yokuthi isixazululo sezibalo esinikeziwe silungile noma asilungile."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ukuthi isixazululo sezibalo silungile noma asilungile.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "es": {
+    "rubric_list": [
+      {
+        "true": "La soluci\u00f3n matem\u00e1tica dada es correcta.",
+        "false": "La soluci\u00f3n matem\u00e1tica dada es incorrecta."
+      }
+    ],
+    "task_description": "Tu tarea es evaluar si la soluci\u00f3n dada resuelve correctamente el problema matem\u00e1tico.",
+    "tags": {
+      "input_tag": "Entrada (Problema matem\u00e1tico)",
+      "math_solution": "Soluci\u00f3n matem\u00e1tica proporcionada",
+      "evaluation_rubric_tag": "R\u00fabrica de evaluaci\u00f3n",
+      "response_format_tag": "Formato de respuesta",
+      "your_response_tag": "Tu respuesta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un breve razonamiento sobre si la soluci\u00f3n matem\u00e1tica proporcionada es correcta o incorrecta."
+        },
+        "score": {
+          "type": "string",
+          "description": "Indica si la soluci\u00f3n matem\u00e1tica es correcta o no.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ja": {
+    "rubric_list": [
+      {
+        "true": "\u4e0e\u3048\u3089\u308c\u305f\u6570\u5b66\u306e\u89e3\u7b54\u306f\u6b63\u3057\u3044\u3067\u3059\u3002",
+        "false": "\u4e0e\u3048\u3089\u308c\u305f\u6570\u5b66\u306e\u89e3\u7b54\u306f\u9593\u9055\u3063\u3066\u3044\u307e\u3059\u3002"
+      }
+    ],
+    "task_description": "\u3042\u306a\u305f\u306e\u8ab2\u984c\u306f\u3001\u4e0e\u3048\u3089\u308c\u305f\u89e3\u7b54\u304c\u6570\u5b66\u306e\u554f\u984c\u3092\u6b63\u3057\u304f\u89e3\u6c7a\u3057\u3066\u3044\u308b\u304b\u3069\u3046\u304b\u3092\u8a55\u4fa1\u3059\u308b\u3053\u3068\u3067\u3059\u3002",
+    "tags": {
+      "input_tag": "\u5165\u529b\uff08\u6570\u5b66\u306e\u554f\u984c\uff09",
+      "math_solution": "\u63d0\u4f9b\u3055\u308c\u305f\u89e3\u7b54",
+      "evaluation_rubric_tag": "\u8a55\u4fa1\u57fa\u6e96",
+      "response_format_tag": "\u56de\u7b54\u5f62\u5f0f",
+      "your_response_tag": "\u3042\u306a\u305f\u306e\u56de\u7b54"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u63d0\u4f9b\u3055\u308c\u305f\u6570\u5b66\u306e\u89e3\u7b54\u304c\u6b63\u3057\u3044\u304b\u8aa4\u3063\u3066\u3044\u308b\u304b\u306e\u7c21\u6f54\u306a\u7406\u7531\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u6570\u5b66\u306e\u89e3\u7b54\u304c\u6b63\u3057\u3044\u304b\u3069\u3046\u304b\u3002",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "zh": {
+    "rubric_list": [
+      {
+        "true": "\u7ed9\u51fa\u7684\u6570\u5b66\u89e3\u7b54\u662f\u6b63\u786e\u7684\u3002",
+        "false": "\u7ed9\u51fa\u7684\u6570\u5b66\u89e3\u7b54\u662f\u9519\u8bef\u7684\u3002"
+      }
+    ],
+    "task_description": "\u4f60\u7684\u4efb\u52a1\u662f\u8bc4\u4f30\u6240\u7ed9\u7684\u89e3\u7b54\u662f\u5426\u6b63\u786e\u89e3\u51b3\u4e86\u6570\u5b66\u95ee\u9898\u3002",
+    "tags": {
+      "input_tag": "\u8f93\u5165\uff08\u6570\u5b66\u9898\uff09",
+      "math_solution": "\u63d0\u4f9b\u7684\u89e3\u7b54",
+      "evaluation_rubric_tag": "\u8bc4\u5206\u6807\u51c6",
+      "response_format_tag": "\u56de\u590d\u683c\u5f0f",
+      "your_response_tag": "\u4f60\u7684\u56de\u7b54"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u5bf9\u6240\u63d0\u4f9b\u7684\u6570\u5b66\u89e3\u7b54\u662f\u5426\u6b63\u786e\u7684\u7b80\u8981\u8bf4\u660e\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u6570\u5b66\u89e3\u7b54\u662f\u5426\u6b63\u786e\u3002",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "de": {
+    "rubric_list": [
+      {
+        "true": "Die gegebene Mathematikl\u00f6sung ist korrekt.",
+        "false": "Die gegebene Mathematikl\u00f6sung ist falsch."
+      }
+    ],
+    "task_description": "Ihre Aufgabe ist es zu beurteilen, ob die gegebene L\u00f6sung das mathematische Problem korrekt l\u00f6st.",
+    "tags": {
+      "input_tag": "Eingabe (Matheaufgabe)",
+      "math_solution": "Berechnete L\u00f6sung",
+      "evaluation_rubric_tag": "Bewertungskriterien",
+      "response_format_tag": "Antwortformat",
+      "your_response_tag": "Deine Antwort"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Eine kurze Begr\u00fcndung, ob die bereitgestellte Mathematikl\u00f6sung richtig oder falsch ist."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ob die Mathematikl\u00f6sung korrekt ist oder nicht.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "te": {
+    "rubric_list": [
+      {
+        "true": "\u0c28\u0c3f\u0c35\u0c4d\u0c35\u0c2c\u0c21\u0c3f\u0c28 \u0c17\u0c23\u0c3f\u0c24 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c38\u0c30\u0c48\u0c28\u0c26\u0c3f.",
+        "false": "\u0c28\u0c3f\u0c35\u0c4d\u0c35\u0c2c\u0c21\u0c3f\u0c28 \u0c17\u0c23\u0c3f\u0c24 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c24\u0c2a\u0c4d\u0c2a\u0c48\u0c02\u0c26\u0c3f."
+      }
+    ],
+    "task_description": "\u0c2e\u0c40 \u0c2a\u0c28\u0c3f \u0c07\u0c1a\u0c4d\u0c1a\u0c3f\u0c28 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c17\u0c23\u0c3f\u0c24 \u0c38\u0c2e\u0c38\u0c4d\u0c2f\u0c28\u0c41 \u0c38\u0c30\u0c48\u0c28 \u0c30\u0c40\u0c24\u0c3f\u0c32\u0c4b \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c30\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c4b \u0c32\u0c47\u0c26\u0c4b \u0c2e\u0c42\u0c32\u0c4d\u0c2f\u0c3e\u0c02\u0c15\u0c28\u0c02 \u0c1a\u0c47\u0c2f\u0c21\u0c02.",
+    "tags": {
+      "input_tag": "\u0c07\u0c28\u0c4d\u0c2a\u0c41\u0c1f\u0c4d (\u0c17\u0c23\u0c3f\u0c24 \u0c38\u0c2e\u0c38\u0c4d\u0c2f)",
+      "math_solution": "\u0c07\u0c1a\u0c4d\u0c1a\u0c3f\u0c28 \u0c17\u0c23\u0c3f\u0c24 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02",
+      "evaluation_rubric_tag": "\u0c2e\u0c42\u0c32\u0c4d\u0c2f\u0c3e\u0c02\u0c15\u0c28 \u0c2a\u0c4d\u0c30\u0c2e\u0c3e\u0c23\u0c02",
+      "response_format_tag": "\u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c41\u0c24\u094d\u0924\u0930 \u0c2b\u0c3e\u0c30\u0c4d\u0c2e\u0c3e\u0c1f\u0c4d",
+      "your_response_tag": "\u0c2e\u0c40 \u0c2a\u0c4d\u0c30\u0c24\u0c3f\u0c38\u0c4d\u0c2a\u0c02\u0c26\u0c28"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0c2a\u0c4a\u0c26\u0c41\u0c2a\u0c41 \u0c17\u0c32 \u0c15\u0c3e\u0c30\u0c23\u0c3e\u0c28\u0c4d\u0c28\u0c3f \u0c07\u0c35\u0c4d\u0c35\u0c02\u0c21\u0c3f, \u0c05\u0c02\u0c26\u0c3f\u0c02\u0c1a\u0c3f\u0c28 \u0c17\u0c23\u0c3f\u0c24 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c38\u0c30\u0c48\u0c28\u0c26\u0c3e \u0c32\u0c47\u0c26\u0c3e \u0c15\u0c3e\u0c26\u0c3e."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0c17\u0c23\u0c3f\u0c24 \u0c2a\u0c30\u0c3f\u0c37\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c38\u0c30\u0c48\u0c28\u0c26\u0c3e \u0c32\u0c47\u0c26\u0c3e \u0c15\u0c3e\u0c26\u0c3e.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "bn": {
+    "rubric_list": [
+      {
+        "true": "\u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u0997\u09a3\u09bf\u09a4 \u09b8\u09ae\u09be\u09a7\u09be\u09a8\u099f\u09bf \u09b8\u09a0\u09bf\u0995\u0964",
+        "false": "\u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u0997\u09a3\u09bf\u09a4 \u09b8\u09ae\u09be\u09a7\u09be\u09a8\u099f\u09bf \u09ad\u09c1\u09b2\u0964"
+      }
+    ],
+    "task_description": "\u0986\u09aa\u09a8\u09be\u09b0 \u0995\u09be\u099c \u09b9\u09b2\u09cb \u09a8\u09bf\u09b0\u09cd\u09a7\u09be\u09b0\u09a3 \u0995\u09b0\u09be \u09af\u09c7 \u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u09b8\u09ae\u09be\u09a7\u09be\u09a8\u099f\u09bf \u0997\u09a3\u09bf\u09a4 \u09b8\u09ae\u09b8\u09cd\u09af\u09be\u099f\u09bf \u09b8\u09a0\u09bf\u0995\u09ad\u09be\u09ac\u09c7 \u09b8\u09ae\u09be\u09a7\u09be\u09a8 \u0995\u09b0\u09c7\u099b\u09c7 \u0995\u09bf \u09a8\u09be\u0964",
+    "tags": {
+      "input_tag": "\u0987\u09a8\u09aa\u09c1\u099f (\u0997\u09be\u09a3\u09bf\u09a4\u09bf\u0995 \u09b8\u09ae\u09b8\u09cd\u09af\u09be)",
+      "math_solution": "\u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u09b8\u09ae\u09be\u09a7\u09be\u09a8",
+      "evaluation_rubric_tag": "\u09ae\u09c2\u09b2\u09cd\u09af\u09be\u09df\u09a8 \u09a8\u09bf\u09b0\u09cd\u09a6\u09c7\u09b6\u09bf\u0995\u09be",
+      "response_format_tag": "\u09aa\u09cd\u09b0\u09a4\u09bf\u0995\u09cd\u09b0\u09bf\u09df\u09be \u09ab\u09b0\u09ae\u09cd\u09af\u09be\u099f",
+      "your_response_tag": "\u0986\u09aa\u09a8\u09be\u09b0 \u0989\u09a4\u09cd\u09a4\u09b0"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u09a6\u09c7\u0993\u09af\u09bc\u09be \u0997\u09be\u09a3\u09bf\u09a4\u09bf\u0995 \u09b8\u09ae\u09be\u09a7\u09be\u09a8\u099f\u09bf \u09b8\u09a0\u09bf\u0995 \u09ac\u09be \u09ad\u09c1\u09b2 \u09b8\u09c7 \u09ac\u09bf\u09b7\u09af\u09bc\u09c7 \u09b8\u0982\u0995\u09cd\u09b7\u09bf\u09aa\u09cd\u09a4 \u09af\u09c1\u0995\u09cd\u09a4\u09bf\u0964"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0997\u09be\u09a3\u09bf\u09a4\u09bf\u0995 \u09b8\u09ae\u09be\u09a7\u09be\u09a8\u099f\u09bf \u09b8\u09a0\u09bf\u0995 \u0995\u09bf\u09a8\u09be \u09a4\u09be \u0989\u09b2\u09cd\u09b2\u09c7\u0996 \u0995\u09b0\u09c1\u09a8\u0964",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "yo": {
+    "rubric_list": [
+      {
+        "true": "Idahun i\u1e63iro ti a fi sil\u1eb9 j\u1eb9 t\u1ecd.",
+        "false": "Idahun i\u1e63iro ti a fi sil\u1eb9 j\u1eb9 a\u1e63i\u1e63e."
+      }
+    ],
+    "task_description": "I\u1e63\u1eb9 r\u1eb9 ni lati \u1e63e ay\u1eb9wo boya ojutu ti a fi sil\u1eb9 ba yanju i\u1e63oro i\u1e63iro naa ni deede.",
+    "tags": {
+      "input_tag": "\u00ccfik\u00fan (\u00cc\u1e63\u00f2ro \u00cc\u1e63ir\u00f2)",
+      "math_solution": "\u00ccd\u00e1h\u00f9n \u00cc\u1e63ir\u00f2 T\u00ed A F\u00fanni",
+      "evaluation_rubric_tag": "Ilana Ay\u1eb9wo",
+      "response_format_tag": "\u00c0m\u00fay\u1eb9 \u00ccd\u00e1h\u00f9n",
+      "your_response_tag": "\u00ccb\u00e1\u1e63ep\u1ecd R\u1eb9"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u00cctum\u1ecd\u0300k\u00e0nk\u00e0n \u1e63\u00f3k\u00ed n\u00edpa b\u00f3y\u00e1 \u00ecd\u00e1h\u00f9n math t\u00ed a f\u00fan j\u1eb9\u0301 t\u1ecd\u0301num\u1ecd\u0301 t\u00e0b\u00ed k\u00f2 t\u1ecd\u0301."
+        },
+        "score": {
+          "type": "string",
+          "description": "B\u00f3y\u00e1 \u00ecd\u00e1h\u00f9n math n\u00e1\u00e0 j\u1eb9\u0301 t\u1ecd\u0301num\u1ecd\u0301 t\u00e0b\u00ed k\u00f2 t\u1ecd\u0301.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ru": {
+    "rubric_list": [
+      {
+        "true": "\u0414\u0430\u043d\u043d\u043e\u0435 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e.",
+        "false": "\u0414\u0430\u043d\u043d\u043e\u0435 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043d\u0435\u0432\u0435\u0440\u043d\u043e."
+      }
+    ],
+    "task_description": "\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u043e\u0446\u0435\u043d\u0438\u0442\u044c, \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e \u043b\u0438 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0440\u0435\u0448\u0430\u0435\u0442 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0443\u044e \u0437\u0430\u0434\u0430\u0447\u0443.",
+    "tags": {
+      "input_tag": "\u0412\u0432\u043e\u0434 (\u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0437\u0430\u0434\u0430\u0447\u0430)",
+      "math_solution": "\u0414\u0430\u043d\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435",
+      "evaluation_rubric_tag": "\u041a\u0440\u0438\u0442\u0435\u0440\u0438\u0438 \u043e\u0446\u0435\u043d\u043a\u0438",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043e\u0442\u0432\u0435\u0442\u0430",
+      "your_response_tag": "\u0412\u0430\u0448 \u043e\u0442\u0432\u0435\u0442"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u0431\u044a\u044f\u0441\u043d\u0435\u043d\u0438\u0435, \u043f\u043e\u0447\u0435\u043c\u0443 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c \u0438\u043b\u0438 \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u042f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043b\u0438 \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c \u0438\u043b\u0438 \u043d\u0435\u0442.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "th": {
+    "rubric_list": [
+      {
+        "true": "\u0e27\u0e34\u0e18\u0e35\u0e41\u0e01\u0e49\u0e44\u0e02\u0e1b\u0e31\u0e0d\u0e2b\u0e32\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e41\u0e25\u0e49\u0e27.",
+        "false": "\u0e27\u0e34\u0e18\u0e35\u0e41\u0e01\u0e49\u0e44\u0e02\u0e1b\u0e31\u0e0d\u0e2b\u0e32\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32\u0e1c\u0e34\u0e14."
+      }
+    ],
+    "task_description": "\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13\u0e04\u0e37\u0e2d\u0e1b\u0e23\u0e30\u0e40\u0e21\u0e34\u0e19\u0e27\u0e48\u0e32\u0e41\u0e19\u0e27\u0e17\u0e32\u0e07\u0e41\u0e01\u0e49\u0e1b\u0e31\u0e0d\u0e2b\u0e32\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32\u0e19\u0e31\u0e49\u0e19\u0e41\u0e01\u0e49\u0e42\u0e08\u0e17\u0e22\u0e4c\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c\u0e44\u0e14\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48",
+    "tags": {
+      "input_tag": "\u0e42\u0e08\u0e17\u0e22\u0e4c\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c",
+      "math_solution": "\u0e27\u0e34\u0e18\u0e35\u0e17\u0e33\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32",
+      "evaluation_rubric_tag": "\u0e40\u0e01\u0e13\u0e11\u0e4c\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e40\u0e21\u0e34\u0e19",
+      "response_format_tag": "\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a\u0e04\u0e33\u0e15\u0e2d\u0e1a",
+      "your_response_tag": "\u0e04\u0e33\u0e15\u0e2d\u0e1a\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0e04\u0e33\u0e2d\u0e18\u0e34\u0e1a\u0e32\u0e22\u0e2a\u0e31\u0e49\u0e19 \u0e46 \u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e01\u0e31\u0e1a\u0e40\u0e2b\u0e15\u0e38\u0e1c\u0e25\u0e27\u0e48\u0e32\u0e17\u0e33\u0e44\u0e21\u0e27\u0e34\u0e18\u0e35\u0e41\u0e01\u0e49\u0e42\u0e08\u0e17\u0e22\u0e4c\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32\u0e08\u0e36\u0e07\u0e16\u0e39\u0e01\u0e2b\u0e23\u0e37\u0e2d\u0e1c\u0e34\u0e14"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0e23\u0e30\u0e1a\u0e38\u0e27\u0e48\u0e32\u0e27\u0e34\u0e18\u0e35\u0e41\u0e01\u0e49\u0e42\u0e08\u0e17\u0e22\u0e4c\u0e04\u0e13\u0e34\u0e15\u0e28\u0e32\u0e2a\u0e15\u0e23\u0e4c\u0e17\u0e35\u0e48\u0e43\u0e2b\u0e49\u0e21\u0e32\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  }
+}

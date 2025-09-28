@@ -1,0 +1,187 @@
+{
+  "en": {
+    "rubric_list": [
+      {
+        "true": "The given math solution is correct.",
+        "false": "The given math solution is wrong."
+      }
+    ],
+    "task_description": "Your task is to evaluate whether the given solution correctly solves the math problem.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "A brief reasoning whether the provided math solution is correct or incorrect."
+        },
+        "score": {
+          "type": "string",
+          "description": "Whether the math solution is correct or not.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Input (Math Problem)",
+      "math_solution": "Provided Math Solution",
+      "evaluation_rubric_tag": "Evaluation Rubric",
+      "response_format_tag": "Response Format",
+      "your_response_tag": "Your Response"
+    }
+  },
+  "es": {
+    "rubric_list": [
+      {
+        "true": "La soluci\u00f3n matem\u00e1tica dada es correcta.",
+        "false": "La soluci\u00f3n matem\u00e1tica dada es incorrecta."
+      }
+    ],
+    "task_description": "Tu tarea es evaluar si la soluci\u00f3n dada resuelve correctamente el problema matem\u00e1tico.",
+    "tags": {
+      "input_tag": "Entrada (Problema de matem\u00e1ticas)",
+      "math_solution": "Soluci\u00f3n proporcionada",
+      "evaluation_rubric_tag": "R\u00fabrica de evaluaci\u00f3n",
+      "response_format_tag": "Formato de respuesta",
+      "your_response_tag": "Tu respuesta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un breve razonamiento sobre si la soluci\u00f3n matem\u00e1tica proporcionada es correcta o incorrecta."
+        },
+        "score": {
+          "type": "string",
+          "description": "Si la soluci\u00f3n matem\u00e1tica es correcta o no.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fr": {
+    "rubric_list": [
+      {
+        "true": "La solution math\u00e9matique donn\u00e9e est correcte.",
+        "false": "La solution math\u00e9matique donn\u00e9e est incorrecte."
+      }
+    ],
+    "task_description": "Votre t\u00e2che consiste \u00e0 \u00e9valuer si la solution donn\u00e9e r\u00e9sout correctement le probl\u00e8me de math\u00e9matiques.",
+    "tags": {
+      "input_tag": "Entr\u00e9e (probl\u00e8me math\u00e9matique)",
+      "math_solution": "Solution math\u00e9matique fournie",
+      "evaluation_rubric_tag": "Grille d\u2019\u00e9valuation",
+      "response_format_tag": "Format de r\u00e9ponse",
+      "your_response_tag": "Votre r\u00e9ponse"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un raisonnement bref indiquant si la solution math\u00e9matique fournie est correcte ou incorrecte."
+        },
+        "score": {
+          "type": "string",
+          "description": "Indique si la solution math\u00e9matique est correcte ou non.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "it": {
+    "rubric_list": [
+      {
+        "true": "La soluzione matematica fornita \u00e8 corretta.",
+        "false": "La soluzione matematica fornita \u00e8 sbagliata."
+      }
+    ],
+    "task_description": "Il tuo compito \u00e8 valutare se la soluzione fornita risolve correttamente il problema matematico.",
+    "tags": {
+      "input_tag": "Input (Problema matematico)",
+      "math_solution": "Soluzione fornita",
+      "evaluation_rubric_tag": "Criteri di valutazione",
+      "response_format_tag": "Formato della risposta",
+      "your_response_tag": "La tua risposta"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Una breve spiegazione sul motivo per cui la soluzione matematica fornita \u00e8 corretta o errata."
+        },
+        "score": {
+          "type": "string",
+          "description": "Se la soluzione matematica \u00e8 corretta o meno.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tr": {
+    "rubric_list": [
+      {
+        "true": "Verilen matematik \u00e7\u00f6z\u00fcm\u00fc do\u011frudur.",
+        "false": "Verilen matematik \u00e7\u00f6z\u00fcm\u00fc yanl\u0131\u015ft\u0131r."
+      }
+    ],
+    "task_description": "G\u00f6reviniz, verilen \u00e7\u00f6z\u00fcm\u00fcn matematik problemini do\u011fru \u015fekilde \u00e7\u00f6z\u00fcp \u00e7\u00f6zmedi\u011fini de\u011ferlendirmektir.",
+    "tags": {
+      "input_tag": "Girdi (Matematik Problemi)",
+      "math_solution": "Sa\u011flanan Matematik \u00c7\u00f6z\u00fcm\u00fc",
+      "evaluation_rubric_tag": "De\u011ferlendirme \u00d6l\u00e7\u00fct\u00fc",
+      "response_format_tag": "Yan\u0131t Format\u0131",
+      "your_response_tag": "Sizin Yan\u0131t\u0131n\u0131z"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Verilen matematik \u00e7\u00f6z\u00fcm\u00fcn\u00fcn do\u011fru veya yanl\u0131\u015f oldu\u011funa dair k\u0131sa bir gerek\u00e7e."
+        },
+        "score": {
+          "type": "string",
+          "description": "Matematik \u00e7\u00f6z\u00fcm\u00fcn\u00fcn do\u011fru olup olmad\u0131\u011f\u0131.",
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  }
+}

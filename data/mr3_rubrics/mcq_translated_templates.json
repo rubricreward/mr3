@@ -1,0 +1,1506 @@
+{
+  "ar": {
+    "task_description": "\u0645\u0647\u0645\u062a\u0643 \u0647\u064a \u0627\u0644\u0625\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u0633\u0624\u0627\u0644 \u0627\u0644\u0627\u062e\u062a\u064a\u0627\u0631 \u0645\u0646 \u0645\u062a\u0639\u062f\u062f \u0627\u0644\u0645\u0642\u062f\u0645. \u0627\u062e\u062a\u0631 \u0623\u0641\u0636\u0644 \u062e\u064a\u0627\u0631 \u0645\u0646 \u0627\u0644\u062e\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u062a\u0627\u062d\u0629 \u0648\u0648\u0636\u062d \u0633\u0628\u0628 \u0627\u062e\u062a\u064a\u0627\u0631\u0643 \u0628\u0625\u064a\u062c\u0627\u0632.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0633\u0628\u0628 \u0645\u062e\u062a\u0635\u0631 \u064a\u0648\u0636\u062d \u0644\u0645\u0627\u0630\u0627 \u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u0645\u062e\u062a\u0627\u0631 \u0647\u0648 \u0627\u0644\u0635\u062d\u064a\u062d."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0627\u0644\u0625\u062c\u0627\u0628\u0629 \u0627\u0644\u0645\u062d\u062f\u062f\u0629: \u0648\u0627\u062d\u062f\u0629 \u0645\u0646 'A' \u0623\u0648 'B' \u0623\u0648 'C' \u0623\u0648 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\u0633\u0624\u0627\u0644 \u0627\u0644\u0625\u062f\u062e\u0627\u0644",
+      "options_tag": "\u062e\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0625\u062c\u0627\u0628\u0629",
+      "response_format_tag": "\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0625\u062c\u0627\u0628\u0629",
+      "your_response_tag": "\u0625\u062c\u0627\u0628\u062a\u0643"
+    }
+  },
+  "bn": {
+    "task_description": "\u0986\u09aa\u09a8\u09be\u09b0 \u0995\u09be\u099c \u09b9\u09b2\u09cb \u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u09ac\u09b9\u09c1 \u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09a8\u09c0 \u09aa\u09cd\u09b0\u09b6\u09cd\u09a8\u09c7\u09b0 \u0989\u09a4\u09cd\u09a4\u09b0 \u09a6\u09c7\u0993\u09df\u09be\u0964 \u09aa\u09cd\u09b0\u09a6\u09a4\u09cd\u09a4 \u09ac\u09bf\u0995\u09b2\u09cd\u09aa\u0997\u09c1\u09b2\u09bf \u09a5\u09c7\u0995\u09c7 \u09b8\u09c7\u09b0\u09be\u099f\u09bf \u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09a8 \u0995\u09b0\u09c1\u09a8 \u098f\u09ac\u0982 \u09b8\u0982\u0995\u09cd\u09b7\u09c7\u09aa\u09c7 \u0986\u09aa\u09a8\u09be\u09b0 \u09af\u09c1\u0995\u09cd\u09a4\u09bf \u09ac\u09cd\u09af\u09be\u0996\u09cd\u09af\u09be \u0995\u09b0\u09c1\u09a8\u0964",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09bf\u09a4 \u09ac\u09bf\u0995\u09b2\u09cd\u09aa\u099f\u09bf \u09b8\u09a0\u09bf\u0995 \u0995\u09c7\u09a8 \u09a4\u09be\u09b0 \u09b8\u0982\u0995\u09cd\u09b7\u09bf\u09aa\u09cd\u09a4 \u09af\u09c1\u0995\u09cd\u09a4\u09bf\u0964"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09bf\u09a4 \u0989\u09a4\u09cd\u09a4\u09b0: 'A', 'B', 'C', \u0985\u09a5\u09ac\u09be 'D' \u098f\u09b0 \u09ae\u09a7\u09cd\u09af\u09c7 \u098f\u0995\u099f\u09bf\u0964",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\u09aa\u09cd\u09b0\u09b6\u09cd\u09a8 \u09b2\u09bf\u0996\u09c1\u09a8",
+      "options_tag": "\u0989\u09a4\u09cd\u09a4\u09b0\u09c7\u09b0 \u09ac\u09bf\u0995\u09b2\u09cd\u09aa",
+      "response_format_tag": "\u0989\u09a4\u09cd\u09a4\u09b0\u09c7\u09b0 \u09a7\u09b0\u09a8",
+      "your_response_tag": "\u0986\u09aa\u09a8\u09be\u09b0 \u0989\u09a4\u09cd\u09a4\u09b0"
+    }
+  },
+  "de": {
+    "task_description": "Ihre Aufgabe ist es, die gegebene Multiple-Choice-Frage zu beantworten. W\u00e4hlen Sie die beste Option aus den bereitgestellten Auswahlm\u00f6glichkeiten und erkl\u00e4ren Sie kurz Ihre Begr\u00fcndung.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Eine pr\u00e4gnante Begr\u00fcndung, warum die gew\u00e4hlte Option korrekt ist."
+        },
+        "score": {
+          "type": "string",
+          "description": "Die ausgew\u00e4hlte Antwort: eine von 'A', 'B', 'C' oder 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Eingabefrage",
+      "options_tag": "Antwortoptionen",
+      "response_format_tag": "Antwortformat",
+      "your_response_tag": "Ihre Antwort"
+    }
+  },
+  "es": {
+    "task_description": "Tu tarea es responder la pregunta de opci\u00f3n m\u00faltiple dada. Selecciona la mejor opci\u00f3n de las opciones proporcionadas y explica brevemente tu razonamiento.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un razonamiento conciso de por qu\u00e9 la opci\u00f3n elegida es correcta."
+        },
+        "score": {
+          "type": "string",
+          "description": "La respuesta seleccionada: una de 'A', 'B', 'C' o 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Pregunta de entrada",
+      "options_tag": "Opciones de respuesta",
+      "response_format_tag": "Formato de respuesta",
+      "your_response_tag": "Tu respuesta"
+    }
+  },
+  "fr": {
+    "task_description": "Votre t\u00e2che consiste \u00e0 r\u00e9pondre \u00e0 la question \u00e0 choix multiples donn\u00e9e. S\u00e9lectionnez la meilleure option parmi les choix propos\u00e9s et expliquez bri\u00e8vement votre raisonnement.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Un raisonnement concis expliquant pourquoi l'option choisie est correcte."
+        },
+        "score": {
+          "type": "string",
+          "description": "La r\u00e9ponse s\u00e9lectionn\u00e9e : l'une de 'A', 'B', 'C' ou 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Question d\u2019entr\u00e9e",
+      "options_tag": "Options de r\u00e9ponse",
+      "response_format_tag": "Format de r\u00e9ponse",
+      "your_response_tag": "Votre r\u00e9ponse"
+    }
+  },
+  "hi": {
+    "task_description": "\u0906\u092a\u0915\u093e \u0915\u093e\u0930\u094d\u092f \u0926\u093f\u090f \u0917\u090f \u092c\u0939\u0941\u0935\u093f\u0915\u0932\u094d\u092a\u0940\u092f \u092a\u094d\u0930\u0936\u094d\u0928 \u0915\u093e \u0909\u0924\u094d\u0924\u0930 \u0926\u0947\u0928\u093e \u0939\u0948\u0964 \u0909\u092a\u0932\u092c\u094d\u0927 \u0935\u093f\u0915\u0932\u094d\u092a\u094b\u0902 \u092e\u0947\u0902 \u0938\u0947 \u0938\u0930\u094d\u0935\u0936\u094d\u0930\u0947\u0937\u094d\u0920 \u0935\u093f\u0915\u0932\u094d\u092a \u091a\u0941\u0928\u0947\u0902 \u0914\u0930 \u0938\u0902\u0915\u094d\u0937\u093f\u092a\u094d\u0924 \u0930\u0942\u092a \u0938\u0947 \u0905\u092a\u0928\u0947 \u0924\u0930\u094d\u0915 \u0915\u0940 \u0935\u094d\u092f\u093e\u0916\u094d\u092f\u093e \u0915\u0930\u0947\u0902\u0964",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u091a\u092f\u0928\u093f\u0924 \u0935\u093f\u0915\u0932\u094d\u092a \u0938\u0939\u0940 \u0915\u094d\u092f\u094b\u0902 \u0939\u0948, \u0907\u0938\u0915\u093e \u0938\u0902\u0915\u094d\u0937\u093f\u092a\u094d\u0924 \u0924\u0930\u094d\u0915\u0964"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u091a\u092f\u0928\u093f\u0924 \u0909\u0924\u094d\u0924\u0930: 'A', 'B', 'C', \u092f\u093e 'D' \u092e\u0947\u0902 \u0938\u0947 \u090f\u0915\u0964",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\u092a\u094d\u0930\u0936\u094d\u0928 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",
+      "options_tag": "\u0909\u0924\u094d\u0924\u0930 \u0935\u093f\u0915\u0932\u094d\u092a",
+      "response_format_tag": "\u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u093e\u0930\u0942\u092a",
+      "your_response_tag": "\u0906\u092a\u0915\u093e \u0909\u0924\u094d\u0924\u0930"
+    }
+  },
+  "id": {
+    "task_description": "Tugas Anda adalah menjawab pertanyaan pilihan ganda yang diberikan. Pilih opsi terbaik dari pilihan yang tersedia dan jelaskan alasan Anda secara singkat.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Penjelasan singkat mengapa opsi yang dipilih benar."
+        },
+        "score": {
+          "type": "string",
+          "description": "Jawaban yang dipilih: salah satu dari 'A', 'B', 'C', atau 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Pertanyaan Masukan",
+      "options_tag": "Pilihan Jawaban",
+      "response_format_tag": "Format Respons",
+      "your_response_tag": "Respon Anda"
+    }
+  },
+  "it": {
+    "task_description": "Il tuo compito \u00e8 rispondere alla domanda a scelta multipla fornita. Seleziona la migliore opzione tra quelle disponibili e spiega brevemente il tuo ragionamento.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Una spiegazione concisa del motivo per cui l'opzione scelta \u00e8 corretta."
+        },
+        "score": {
+          "type": "string",
+          "description": "La risposta selezionata: una tra 'A', 'B', 'C' o 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Domanda di input",
+      "options_tag": "Opzioni di risposta",
+      "response_format_tag": "Formato di risposta",
+      "your_response_tag": "La tua risposta"
+    }
+  },
+  "ja": {
+    "task_description": "\u4e0e\u3048\u3089\u308c\u305f\u9078\u629e\u5f0f\u306e\u8cea\u554f\u306b\u7b54\u3048\u3066\u304f\u3060\u3055\u3044\u3002\u63d0\u793a\u3055\u308c\u305f\u9078\u629e\u80a2\u306e\u4e2d\u304b\u3089\u6700\u3082\u9069\u5207\u306a\u3082\u306e\u3092\u9078\u3073\u3001\u305d\u306e\u7406\u7531\u3092\u7c21\u6f54\u306b\u8aac\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u9078\u629e\u3057\u305f\u9078\u629e\u80a2\u304c\u6b63\u3057\u3044\u7406\u7531\u3092\u7c21\u6f54\u306b\u8ff0\u3079\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u9078\u629e\u3057\u305f\u7b54\u3048\uff1a'A'\u3001'B'\u3001'C'\u3001'D' \u306e\u3044\u305a\u308c\u304b\u3002",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\u8cea\u554f\u5185\u5bb9",
+      "options_tag": "\u56de\u7b54\u9078\u629e\u80a2",
+      "response_format_tag": "\u56de\u7b54\u5f62\u5f0f",
+      "your_response_tag": "\u3042\u306a\u305f\u306e\u56de\u7b54"
+    }
+  },
+  "ko": {
+    "task_description": "\uc8fc\uc5b4\uc9c4 \uac1d\uad00\uc2dd \uc9c8\ubb38\uc5d0 \ub2f5\ud558\ub294 \uac83\uc774 \ub2f9\uc2e0\uc758 \uacfc\uc81c\uc785\ub2c8\ub2e4. \uc81c\uacf5\ub41c \uc120\ud0dd\uc9c0 \uc911\uc5d0\uc11c \uac00\uc7a5 \uc801\ud569\ud55c \ub2f5\uc744 \uc120\ud0dd\ud558\uace0, \uadf8 \uc774\uc720\ub97c \uac04\ub7b5\ud558\uac8c \uc124\uba85\ud558\uc138\uc694.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\uc120\ud0dd\ud55c \ub2f5\uc774 \uc633\uc740 \uc774\uc720\uc5d0 \ub300\ud55c \uac04\uacb0\ud55c \uc124\uba85\uc785\ub2c8\ub2e4."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', 'D' \uc911 \ud558\ub098\uc758 \uc120\ud0dd\ub41c \ub2f5\ubcc0\uc785\ub2c8\ub2e4.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\uc9c8\ubb38 \uc785\ub825",
+      "options_tag": "\ub2f5\ubcc0 \uc120\ud0dd\uc9c0",
+      "response_format_tag": "\uc751\ub2f5 \ud615\uc2dd",
+      "your_response_tag": "\ub0b4 \ub2f5\ubcc0"
+    }
+  },
+  "pt": {
+    "task_description": "Sua tarefa \u00e9 responder \u00e0 pergunta de m\u00faltipla escolha apresentada. Selecione a melhor op\u00e7\u00e3o entre as alternativas fornecidas e explique brevemente seu racioc\u00ednio.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Um racioc\u00ednio conciso sobre por que a op\u00e7\u00e3o escolhida est\u00e1 correta."
+        },
+        "score": {
+          "type": "string",
+          "description": "A resposta selecionada: uma dentre 'A', 'B', 'C' ou 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Pergunta de Entrada",
+      "options_tag": "Op\u00e7\u00f5es de Resposta",
+      "response_format_tag": "Formato da Resposta",
+      "your_response_tag": "Sua Resposta"
+    }
+  },
+  "sw": {
+    "task_description": "Kazi yako ni kujibu swali la chaguo nyingi lililopeanwa. Chagua jibu bora zaidi kati ya machaguo yaliyotolewa na ueleze sababu yako kwa kifupi.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Sababu fupi ya kuelezea kwa nini chaguo lililochaguliwa ni sahihi."
+        },
+        "score": {
+          "type": "string",
+          "description": "Jibu lililochaguliwa: mojawapo ya 'A', 'B', 'C', au 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Swali la Kuingiza",
+      "options_tag": "Chaguo za Majibu",
+      "response_format_tag": "Muundo wa Majibu",
+      "your_response_tag": "Jibu Lako"
+    }
+  },
+  "yo": {
+    "task_description": "I\u1e63\u1eb9\u0301 r\u1eb9 ni l\u00e1ti d\u00e1h\u00f9n \u00ecb\u00e9\u00e8r\u00e8 \u00e0y\u00edyan-m\u1eb9\u0301ta t\u00ed a f\u00fan. Y\u00e0n \u00e0\u1e63\u00e0y\u00e0n t\u00f3 d\u00e1a j\u00f9 l\u1ecd l\u00e1ra \u00e0w\u1ecdn \u00e0\u1e63\u00e0y\u00e0n t\u00ed a p\u00e8s\u00e8, k\u00ed o s\u00ec \u1e63\u00e0l\u00e0y\u00e9 \u00ecd\u00ed r\u1eb9 n\u00ed \u1e63\u00f3k\u00ed.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u00cct\u00fam\u1ecd\u0300 k\u00fak\u00far\u00fa f\u00fan \u00ecd\u00ed t\u00ed \u00e0\u1e63\u00e0y\u00e0n t\u00f3 j\u1eb9\u0301 t\u1ecd\u0301."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u00ccd\u00e1h\u00f9n t\u00ed a y\u00e0n: \u1ecd\u0300kan l\u00e1ra \u200b\u200b'A', 'B', 'C', t\u00e0b\u00ed 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "Ibeere \u1eb8k\u1ecd",
+      "options_tag": "\u00c0\u1e63\u00e0y\u00e0n Idahun",
+      "response_format_tag": "Ilana Idahun",
+      "your_response_tag": "Idahun R\u1eb9"
+    }
+  },
+  "zh": {
+    "task_description": "\u4f60\u7684\u4efb\u52a1\u662f\u56de\u7b54\u6240\u7ed9\u7684\u9009\u62e9\u9898\u3002\u4ece\u63d0\u4f9b\u7684\u9009\u9879\u4e2d\u9009\u62e9\u6700\u5408\u9002\u7684\u4e00\u9879\uff0c\u5e76\u7b80\u8981\u8bf4\u660e\u4f60\u7684\u7406\u7531\u3002",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u5bf9\u6240\u9009\u9009\u9879\u4e3a\u4f55\u6b63\u786e\u7684\u7b80\u660e\u7406\u7531\u3002"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u6240\u9009\u7b54\u6848\uff1a'A'\u3001'B'\u3001'C' \u6216 'D' \u4e4b\u4e00\u3002",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    },
+    "tags": {
+      "input_tag": "\u8f93\u5165\u95ee\u9898",
+      "options_tag": "\u7b54\u6848\u9009\u9879",
+      "response_format_tag": "\u56de\u590d\u683c\u5f0f",
+      "your_response_tag": "\u4f60\u7684\u56de\u590d"
+    }
+  },
+  "en": {
+    "tags": {
+      "input_tag": "Input Question",
+      "options_tag": "Answer Options",
+      "response_format_tag": "Response Format",
+      "your_response_tag": "Your Response"
+    },
+    "task_description": "Your task is to answer the given multiple-choice question. Select the best option from the provided choices and explain your reasoning briefly.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "A concise reasoning for why the chosen option is correct."
+        },
+        "score": {
+          "type": "string",
+          "description": "The selected answer: one of 'A', 'B', 'C', or 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "et": {
+    "task_description": "Sinu \u00fclesandeks on vastata antud valikvastustega k\u00fcsimusele. Vali parim variant pakutud valikute seast ja p\u00f5hjenda l\u00fchidalt oma valikut.",
+    "tags": {
+      "input_tag": "Sisestusk\u00fcsimus",
+      "options_tag": "Vastusvalikud",
+      "response_format_tag": "Vastusvorming",
+      "your_response_tag": "Sinu vastus"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "L\u00fchike p\u00f5hjendus, miks valitud vastus on \u00f5ige."
+        },
+        "score": {
+          "type": "string",
+          "description": "Valitud vastus: \u00fcks j\u00e4rgmistest 'A', 'B', 'C' v\u00f5i 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fi": {
+    "task_description": "Teht\u00e4v\u00e4si on vastata annettuun monivalintakysymykseen. Valitse paras vaihtoehto tarjotuista vaihtoehdoista ja perustele lyhyesti valintasi.",
+    "tags": {
+      "input_tag": "Kysymys",
+      "options_tag": "Vastausvaihtoehdot",
+      "response_format_tag": "Vastausmuoto",
+      "your_response_tag": "Vastauksesi"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Tiivis perustelu siit\u00e4, miksi valittu vaihtoehto on oikea."
+        },
+        "score": {
+          "type": "string",
+          "description": "Valittu vastaus: yksi seuraavista 'A', 'B', 'C' tai 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "hr": {
+    "task_description": "Va\u0161 zadatak je odgovoriti na dano pitanje s vi\u0161estrukim izborom. Odaberite najbolju opciju me\u0111u ponu\u0111enim odgovorima i ukratko objasnite svoje obrazlo\u017eenje.",
+    "tags": {
+      "input_tag": "Unesi pitanje",
+      "options_tag": "Mogu\u0107nosti odgovora",
+      "response_format_tag": "Format odgovora",
+      "your_response_tag": "Tvoj odgovor"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Kratko obrazlo\u017eenje za\u0161to je odabrana opcija to\u010dna."
+        },
+        "score": {
+          "type": "string",
+          "description": "Odabrani odgovor: jedna od 'A', 'B', 'C' ili 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "nl": {
+    "task_description": "Je taak is om de gegeven meerkeuzevraag te beantwoorden. Kies de beste optie uit de aangeboden keuzes en leg je redenering kort uit.",
+    "tags": {
+      "input_tag": "Invoervraag",
+      "options_tag": "Antwoordopties",
+      "response_format_tag": "Antwoordformaat",
+      "your_response_tag": "Jouw Antwoord"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Een beknopte reden waarom de gekozen optie correct is."
+        },
+        "score": {
+          "type": "string",
+          "description": "Het geselecteerde antwoord: een van 'A', 'B', 'C' of 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "bg": {
+    "task_description": "\u0412\u0430\u0448\u0430\u0442\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u0435 \u0434\u0430 \u043e\u0442\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u0435 \u043d\u0430 \u0434\u0430\u0434\u0435\u043d\u0438\u044f \u0432\u044a\u043f\u0440\u043e\u0441 \u0441 \u0438\u0437\u0431\u043e\u0440 \u043c\u0435\u0436\u0434\u0443 \u043d\u044f\u043a\u043e\u043b\u043a\u043e \u0432\u044a\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438. \u0418\u0437\u0431\u0435\u0440\u0435\u0442\u0435 \u043d\u0430\u0439-\u0434\u043e\u0431\u0440\u0438\u044f \u0432\u0430\u0440\u0438\u0430\u043d\u0442 \u043e\u0442 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0435\u043d\u0438\u0442\u0435 \u043e\u043f\u0446\u0438\u0438 \u0438 \u043e\u0431\u044f\u0441\u043d\u0435\u0442\u0435 \u043d\u0430\u043a\u0440\u0430\u0442\u043a\u043e \u0441\u0432\u043e\u0435\u0442\u043e \u0440\u0430\u0437\u0441\u044a\u0436\u0434\u0435\u043d\u0438\u0435.",
+    "tags": {
+      "input_tag": "\u0412\u044a\u043f\u0440\u043e\u0441 \u0437\u0430 \u0432\u044a\u0432\u0435\u0436\u0434\u0430\u043d\u0435",
+      "options_tag": "\u0412\u044a\u0437\u043c\u043e\u0436\u043d\u0438 \u043e\u0442\u0433\u043e\u0432\u043e\u0440\u0438",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043d\u0430 \u043e\u0442\u0433\u043e\u0432\u043e\u0440\u0430",
+      "your_response_tag": "\u0412\u0430\u0448\u0438\u044f\u0442 \u043e\u0442\u0433\u043e\u0432\u043e\u0440"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e \u043e\u0431\u044f\u0441\u043d\u0435\u043d\u0438\u0435 \u0437\u0430\u0449\u043e \u0438\u0437\u0431\u0440\u0430\u043d\u0438\u044f\u0442 \u043e\u0442\u0433\u043e\u0432\u043e\u0440 \u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u0435\u043d."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0418\u0437\u0431\u0440\u0430\u043d\u0438\u044f\u0442 \u043e\u0442\u0433\u043e\u0432\u043e\u0440: \u0435\u0434\u043d\u0430 \u043e\u0442 \u043e\u043f\u0446\u0438\u0438\u0442\u0435 'A', 'B', 'C' \u0438\u043b\u0438 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "be": {
+    "task_description": "\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u0430\u0434\u043a\u0430\u0437\u0430\u0446\u044c \u043d\u0430 \u0434\u0430\u0434\u0437\u0435\u043d\u0430\u0435 \u043f\u044b\u0442\u0430\u043d\u043d\u0435 \u0437 \u0432\u0430\u0440\u044b\u044f\u043d\u0442\u0430\u043c\u0456 \u0430\u0434\u043a\u0430\u0437\u0430\u045e. \u0410\u0431\u044f\u0440\u044b\u0446\u0435 \u043d\u0430\u0439\u043b\u0435\u043f\u0448\u044b \u0432\u0430\u0440\u044b\u044f\u043d\u0442 \u0437 \u043f\u0440\u0430\u043f\u0430\u043d\u0430\u0432\u0430\u043d\u044b\u0445 \u0456 \u043a\u043e\u0440\u0430\u0442\u043a\u0430 \u0440\u0430\u0441\u0442\u043b\u0443\u043c\u0430\u0447\u0446\u0435 \u0441\u0432\u0430\u044e \u043b\u043e\u0433\u0456\u043a\u0443.",
+    "tags": {
+      "input_tag": "\u041f\u044b\u0442\u0430\u043d\u043d\u0435",
+      "options_tag": "\u0412\u0430\u0440\u044b\u044f\u043d\u0442\u044b \u0430\u0434\u043a\u0430\u0437\u0430\u045e",
+      "response_format_tag": "\u0424\u0430\u0440\u043c\u0430\u0442 \u0430\u0434\u043a\u0430\u0437\u0443",
+      "your_response_tag": "\u0412\u0430\u0448 \u0430\u0434\u043a\u0430\u0437"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0430\u0440\u043e\u0442\u043a\u0430\u0435 \u0442\u043b\u0443\u043c\u0430\u0447\u044d\u043d\u043d\u0435, \u0447\u0430\u043c\u0443 \u0430\u0431\u0440\u0430\u043d\u044b \u0432\u0430\u0440\u044b\u044f\u043d\u0442 \u0437\u2019\u044f\u045e\u043b\u044f\u0435\u0446\u0446\u0430 \u043f\u0440\u0430\u0432\u0456\u043b\u044c\u043d\u044b\u043c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0410\u0431\u0440\u0430\u043d\u044b \u0430\u0434\u043a\u0430\u0437: \u0430\u0434\u0437\u0456\u043d \u0437 'A', 'B', 'C' \u0430\u0431\u043e 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "hy": {
+    "task_description": "\u0541\u0565\u0580 \u0561\u057c\u0561\u057b\u0561\u0564\u0580\u0561\u0576\u0584\u0576 \u0567 \u057a\u0561\u057f\u0561\u057d\u056d\u0561\u0576\u0565\u056c \u057f\u0580\u057e\u0561\u056e \u0562\u0561\u0566\u0574\u0568\u0576\u057f\u0580\u0561\u0576\u056b \u0570\u0561\u0580\u0581\u056b\u0576\u0589 \u0538\u0576\u057f\u0580\u0565\u0584 \u056c\u0561\u057e\u0561\u0563\u0578\u0582\u0575\u0576 \u057f\u0561\u0580\u0562\u0565\u0580\u0561\u056f\u0568 \u0576\u0565\u0580\u056f\u0561\u0575\u0561\u0581\u057e\u0561\u056e \u0568\u0576\u057f\u0580\u0561\u0576\u0584\u0576\u0565\u0580\u056b\u0581 \u0587 \u056f\u0561\u0580\u0573 \u0576\u0565\u0580\u056f\u0561\u0575\u0561\u0581\u0580\u0565\u0584 \u0571\u0565\u0580 \u0570\u056b\u0574\u0576\u0561\u057e\u0578\u0580\u0578\u0582\u0574\u0568\u0589",
+    "tags": {
+      "input_tag": "\u0544\u0578\u0582\u057f\u0584 \u0570\u0561\u0580\u0581",
+      "options_tag": "\u054a\u0561\u057f\u0561\u057d\u056d\u0561\u0576\u056b \u057f\u0561\u0580\u0562\u0565\u0580\u0561\u056f\u0576\u0565\u0580",
+      "response_format_tag": "\u054a\u0561\u057f\u0561\u057d\u056d\u0561\u0576\u056b \u0571\u0587\u0561\u0579\u0561\u0583",
+      "your_response_tag": "\u0541\u0565\u0580 \u057a\u0561\u057f\u0561\u057d\u056d\u0561\u0576\u0568"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u053f\u0561\u0580\u0573 \u0562\u0561\u0581\u0561\u057f\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576, \u0569\u0565 \u056b\u0576\u0579\u0578\u0582 \u0568\u0576\u057f\u0580\u057e\u0561\u056e \u057f\u0561\u0580\u0562\u0565\u0580\u0561\u056f\u0576 \u0567 \u0573\u056b\u0577\u057f\u0568\u0589"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0538\u0576\u057f\u0580\u057e\u0561\u056e \u057a\u0561\u057f\u0561\u057d\u056d\u0561\u0576\u055d 'A', 'B', 'C' \u056f\u0561\u0574 'D'-\u056b\u0581 \u0574\u0565\u056f\u0568\u0589",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "sq": {
+    "task_description": "Detyra juaj \u00ebsht\u00eb t\u00eb p\u00ebrgjigjeni n\u00eb pyetjen me alternativa t\u00eb shumta t\u00eb dh\u00ebna. Zgjidhni opsionin m\u00eb t\u00eb mir\u00eb nga zgjedhjet e ofruara dhe shpjegoni shkurtimisht arsyetimin tuaj.",
+    "tags": {
+      "input_tag": "Pyetja hyr\u00ebse",
+      "options_tag": "Opsionet e p\u00ebrgjigjeve",
+      "response_format_tag": "Formati i p\u00ebrgjigjes",
+      "your_response_tag": "P\u00ebrgjigjja juaj"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Nj\u00eb arsyetim i p\u00ebrmbledhur p\u00ebrse alternativa e zgjedhur \u00ebsht\u00eb e sakt\u00eb."
+        },
+        "score": {
+          "type": "string",
+          "description": "P\u00ebrgjigjja e zgjedhur: nj\u00ebra nga 'A', 'B', 'C', ose 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ka": {
+    "task_description": "\u10d7\u10e5\u10d5\u10d4\u10dc\u10d8 \u10d0\u10db\u10dd\u10ea\u10d0\u10dc\u10d0\u10d0 \u10e3\u10de\u10d0\u10e1\u10e3\u10ee\u10dd\u10d7 \u10db\u10dd\u10ea\u10d4\u10db\u10e3\u10da \u10db\u10e0\u10d0\u10d5\u10d0\u10da\u10e0\u10e9\u10d4\u10e3\u10da\u10d8 \u10d9\u10d8\u10d7\u10ee\u10d5\u10d0\u10e1. \u10d0\u10d8\u10e0\u10e9\u10d8\u10d4\u10d7 \u10e1\u10d0\u10e3\u10d9\u10d4\u10d7\u10d4\u10e1\u10dd \u10de\u10d0\u10e1\u10e3\u10ee\u10d8 \u10db\u10dd\u10ea\u10d4\u10db\u10e3\u10da\u10d8 \u10d5\u10d0\u10e0\u10d8\u10d0\u10dc\u10e2\u10d4\u10d1\u10d8\u10d3\u10d0\u10dc \u10d3\u10d0 \u10db\u10dd\u10d9\u10da\u10d4\u10d3 \u10d0\u10ee\u10e1\u10d4\u10dc\u10d8\u10d7 \u10d7\u10e5\u10d5\u10d4\u10dc\u10d8 \u10d0\u10e0\u10d2\u10e3\u10db\u10d4\u10dc\u10e2\u10d8.",
+    "tags": {
+      "input_tag": "\u10e8\u10d4\u10d9\u10d8\u10d7\u10ee\u10d5\u10d8\u10e1 \u10e8\u10d4\u10e7\u10d5\u10d0\u10dc\u10d0",
+      "options_tag": "\u10de\u10d0\u10e1\u10e3\u10ee\u10d8\u10e1 \u10d5\u10d0\u10e0\u10d8\u10d0\u10dc\u10e2\u10d4\u10d1\u10d8",
+      "response_format_tag": "\u10de\u10d0\u10e1\u10e3\u10ee\u10d8\u10e1 \u10e4\u10dd\u10e0\u10db\u10d0\u10e2\u10d8",
+      "your_response_tag": "\u10d7\u10e5\u10d5\u10d4\u10dc\u10d8 \u10de\u10d0\u10e1\u10e3\u10ee\u10d8"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u10db\u10dd\u10d9\u10da\u10d4 \u10d2\u10d0\u10dc\u10db\u10d0\u10e0\u10e2\u10d4\u10d1\u10d0, \u10d7\u10e3 \u10e0\u10d0\u10e2\u10dd\u10db \u10d0\u10e0\u10d8\u10e1 \u10d0\u10e0\u10e9\u10d4\u10e3\u10da\u10d8 \u10de\u10d0\u10e1\u10e3\u10ee\u10d8 \u10e1\u10ec\u10dd\u10e0\u10d8."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u10d0\u10e0\u10e9\u10d4\u10e3\u10da\u10d8 \u10de\u10d0\u10e1\u10e3\u10ee\u10d8: 'A', 'B', 'C' \u10d0\u10dc 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "az": {
+    "task_description": "Tap\u015f\u0131r\u0131\u011f\u0131n\u0131z verilmi\u015f \u00e7oxse\u00e7imli sual\u0131 cavabland\u0131rmaqd\u0131r. T\u0259qdim olunan variantlar aras\u0131ndan \u0259n yax\u015f\u0131s\u0131n\u0131 se\u00e7in v\u0259 se\u00e7iminizi q\u0131sa \u015f\u0259kild\u0259 \u0259sasland\u0131r\u0131n.",
+    "tags": {
+      "input_tag": "Sual\u0131 daxil edin",
+      "options_tag": "Cavab Se\u00e7iml\u0259ri",
+      "response_format_tag": "Cavab Format\u0131",
+      "your_response_tag": "Sizin Cavab\u0131n\u0131z"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Se\u00e7ilmi\u015f variant\u0131n d\u00fczg\u00fcn olmas\u0131n\u0131n q\u0131sa izah\u0131."
+        },
+        "score": {
+          "type": "string",
+          "description": "Se\u00e7ilmi\u015f cavab: 'A', 'B', 'C' v\u0259 ya 'D'-d\u0259n biri.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "he": {
+    "task_description": "\u05d4\u05de\u05e9\u05d9\u05de\u05d4 \u05e9\u05dc\u05da \u05d4\u05d9\u05d0 \u05dc\u05e2\u05e0\u05d5\u05ea \u05e2\u05dc \u05e9\u05d0\u05dc\u05ea \u05d1\u05d7\u05d9\u05e8\u05d4 \u05de\u05e8\u05d5\u05d1\u05d4 \u05e9\u05e0\u05d9\u05ea\u05e0\u05d4. \u05d1\u05d7\u05e8 \u05d0\u05ea \u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05ea \u05d4\u05d8\u05d5\u05d1\u05d4 \u05d1\u05d9\u05d5\u05ea\u05e8 \u05de\u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05d9\u05d5\u05ea \u05e9\u05e1\u05d5\u05e4\u05e7\u05d5 \u05d5\u05d4\u05e1\u05d1\u05e8 \u05d1\u05e7\u05e6\u05e8\u05d4 \u05d0\u05ea \u05d4\u05e0\u05d9\u05de\u05d5\u05e7 \u05e9\u05dc\u05da.",
+    "tags": {
+      "input_tag": "\u05e9\u05d0\u05dc\u05d4",
+      "options_tag": "\u05d0\u05e4\u05e9\u05e8\u05d5\u05d9\u05d5\u05ea \u05ea\u05e9\u05d5\u05d1\u05d4",
+      "response_format_tag": "\u05e4\u05d5\u05e8\u05de\u05d8 \u05ea\u05d2\u05d5\u05d1\u05d4",
+      "your_response_tag": "\u05d4\u05ea\u05e9\u05d5\u05d1\u05d4 \u05e9\u05dc\u05da"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u05d4\u05e1\u05d1\u05e8 \u05ea\u05de\u05e6\u05d9\u05ea\u05d9 \u05de\u05d3\u05d5\u05e2 \u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05ea \u05e9\u05e0\u05d1\u05d7\u05e8\u05d4 \u05e0\u05db\u05d5\u05e0\u05d4."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u05d4\u05ea\u05e9\u05d5\u05d1\u05d4 \u05e9\u05e0\u05d1\u05d7\u05e8\u05d4: \u05d0\u05d7\u05ea \u05de\u05ea\u05d5\u05da 'A', 'B', 'C', \u05d0\u05d5 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "eu": {
+    "task_description": "Zure eginkizuna emandako aukera anitzeko galderari erantzutea da. Hautatutako aukeren artetik egokiena aukeratu eta zure arrazoibidea labur azaldu.",
+    "tags": {
+      "input_tag": "Sarrera Galdera",
+      "options_tag": "Erantzun Aukerak",
+      "response_format_tag": "Erantzun Formatua",
+      "your_response_tag": "Zure Erantzuna"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Aukeratutako aukera zuzena dela azaltzen duen arrazoibide laburra."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C' edo 'D'-etako bat: hautatutako erantzuna.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "kk": {
+    "task_description": "\u0421\u0456\u0437\u0434\u0456\u04a3 \u0442\u0430\u043f\u0441\u044b\u0440\u043c\u0430\u04a3\u044b\u0437 \u2013 \u0431\u0435\u0440\u0456\u043b\u0433\u0435\u043d \u043a\u04e9\u043f \u043d\u04b1\u0441\u049b\u0430\u043b\u044b \u0441\u04b1\u0440\u0430\u049b\u049b\u0430 \u0436\u0430\u0443\u0430\u043f \u0431\u0435\u0440\u0443. \u04b0\u0441\u044b\u043d\u044b\u043b\u0493\u0430\u043d \u0442\u0430\u04a3\u0434\u0430\u0443\u043b\u0430\u0440\u0434\u044b\u04a3 \u0456\u0448\u0456\u043d\u0435\u043d \u0435\u04a3 \u04af\u0437\u0434\u0456\u043a \u043d\u04b1\u0441\u049b\u0430\u043d\u044b \u0442\u0430\u04a3\u0434\u0430\u04a3\u044b\u0437 \u0436\u04d9\u043d\u0435 \u04e9\u0437 \u043b\u043e\u0433\u0438\u043a\u0430\u04a3\u044b\u0437\u0434\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u0442\u04af\u0441\u0456\u043d\u0434\u0456\u0440\u0456\u04a3\u0456\u0437.",
+    "tags": {
+      "input_tag": "\u0421\u04b1\u0440\u0430\u049b\u0442\u044b \u0435\u043d\u0433\u0456\u0437\u0443",
+      "options_tag": "\u0416\u0430\u0443\u0430\u043f \u043d\u04b1\u0441\u049b\u0430\u043b\u0430\u0440\u044b",
+      "response_format_tag": "\u0416\u0430\u0443\u0430\u043f \u0444\u043e\u0440\u043c\u0430\u0442\u044b",
+      "your_response_tag": "\u0421\u0456\u0437\u0434\u0456\u04a3 \u0436\u0430\u0443\u0430\u0431\u044b\u04a3\u044b\u0437"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0422\u0430\u04a3\u0434\u0430\u043b\u0493\u0430\u043d \u0436\u0430\u0443\u0430\u043f\u0442\u044b\u04a3 \u043d\u0435\u0433\u0435 \u0434\u04b1\u0440\u044b\u0441 \u0435\u043a\u0435\u043d\u0434\u0456\u0433\u0456 \u0442\u0443\u0440\u0430\u043b\u044b \u049b\u044b\u0441\u049b\u0430\u0448\u0430 \u043d\u0435\u0433\u0456\u0437\u0434\u0435\u043c\u0435."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', \u043d\u0435\u043c\u0435\u0441\u0435 'D' \u043c\u04d9\u043d\u0434\u0435\u0440\u0456\u043d\u0456\u04a3 \u0431\u0456\u0440\u0456: \u0442\u0430\u04a3\u0434\u0430\u043b\u0493\u0430\u043d \u0436\u0430\u0443\u0430\u043f.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "el": {
+    "task_description": "\u0397 \u03b5\u03c1\u03b3\u03b1\u03c3\u03af\u03b1 \u03c3\u03b1\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03bd\u03b1 \u03b1\u03c0\u03b1\u03bd\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c3\u03c4\u03b7\u03bd \u03c0\u03b1\u03c1\u03b1\u03ba\u03ac\u03c4\u03c9 \u03b5\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03c0\u03bf\u03bb\u03bb\u03b1\u03c0\u03bb\u03ae\u03c2 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae\u03c2. \u0395\u03c0\u03b9\u03bb\u03ad\u03be\u03c4\u03b5 \u03c4\u03b7\u03bd \u03ba\u03b1\u03bb\u03cd\u03c4\u03b5\u03c1\u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03b1\u03c0\u03cc \u03c4\u03b9\u03c2 \u03c0\u03b1\u03c1\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03b5\u03be\u03b7\u03b3\u03ae\u03c3\u03c4\u03b5 \u03c3\u03c5\u03bd\u03bf\u03c0\u03c4\u03b9\u03ba\u03ac \u03c4\u03b7 \u03c3\u03c5\u03bb\u03bb\u03bf\u03b3\u03b9\u03c3\u03c4\u03b9\u03ba\u03ae \u03c3\u03b1\u03c2.",
+    "tags": {
+      "input_tag": "\u0395\u03c1\u03ce\u03c4\u03b7\u03c3\u03b7 \u03b5\u03b9\u03c3\u03cc\u03b4\u03bf\u03c5",
+      "options_tag": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ad\u03c2 \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7\u03c2",
+      "response_format_tag": "\u039c\u03bf\u03c1\u03c6\u03ae \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7\u03c2",
+      "your_response_tag": "\u0397 \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03ae \u03c3\u03b1\u03c2"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u039c\u03b9\u03b1 \u03c3\u03c5\u03bd\u03bf\u03c0\u03c4\u03b9\u03ba\u03ae \u03b1\u03b9\u03c4\u03b9\u03bf\u03bb\u03cc\u03b3\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03bf \u03b3\u03b9\u03b1\u03c4\u03af \u03b7 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7 \u03b5\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ae."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0397 \u03b5\u03c0\u03b9\u03bb\u03b5\u03b3\u03bc\u03ad\u03bd\u03b7 \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7: \u03bc\u03af\u03b1 \u03b1\u03c0\u03cc \u03c4\u03b9\u03c2 'A', 'B', 'C' \u03ae 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ms": {
+    "task_description": "Tugas anda adalah untuk menjawab soalan aneka pilihan yang diberikan. Pilih pilihan yang terbaik daripada pilihan yang disediakan dan terangkan alasan anda secara ringkas.",
+    "tags": {
+      "input_tag": "Soalan Input",
+      "options_tag": "Pilihan Jawapan",
+      "response_format_tag": "Format Respons",
+      "your_response_tag": "Jawapan Anda"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Penjelasan ringkas tentang sebab mengapa pilihan yang dipilih adalah betul."
+        },
+        "score": {
+          "type": "string",
+          "description": "Jawapan yang dipilih: salah satu daripada 'A', 'B', 'C', atau 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "mk": {
+    "task_description": "\u0412\u0430\u0448\u0430\u0442\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u0435 \u0434\u0430 \u043e\u0434\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u0435 \u043d\u0430 \u0434\u0430\u0434\u0435\u043d\u043e\u0442\u043e \u043f\u0440\u0430\u0448\u0430\u045a\u0435 \u0441\u043e \u043f\u043e\u0432\u0435\u045c\u0435\u043a\u0440\u0430\u0442\u0435\u043d \u0438\u0437\u0431\u043e\u0440. \u0418\u0437\u0431\u0435\u0440\u0435\u0442\u0435 \u0458\u0430 \u043d\u0430\u0458\u0434\u043e\u0431\u0440\u0430\u0442\u0430 \u043e\u043f\u0446\u0438\u0458\u0430 \u043e\u0434 \u043f\u043e\u043d\u0443\u0434\u0435\u043d\u0438\u0442\u0435 \u0438 \u043d\u0430\u043a\u0440\u0430\u0442\u043a\u043e \u043e\u0431\u0458\u0430\u0441\u043d\u0435\u0442\u0435 \u0433\u043e \u0432\u0430\u0448\u0435\u0442\u043e \u0440\u0430\u0437\u043c\u0438\u0441\u043b\u0443\u0432\u0430\u045a\u0435.",
+    "tags": {
+      "input_tag": "\u0412\u043d\u0435\u0441\u0438 \u041f\u0440\u0430\u0448\u0430\u045a\u0435",
+      "options_tag": "\u041e\u043f\u0446\u0438\u0438 \u0437\u0430 \u041e\u0434\u0433\u043e\u0432\u043e\u0440",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043d\u0430 \u041e\u0434\u0433\u043e\u0432\u043e\u0440",
+      "your_response_tag": "\u0422\u0432\u043e\u0458 \u041e\u0434\u0433\u043e\u0432\u043e\u0440"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e \u043e\u0431\u0458\u0430\u0441\u043d\u0443\u0432\u0430\u045a\u0435 \u0437\u043e\u0448\u0442\u043e \u0438\u0437\u0431\u0440\u0430\u043d\u0430\u0442\u0430 \u043e\u043f\u0446\u0438\u0458\u0430 \u0435 \u0442\u043e\u0447\u043d\u0430."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0418\u0437\u0431\u0440\u0430\u043d\u0438\u043e\u0442 \u043e\u0434\u0433\u043e\u0432\u043e\u0440: \u0435\u0434\u0435\u043d \u043e\u0434 'A', 'B', 'C' \u0438\u043b\u0438 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "fa": {
+    "task_description": "\u0648\u0638\u06cc\u0641\u0647 \u0634\u0645\u0627 \u0627\u06cc\u0646 \u0627\u0633\u062a \u06a9\u0647 \u0628\u0647 \u0633\u0624\u0627\u0644 \u0686\u0646\u062f\u06af\u0632\u06cc\u0646\u0647\u200c\u0627\u06cc \u062f\u0627\u062f\u0647\u200c\u0634\u062f\u0647 \u067e\u0627\u0633\u062e \u062f\u0647\u06cc\u062f. \u0628\u0647\u062a\u0631\u06cc\u0646 \u06af\u0632\u06cc\u0646\u0647 \u0631\u0627 \u0627\u0632 \u0645\u06cc\u0627\u0646 \u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627\u06cc \u0627\u0631\u0627\u0626\u0647\u200c\u0634\u062f\u0647 \u0627\u0646\u062a\u062e\u0627\u0628 \u06a9\u0646\u06cc\u062f \u0648 \u062f\u0644\u06cc\u0644 \u062e\u0648\u062f \u0631\u0627 \u0628\u0647\u200c\u0637\u0648\u0631 \u0645\u062e\u062a\u0635\u0631 \u062a\u0648\u0636\u06cc\u062d \u062f\u0647\u06cc\u062f.",
+    "tags": {
+      "input_tag": "\u0633\u0624\u0627\u0644 \u0648\u0631\u0648\u062f\u06cc",
+      "options_tag": "\u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0627\u0633\u062e",
+      "response_format_tag": "\u0642\u0627\u0644\u0628 \u067e\u0627\u0633\u062e",
+      "your_response_tag": "\u067e\u0627\u0633\u062e \u0634\u0645\u0627"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u06cc\u06a9 \u062a\u0648\u0636\u06cc\u062d \u0645\u062e\u062a\u0635\u0631 \u062f\u0631\u0628\u0627\u0631\u0647 \u062f\u0644\u06cc\u0644 \u062f\u0631\u0633\u062a\u06cc \u06af\u0632\u06cc\u0646\u0647 \u0627\u0646\u062a\u062e\u0627\u0628\u200c\u0634\u062f\u0647."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u067e\u0627\u0633\u062e \u0627\u0646\u062a\u062e\u0627\u0628\u200c\u0634\u062f\u0647: \u06cc\u06a9\u06cc \u0627\u0632 'A'\u060c 'B'\u060c 'C' \u06cc\u0627 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "hu": {
+    "task_description": "A feladatod az, hogy v\u00e1laszolj a megadott feleletv\u00e1laszt\u00f3s k\u00e9rd\u00e9sre. V\u00e1laszd ki a legjobb lehet\u0151s\u00e9get a felsorolt v\u00e1laszok k\u00f6z\u00fcl, \u00e9s r\u00f6viden indokold meg a d\u00f6nt\u00e9sedet.",
+    "tags": {
+      "input_tag": "K\u00e9rd\u00e9s",
+      "options_tag": "V\u00e1laszlehet\u0151s\u00e9gek",
+      "response_format_tag": "V\u00e1lasz form\u00e1tuma",
+      "your_response_tag": "A v\u00e1laszod"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Egy t\u00f6m\u00f6r indokl\u00e1s arra, hogy mi\u00e9rt a kiv\u00e1lasztott lehet\u0151s\u00e9g a helyes."
+        },
+        "score": {
+          "type": "string",
+          "description": "A kiv\u00e1lasztott v\u00e1lasz: az al\u00e1bbiak egyike: 'A', 'B', 'C' vagy 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "pl": {
+    "task_description": "Twoim zadaniem jest odpowiedzie\u0107 na podane pytanie wielokrotnego wyboru. Wybierz najlepsz\u0105 opcj\u0119 spo\u015br\u00f3d dost\u0119pnych odpowiedzi i kr\u00f3tko wyja\u015bnij sw\u00f3j wyb\u00f3r.",
+    "tags": {
+      "input_tag": "Pytanie",
+      "options_tag": "Opcje odpowiedzi",
+      "response_format_tag": "Format odpowiedzi",
+      "your_response_tag": "Twoja odpowied\u017a"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Zwi\u0119z\u0142e wyja\u015bnienie, dlaczego wybrana opcja jest poprawna."
+        },
+        "score": {
+          "type": "string",
+          "description": "Wybrana odpowied\u017a: jedna z 'A', 'B', 'C' lub 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "lt": {
+    "task_description": "J\u016bs\u0173 u\u017eduotis yra atsakyti \u012f pateikt\u0105 klausim\u0105 su keliais atsakymo variantais. Pasirinkite geriausi\u0105 variant\u0105 i\u0161 pateikt\u0173 pasirinkim\u0173 ir trumpai paai\u0161kinkite savo pasirinkim\u0105.",
+    "tags": {
+      "input_tag": "\u012evesties klausimas",
+      "options_tag": "Atsakymo parinktys",
+      "response_format_tag": "Atsakymo formatas",
+      "your_response_tag": "J\u016bs\u0173 atsakymas"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Trumpas paai\u0161kinimas, kod\u0117l pasirinktas variantas yra teisingas."
+        },
+        "score": {
+          "type": "string",
+          "description": "Pasirinktas atsakymas: vienas i\u0161 'A', 'B', 'C' arba 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ru": {
+    "task_description": "\u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430 \u2014 \u043e\u0442\u0432\u0435\u0442\u0438\u0442\u044c \u043d\u0430 \u0434\u0430\u043d\u043d\u044b\u0439 \u0432\u043e\u043f\u0440\u043e\u0441 \u0441 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u043c\u0438 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430\u043c\u0438 \u043e\u0442\u0432\u0435\u0442\u0430. \u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043b\u0443\u0447\u0448\u0438\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442 \u0438\u0437 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0445 \u0438 \u043a\u0440\u0430\u0442\u043a\u043e \u043e\u0431\u044a\u044f\u0441\u043d\u0438\u0442\u0435 \u0441\u0432\u043e\u0439 \u0432\u044b\u0431\u043e\u0440.",
+    "tags": {
+      "input_tag": "\u0412\u043e\u043f\u0440\u043e\u0441",
+      "options_tag": "\u0412\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u043e\u0442\u0432\u0435\u0442\u043e\u0432",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u043e\u0442\u0432\u0435\u0442\u0430",
+      "your_response_tag": "\u0412\u0430\u0448 \u043e\u0442\u0432\u0435\u0442"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u0431\u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435, \u043f\u043e\u0447\u0435\u043c\u0443 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u043c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0412\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u043e\u0442\u0432\u0435\u0442: \u043e\u0434\u0438\u043d \u0438\u0437 'A', 'B', 'C' \u0438\u043b\u0438 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "sr": {
+    "task_description": "Va\u0161 zadatak je da odgovorite na postavljeno pitanje sa vi\u0161estrukim izborom. Izaberite najbolju opciju od ponu\u0111enih odgovora i ukratko objasnite svoje obrazlo\u017eenje.",
+    "tags": {
+      "input_tag": "Unos pitanja",
+      "options_tag": "Opcije odgovora",
+      "response_format_tag": "Format odgovora",
+      "your_response_tag": "Va\u0161 odgovor"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Kratko obrazlo\u017eenje za\u0161to je izabrana opcija ta\u010dna."
+        },
+        "score": {
+          "type": "string",
+          "description": "Izabrani odgovor: jedno od 'A', 'B', 'C' ili 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tr": {
+    "task_description": "G\u00f6reviniz, verilen \u00e7oktan se\u00e7meli soruyu cevaplamakt\u0131r. Sunulan se\u00e7enekler aras\u0131ndan en iyi se\u00e7ene\u011fi se\u00e7in ve gerek\u00e7enizi k\u0131saca a\u00e7\u0131klay\u0131n.",
+    "tags": {
+      "input_tag": "Girdi Sorusu",
+      "options_tag": "Cevap Se\u00e7enekleri",
+      "response_format_tag": "Yan\u0131t Format\u0131",
+      "your_response_tag": "Yan\u0131t\u0131n\u0131z"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Se\u00e7ilen se\u00e7ene\u011fin neden do\u011fru oldu\u011funa dair k\u0131sa bir gerek\u00e7e."
+        },
+        "score": {
+          "type": "string",
+          "description": "Se\u00e7ilen cevap: 'A', 'B', 'C' veya 'D' se\u00e7eneklerinden biri.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "tl": {
+    "task_description": "Ang iyong gawain ay sagutin ang ibinigay na multiple-choice na tanong. Piliin ang pinakamainam na sagot mula sa mga pagpipilian at ipaliwanag nang maikli ang iyong dahilan.",
+    "tags": {
+      "input_tag": "Tanong",
+      "options_tag": "Mga Pagpipilian ng Sagot",
+      "response_format_tag": "Format ng Sagot",
+      "your_response_tag": "Iyong Sagot"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Isang maikling paliwanag kung bakit tama ang napiling sagot."
+        },
+        "score": {
+          "type": "string",
+          "description": "Ang napiling sagot: isa sa 'A', 'B', 'C', o 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "vi": {
+    "task_description": "Nhi\u1ec7m v\u1ee5 c\u1ee7a b\u1ea1n l\u00e0 tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi tr\u1eafc nghi\u1ec7m \u0111\u00e3 cho. H\u00e3y ch\u1ecdn ph\u01b0\u01a1ng \u00e1n t\u1ed1t nh\u1ea5t trong c\u00e1c l\u1ef1a ch\u1ecdn \u0111\u01b0\u1ee3c cung c\u1ea5p v\u00e0 gi\u1ea3i th\u00edch ng\u1eafn g\u1ecdn l\u00fd do l\u1ef1a ch\u1ecdn c\u1ee7a b\u1ea1n.",
+    "tags": {
+      "input_tag": "C\u00e2u h\u1ecfi nh\u1eadp",
+      "options_tag": "T\u00f9y ch\u1ecdn tr\u1ea3 l\u1eddi",
+      "response_format_tag": "\u0110\u1ecbnh d\u1ea1ng ph\u1ea3n h\u1ed3i",
+      "your_response_tag": "Ph\u1ea3n h\u1ed3i c\u1ee7a b\u1ea1n"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "M\u1ed9t l\u00fd do ng\u1eafn g\u1ecdn gi\u1ea3i th\u00edch t\u1ea1i sao l\u1ef1a ch\u1ecdn \u0111\u01b0\u1ee3c ch\u1ecdn l\u00e0 \u0111\u00fang."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0110\u00e1p \u00e1n \u0111\u00e3 ch\u1ecdn: m\u1ed9t trong 'A', 'B', 'C' ho\u1eb7c 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "uk": {
+    "task_description": "\u0412\u0430\u0448\u0435 \u0437\u0430\u0432\u0434\u0430\u043d\u043d\u044f \u2014 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0441\u0442\u0438 \u043d\u0430 \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0435 \u043f\u0438\u0442\u0430\u043d\u043d\u044f \u0437 \u043a\u0456\u043b\u044c\u043a\u043e\u043c\u0430 \u0432\u0430\u0440\u0456\u0430\u043d\u0442\u0430\u043c\u0438 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0435\u0439. \u0412\u0438\u0431\u0435\u0440\u0456\u0442\u044c \u043d\u0430\u0439\u043a\u0440\u0430\u0449\u0438\u0439 \u0432\u0430\u0440\u0456\u0430\u043d\u0442 \u0456\u0437 \u0437\u0430\u043f\u0440\u043e\u043f\u043e\u043d\u043e\u0432\u0430\u043d\u0438\u0445 \u0456 \u043a\u043e\u0440\u043e\u0442\u043a\u043e \u043f\u043e\u044f\u0441\u043d\u0456\u0442\u044c \u0441\u0432\u0456\u0439 \u0432\u0438\u0431\u0456\u0440.",
+    "tags": {
+      "input_tag": "\u0412\u0445\u0456\u0434\u043d\u0435 \u043f\u0438\u0442\u0430\u043d\u043d\u044f",
+      "options_tag": "\u0412\u0430\u0440\u0456\u0430\u043d\u0442\u0438 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0435\u0439",
+      "response_format_tag": "\u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0456",
+      "your_response_tag": "\u0412\u0430\u0448\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u044c"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u041a\u043e\u0440\u043e\u0442\u043a\u0435 \u043e\u0431\u0491\u0440\u0443\u043d\u0442\u0443\u0432\u0430\u043d\u043d\u044f, \u0447\u043e\u043c\u0443 \u0432\u0438\u0431\u0440\u0430\u043d\u0438\u0439 \u0432\u0430\u0440\u0456\u0430\u043d\u0442 \u0454 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0438\u043c."
+        },
+        "score": {
+          "type": "string",
+          "description": "\u041e\u0431\u0440\u0430\u043d\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u044c: \u043e\u0434\u043d\u0430 \u0437 'A', 'B', 'C' \u0430\u0431\u043e 'D'.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ne": {
+    "task_description": "\u0924\u092a\u093e\u0908\u0902\u0915\u094b \u0915\u093e\u0930\u094d\u092f \u092d\u0928\u0947\u0915\u094b \u0926\u093f\u0907\u090f\u0915\u094b \u092c\u0939\u0941\u092a\u0930\u094d\u092f\u093e\u092f\u0940 \u092a\u094d\u0930\u0936\u094d\u0928\u0915\u094b \u0909\u0924\u094d\u0924\u0930 \u0926\u093f\u0928\u0941 \u0939\u094b\u0964 \u0926\u093f\u0907\u090f\u0915\u093e \u0935\u093f\u0915\u0932\u094d\u092a\u0939\u0930\u0942\u092c\u093e\u091f \u0909\u0924\u094d\u0924\u092e \u0935\u093f\u0915\u0932\u094d\u092a \u091a\u092f\u0928 \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d \u0930 \u0906\u092b\u094d\u0928\u094b \u0915\u093e\u0930\u0923 \u0938\u0902\u0915\u094d\u0937\u0947\u092a\u092e\u093e \u0935\u094d\u092f\u093e\u0916\u094d\u092f\u093e \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d\u0964",
+    "tags": {
+      "input_tag": "\u092a\u094d\u0930\u0936\u094d\u0928 \u0930\u093e\u0916\u094d\u0928\u0941\u0939\u094b\u0938\u094d",
+      "options_tag": "\u0909\u0924\u094d\u0924\u0930 \u0935\u093f\u0915\u0932\u094d\u092a\u0939\u0930\u0942",
+      "response_format_tag": "\u0909\u0924\u094d\u0924\u0930 \u0922\u093e\u0901\u091a\u093e",
+      "your_response_tag": "\u0924\u092a\u093e\u0908\u0902\u0915\u094b \u0909\u0924\u094d\u0924\u0930"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u091a\u092f\u0928 \u0917\u0930\u093f\u090f\u0915\u094b \u0935\u093f\u0915\u0932\u094d\u092a \u0915\u093f\u0928 \u0938\u0939\u0940 \u0939\u094b \u092d\u0928\u094d\u0928\u0947 \u092c\u093e\u0930\u0947\u092e\u093e \u0938\u0902\u0915\u094d\u0937\u093f\u092a\u094d\u0924 \u0915\u093e\u0930\u0923\u0964"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u091a\u092f\u0928 \u0917\u0930\u093f\u090f\u0915\u094b \u0909\u0924\u094d\u0924\u0930: 'A', 'B', 'C', \u0935\u093e 'D' \u092e\u0927\u094d\u092f\u0947 \u090f\u0915\u0964",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ur": {
+    "task_description": "\u0622\u067e \u06a9\u0627 \u06a9\u0627\u0645 \u06cc\u06c1 \u06c1\u06d2 \u06a9\u06c1 \u062f\u06cc\u06d2 \u06af\u0626\u06d2 \u06a9\u062b\u06cc\u0631 \u0627\u0644\u0627\u0646\u062a\u062e\u0627\u0628 \u0633\u0648\u0627\u0644 \u06a9\u0627 \u062c\u0648\u0627\u0628 \u062f\u06cc\u06ba\u06d4 \u0641\u0631\u0627\u06c1\u0645 \u06a9\u0631\u062f\u06c1 \u0627\u062e\u062a\u06cc\u0627\u0631\u0627\u062a \u0645\u06cc\u06ba \u0633\u06d2 \u0628\u06c1\u062a\u0631\u06cc\u0646 \u0622\u067e\u0634\u0646 \u0645\u0646\u062a\u062e\u0628 \u06a9\u0631\u06cc\u06ba \u0627\u0648\u0631 \u0627\u067e\u0646\u06cc \u062f\u0644\u06cc\u0644 \u0645\u062e\u062a\u0635\u0631\u0627\u064b \u0628\u06cc\u0627\u0646 \u06a9\u0631\u06cc\u06ba\u06d4",
+    "tags": {
+      "input_tag": "\u0633\u0648\u0627\u0644 \u062f\u0631\u062c \u06a9\u0631\u06cc\u06ba",
+      "options_tag": "\u062c\u0648\u0627\u0628 \u06a9\u06d2 \u0627\u062e\u062a\u06cc\u0627\u0631\u0627\u062a",
+      "response_format_tag": "\u062c\u0648\u0627\u0628 \u06a9\u06cc \u062a\u0631\u062a\u06cc\u0628",
+      "your_response_tag": "\u0622\u067e \u06a9\u0627 \u062c\u0648\u0627\u0628"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0645\u0646\u062a\u062e\u0628 \u06a9\u0631\u062f\u06c1 \u0622\u067e\u0634\u0646 \u06a9\u06d2 \u062f\u0631\u0633\u062a \u06c1\u0648\u0646\u06d2 \u06a9\u06cc \u0645\u062e\u062a\u0635\u0631 \u0648\u062c\u06c1\u06d4"
+        },
+        "score": {
+          "type": "string",
+          "description": "\u0645\u0646\u062a\u062e\u0628 \u06a9\u0631\u062f\u06c1 \u062c\u0648\u0627\u0628: 'A', 'B', 'C', \u06cc\u0627 'D' \u0645\u06cc\u06ba \u0633\u06d2 \u06a9\u0648\u0626\u06cc \u0627\u06cc\u06a9\u06d4",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "uz": {
+    "task_description": "Vazifangiz \u2013 berilgan ko\u2018p tanlovli savolga javob berish. Taklif etilgan variantlardan eng yaxshi javobni tanlang va qisqacha izoh bering.",
+    "tags": {
+      "input_tag": "Savol kiriting",
+      "options_tag": "Javob variantlari",
+      "response_format_tag": "Javob formati",
+      "your_response_tag": "Sizning javobingiz"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "Tanlangan variant nima uchun to\u2018g\u2018ri ekani bo\u2018yicha qisqacha izoh."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', yoki 'D' dan biri: tanlangan javob.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "te": {
+    "task_description": "\u0c2e\u0c40 \u0c2a\u0c28\u0c3f \u0c0f\u0c2e\u0c02\u0c1f\u0c47, \u0c07\u0c35\u0c4d\u0c35\u0c2c\u0c21\u0c3f\u0c28 \u0c2c\u0c39\u0c41\u0c33\u0c48\u0c1a\u0c4d\u0c1b\u0c3f\u0c15 \u0c2a\u0c4d\u0c30\u0c36\u0c4d\u0c28\u0c15\u0c41 \u0c38\u0c2e\u0c3e\u0c27\u0c3e\u0c28\u0c02 \u0c07\u0c35\u0c4d\u0c35\u0c3e\u0c32\u0c3f. \u0c05\u0c02\u0c26\u0c41\u0c2c\u0c3e\u0c1f\u0c41\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28 \u0c0e\u0c02\u0c2a\u0c3f\u0c15\u0c32\u0c32\u0c4b\u0c28\u0c41\u0c02\u0c1a\u0c3f \u0c09\u0c24\u0c4d\u0c24\u0c2e\u0c2e\u0c48\u0c28 \u0c0e\u0c02\u0c2a\u0c3f\u0c15\u0c28\u0c41 \u0c0e\u0c02\u0c2a\u0c3f\u0c15 \u0c1a\u0c47\u0c2f\u0c3e\u0c32\u0c3f \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2e\u0c40 \u0c24\u0c30\u0c4d\u0c15\u0c3e\u0c28\u0c4d\u0c28\u0c3f \u0c38\u0c02\u0c15\u0c4d\u0c37\u0c3f\u0c2a\u0c4d\u0c24\u0c02\u0c17\u0c3e \u0c35\u0c3f\u0c35\u0c30\u0c3f\u0c02\u0c1a\u0c3e\u0c32\u0c3f.",
+    "tags": {
+      "input_tag": "\u0c2a\u0c4d\u0c30\u0c36\u0c4d\u0c28\u0c28\u0c41 \u0c28\u0c2e\u0c4b\u0c26\u0c41 \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f",
+      "options_tag": "\u0c2a\u0c30\u0c3f\u0c36\u0c40\u0c32\u0c28\u0c32\u0c4b \u0c0e\u0c02\u0c2a\u0c3f\u0c15\u0c32\u0c41",
+      "response_format_tag": "\u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c41\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c30\u0c42\u0c2a\u0c02",
+      "your_response_tag": "\u0c2e\u0c40 \u0c38\u0c2e\u0c3e\u0c27\u0c3e\u0c28\u0c02"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 \u0c09\u0c24\u0c4d\u0c24\u0c30\u0c02 \u0c38\u0c30\u0c48\u0c28\u0c26\u0c3f\u0c17\u0c3e \u0c0e\u0c02\u0c26\u0c41\u0c15\u0c41 \u0c05\u0c28\u0c3f\u0c2a\u0c3f\u0c02\u0c1a\u0c3f\u0c02\u0c26\u0c3f \u0c05\u0c28\u0c47 \u0c38\u0c02\u0c15\u0c4d\u0c37\u0c3f\u0c2a\u0c4d\u0c24 \u0c15\u0c3e\u0c30\u0c23\u0c02."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', \u0c32\u0c47\u0c26\u0c3e 'D' \u0c32\u0c4b \u0c12\u0c15\u0c1f\u0c3f \u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 \u0c38\u0c2e\u0c3e\u0c27\u0c3e\u0c28\u0c02.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ta": {
+    "task_description": "\u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bcd \u0b95\u0bca\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f \u0baa\u0bb2\u0bcd\u0ba4\u0bc6\u0bb0\u0bbf\u0bb5\u0bc1 \u0b95\u0bc7\u0bb3\u0bcd\u0bb5\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0baa\u0bcd \u0baa\u0ba4\u0bbf\u0bb2\u0bb3\u0bbf\u0baa\u0bcd\u0baa\u0ba4\u0bc1 \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0baa\u0ba3\u0bbf\u0baf\u0bbe\u0b95\u0bc1\u0bae\u0bcd. \u0b95\u0bca\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f \u0bb5\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0b99\u0bcd\u0b95\u0bb3\u0bbf\u0bb2\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b9a\u0bbf\u0bb1\u0ba8\u0bcd\u0ba4 \u0bb5\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bc8\u0ba4\u0bcd \u0ba4\u0bc7\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bc6\u0b9f\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0b95\u0bbe\u0bb0\u0ba3\u0ba4\u0bcd\u0ba4\u0bc8 \u0b9a\u0bc1\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bae\u0bbe\u0b95 \u0bb5\u0bbf\u0bb3\u0b95\u0bcd\u0b95\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd.",
+    "tags": {
+      "input_tag": "\u0b89\u0bb3\u0bcd\u0bb5\u0bbf\u0ba9\u0bbe",
+      "options_tag": "\u0baa\u0ba4\u0bbf\u0bb2\u0bcd \u0ba4\u0bc7\u0bb0\u0bcd\u0bb5\u0bc1\u0b95\u0bb3\u0bcd",
+      "response_format_tag": "\u0baa\u0ba4\u0bbf\u0bb2\u0bcd \u0bb5\u0b9f\u0bbf\u0bb5\u0bae\u0bcd",
+      "your_response_tag": "\u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0baa\u0ba4\u0bbf\u0bb5\u0bc1"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0ba4\u0bc7\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bc6\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f \u0bb5\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bae\u0bcd \u0b8f\u0ba9\u0bcd \u0b9a\u0bb0\u0bbf\u0baf\u0bc6\u0ba9\u0bc1\u0bae\u0bcd \u0b9a\u0bc1\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bae\u0bbe\u0ba9 \u0b95\u0bbe\u0bb0\u0ba3\u0bae\u0bcd."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 'D' \u0b8e\u0ba9\u0bc1\u0bae\u0bcd \u0ba4\u0bc7\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0bc6\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f \u0baa\u0ba4\u0bbf\u0bb2\u0bcd.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  },
+  "ml": {
+    "task_description": "\u0d28\u0d7d\u0d15\u0d3f\u0d2f \u0d2c\u0d39\u0d41\u0d06\u0d2f\u0d4d\u0d15\u0d4d\u0d2f \u0d1a\u0d4b\u0d26\u0d4d\u0d2f\u0d24\u0d4d\u0d24\u0d3f\u0d28\u0d4d \u0d09\u0d24\u0d4d\u0d24\u0d30\u0d2e\u0d3f\u0d1f\u0d41\u0d28\u0d4d\u0d28\u0d24\u0d3e\u0d23\u0d4d \u0d28\u0d3f\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d28\u0d1f\u0d2a\u0d1f\u0d3f. \u0d28\u0d7d\u0d15\u0d3f\u0d2f \u0568\u0576\u057f\u0580\u0d41\u0d38\u0d3e\u0d27\u0d4d\u0d2f\u0d19\u0d4d\u0d19\u0d7e\u0d15\u0d4d\u0d15\u0d3f\u0d1f\u0d2f\u0d3f\u0d7d \u0d0f\u0d31\u0d4d\u0d31\u0d35\u0d41\u0d02 \u0d09\u0d24\u0d4d\u0d24\u0d2e\u0d2e\u0d3e\u0d2f \u0d13\u0d2a\u0d4d\u0d37\u0d7b \u0d24\u0d3f\u0d30\u0d1e\u0d4d\u0d1e\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d15, \u0d15\u0d42\u0d1f\u0d3e\u0d24\u0d46 \u0d28\u0d3f\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d28\u0d3f\u0d30\u0d42\u0d2a\u0d23\u0d02 \u0d38\u0d02\u0d15\u0d4d\u0d37\u0d3f\u0d2a\u0d4d\u0d24\u0d2e\u0d3e\u0d2f\u0d3f \u0d35\u0d3f\u0d36\u0d26\u0d40\u0d15\u0d30\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d15.",
+    "tags": {
+      "input_tag": "\u0d1a\u0d4b\u0d26\u0d4d\u0d2f\u0d24\u0d4d\u0d24\u0d46 \u0d28\u0d7d\u0d15\u0d41\u0d15",
+      "options_tag": "\u0d09\u0d24\u0d4d\u0d24\u0d30\u0d19\u0d4d\u0d19\u0d7e \u0d24\u0d3f\u0d30\u0d1e\u0d4d\u0d1e\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d41\u0d15",
+      "response_format_tag": "\u0d09\u0d24\u0d4d\u0d24\u0d30\u0d02 \u0d28\u0d7d\u0d15\u0d41\u0d28\u0d4d\u0d28 \u0d30\u0d42\u0d2a\u0d02",
+      "your_response_tag": "\u0d28\u0d3f\u0d19\u0d4d\u0d19\u0d33\u0d41\u0d1f\u0d46 \u0d38\u0d4d\u0d25\u0d3f\u0d30\u0d40\u0d15\u0d30\u0d23\u0d02"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "explanation": {
+          "type": "string",
+          "description": "\u0d24\u0d3f\u0d30\u0d1e\u0d4d\u0d1e\u0d46\u0d1f\u0d41\u0d24\u0d4d\u0d24 \u0d13\u0d2a\u0d4d\u0d37\u0d7b \u0d36\u0d30\u0d3f\u0d2f\u0d3e\u0d23\u0d4d \u0d0e\u0d28\u0d4d\u0d28\u0d24\u0d3f\u0d28\u0d41 \u0d28\u0d7d\u0d15\u0d3f\u0d2f\u0d41\u0d33\u0d4d\u0d33 \u0d38\u0d02\u0d15\u0d4d\u0d37\u0d3f\u0d2a\u0d4d\u0d24\u0d2e\u0d3e\u0d2f \u0d28\u0d3f\u0d30\u0d42\u0d2a\u0d23\u0d02."
+        },
+        "score": {
+          "type": "string",
+          "description": "'A', 'B', 'C', \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d 'D' \u0d0e\u0d28\u0d4d\u0d28\u0d24\u0d3f\u0d7d \u0d12\u0d28\u0d4d\u0d28\u0d3e\u0d2f \u0d24\u0d3f\u0d30\u0d1e\u0d4d\u0d1e\u0d46\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d2a\u0d4d\u0d2a\u0d46\u0d1f\u0d4d\u0d1f \u0d09\u0d24\u0d4d\u0d24\u0d30\u0d02.",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      },
+      "required": [
+        "explanation",
+        "score"
+      ]
+    }
+  }
+}
