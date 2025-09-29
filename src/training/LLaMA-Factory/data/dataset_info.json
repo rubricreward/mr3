@@ -120,7 +120,7 @@
     }
   },
   "qwen3_mr3_dataset_100k_easytohard_tgt_tgt_translated": {
-    "hf_hub_url": "rubricreward/mR3-Dataset-100K-EasyToHard-Truncated",
+    "hf_hub_url": "rubricreward/mR3-Dataset-100K-EasyToHard",
     "split": "train",
     "columns": {
       "prompt": "qwen3-prompt_tgt_prompt_tgt_thinking",
@@ -152,7 +152,7 @@
     }
   },
   "gpt_oss_mr3_dataset_100k_easytohard_tgt_tgt_translated": {
-    "hf_hub_url": "rubricreward/mR3-Dataset-100K-EasyToHard-Truncated",
+    "hf_hub_url": "rubricreward/mR3-Dataset-100K-EasyToHard",
     "split": "train",
     "columns": {
       "prompt": "gpt-oss-prompt_tgt_prompt_tgt_thinking",
