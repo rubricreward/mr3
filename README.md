@@ -76,6 +76,91 @@ The resulting mR3 dataset of **100,000 samples covers 72 languages.** This datas
 
 d. **Target Prompt + Target Reasoning (Translated from English)** for comparison against the language-forcing approach.
 
+For documentation purposes, these are the 72 languages used for training:
+
+<details>
+
+<summary>Click to reveal list of all 72 languages</summary>
+
+
+```
+- aa
+- af
+- ar
+- as
+- az
+- be
+- bg
+- bn
+- bs
+- ca
+- cs
+- da
+- de
+- el
+- en
+- es
+- et
+- eu
+- fa
+- fi
+- fr
+- ha
+- he
+- hi
+- hr
+- hu
+- hy
+- id
+- ie
+- it
+- iw
+- ja
+- ka
+- kk
+- ko
+- ku
+- la
+- lt
+- lv
+- mk
+- ms
+- my
+- nl
+- nn
+- no
+- oc
+- pl
+- pt
+- ro
+- ru
+- rw
+- sa
+- sco
+- si
+- sk
+- sl
+- sr
+- sv
+- sw
+- ta
+- th
+- tl
+- tlh
+- tr
+- tt
+- uk
+- vi
+- vo
+- war
+- xh
+- zh
+- zh-Hant
+```
+
+</details>
+
+
 <p align="center">
   <img src="./assets/result_preview.png" alt="mR3 Result Breakdown by Multilingual Training Strategy" width="80%"/>
 </p>
