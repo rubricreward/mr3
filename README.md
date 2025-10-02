@@ -60,11 +60,11 @@ The final mR3 training dataset totals **100,000 high-quality samples** and was d
 
 As shown in **Step 1** of the accompanying figure, the process began with knowledge distillation from the `gpt-oss-120b` model. We employed various strategies to generate reasoning traces (where "target language" refers to the input language):
 
-    a. **English Prompt + Target Reasoning**: Using English instructions/rubrics with target-language reasoning.
+a. **English Prompt + Target Reasoning**: Using English instructions/rubrics with target-language reasoning.
 
-    b. **Target Prompt + English Reasoning**: Using target-language instructions/rubrics with English reasoning.
+b. **Target Prompt + English Reasoning**: Using target-language instructions/rubrics with English reasoning.
 
-    c. **Target Prompt + Target Reasoning**: Using target-language instructions/rubrics with target-language reasoning.
+c. **Target Prompt + Target Reasoning**: Using target-language instructions/rubrics with target-language reasoning.
 
 Crucially, correctness was ensured across all three distillation strategies.
 
@@ -72,9 +72,9 @@ Crucially, correctness was ensured across all three distillation strategies.
 
 As shown in Step 2 of the accompanying figure, "easy" samples (those where the model could reason correctly without difficulty) were discarded to focus the training on complex examples.
 
-The resulting mR3 dataset of **100,000 samples covers 72 languages.** This dataset is intentionally aligned across different prompt and reasoning language settings for our study. Additionally, we included a scenario where 
+The resulting mR3 dataset of **100,000 samples covers 72 languages.** This dataset is intentionally aligned across different prompt and reasoning language settings for our study. Additionally, we included a scenario:
 
-    d. **the English reasoning and responses were translated into the target language** for comparison against the language-forcing approach.
+d. **Target Prompt + Target Reasoning (Translated from English)** for comparison against the language-forcing approach.
 
 <p align="center">
   <img src="./assets/result_preview.png" alt="mR3 Result Breakdown by Multilingual Training Strategy" width="80%"/>
@@ -84,10 +84,10 @@ The figure illustrates the performance change in base models following mR3 train
 
 ## ⚙️ Setup Instruction
 
-Python 3.12.11 or higher are recommended.
+Python 3.12.11 or higher are recommended. It is recommended to install using `uv` for the following setup.
 
 To install core dependencies for inference and training with `LLaMA-Factory`:
-1. Run `pip install -e .` (or use `uv`) as it will automatically setup everything. Details of dependencies are in `setup.py`.
+1. Run `pip install -e .` as it will automatically setup everything. Details of dependencies are in `setup.py`.
 2. (Optional to reproduce training) Checkout to `src/training/LLaMA-Factory` and do `pip install -e ".[torch,metrics]"`
 
 To run inference with gpt-oss with vLLM (for reproducing baselines), you can run
