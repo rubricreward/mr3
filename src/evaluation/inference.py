@@ -20,42 +20,7 @@ MODEL = None
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-from transformers import LogitsProcessor
-import torch
-
-class BanSecondThink:
-    def __init__(self, tokenizer):
-        self.eos_token_id = tokenizer.eos_token_id
-        self.think_end_token_id = tokenizer.encode("</think>", add_special_tokens=False)[0]  # </think> token ID as you found
-        
-        # Get token IDs for "score" patterns - you might need to check these
-        self.score_token_ids = tokenizer.encode('score', add_special_tokens=False)[0]
-        self.closing_brace_token_id1 = tokenizer.encode('}', add_special_tokens=False)[0]
-        self.closing_brace_token_id2 = tokenizer.encode('"}', add_special_tokens=False)[0]
-        self.closing_brace_token_id3 = tokenizer.encode("'}", add_special_tokens=False)[0]
-        
-    def __call__(self, past_tokens_ids: list[int], logits: torch.Tensor) -> torch.Tensor:
-        if len(past_tokens_ids) > 128:
-            
-            # Fast check: is </think> token present?
-            if self.think_end_token_id in past_tokens_ids:
-                # Look for closing brace in recent tokens (indicating JSON end)
-                recent_tokens = past_tokens_ids[-10:]
-                if self.score_token_ids in recent_tokens and (self.closing_brace_token_id1 in recent_tokens or self.closing_brace_token_id2 in recent_tokens or self.closing_brace_token_id3 in recent_tokens):
-                    # End generation
-                    logits.fill_(float('-inf'))
-                    if self.eos_token_id < logits.shape[-1]:
-                        logits[self.eos_token_id] = 0.0
-            
-                if past_tokens_ids.count(self.think_end_token_id) >= 2:
-                    logits.fill_(float('-inf'))
-                    if self.eos_token_id < logits.shape[-1]:
-                        logits[self.eos_token_id] = 0.0
-                    logging.warning("</think> appears twice")
-                        
-        return logits
-
-def client_completion(config, final_dataset, penalize_second_think=False, use_tgt_thinking=False):
+def client_completion(config, final_dataset, use_tgt_thinking=False):
     from vllm import LLM, SamplingParams
     from transformers import AutoTokenizer
     global MODEL
@@ -66,11 +31,7 @@ def client_completion(config, final_dataset, penalize_second_think=False, use_tg
     if MODEL is None:
         MODEL = LLM(model=config.get('model_name'), **config.get("model_args", {}))
 
-    if penalize_second_think:
-        tokenizer = AutoTokenizer.from_pretrained(config.get('model_name'))
-        sampling_params = SamplingParams(**config.get('generation_args', {}), logits_processors=[BanSecondThink(tokenizer)])
-    else:
-        sampling_params = SamplingParams(**config.get('generation_args', {}))
+    sampling_params = SamplingParams(**config.get('generation_args', {}))
     output_list = MODEL.generate(batched_prompt, sampling_params)
     
     results = []
@@ -94,8 +55,7 @@ def client_completion(config, final_dataset, penalize_second_think=False, use_tg
     return results
 
 def process_dataset_in_chunks(dataset_name, output_path, chunk_size, start_offset, end_offset, model_config, reward_model,
-                              use_tgt_prompt=False, use_tgt_thinking=False, safe_infer=False,
-                              penalize_second_think=False, surgery=False, debug=False):
+                              use_tgt_prompt=False, use_tgt_thinking=False, safe_infer=False, surgery=False, debug=False):
     """Process the entire dataset in chunks"""
     total_size = 0
     if dataset_name in TRAIN_DATASETS_DICT_SIZE:
@@ -127,8 +87,7 @@ def process_dataset_in_chunks(dataset_name, output_path, chunk_size, start_offse
             logging.info(f"Processing {len(chunk_dataset)} samples")
             
             # Generate responses for this chunk
-            results = client_completion(model_config, chunk_dataset,
-                                        penalize_second_think=penalize_second_think, use_tgt_thinking=use_tgt_thinking)
+            results = client_completion(model_config, chunk_dataset, use_tgt_thinking=use_tgt_thinking)
             write_results(results, save_path, surgery=surgery)
             
             # If debug mode, only process one chunk
@@ -164,14 +123,12 @@ if __name__ == '__main__':
                         help=f"Use target language forcing for thinking based on input language.")
     parser.add_argument('--safe-infer', action="store_true", dest="safe_infer",
                         help=f"Filter out input that is longer than max-model-len minus output length.")
-    parser.add_argument('--penalize-second-think', action="store_true", dest="penalize_second_think",
-                        help=f"Trick to penalize second time think token appears.")
     parser.add_argument('--surgery', action="store_true", dest="surgery",
                         help=f"Perform fixes on broken responses.")
     parser.add_argument("--debug", action="store_true", dest="debug",
                         help=f"Debug with {DEBUG_COUNT} samples.")
     parser.set_defaults(use_tgt_prompt=False, use_tgt_thinking=False, safe_infer=False,
-                        penalize_second_think=False, surgery=False, debug=False)
+                        surgery=False, debug=False)
     args = parser.parse_args()
     
     logging.info("==== Current Arguments ====")
@@ -254,7 +211,6 @@ if __name__ == '__main__':
                     use_tgt_prompt=args.use_tgt_prompt,
                     use_tgt_thinking=args.use_tgt_thinking,
                     safe_infer=args.safe_infer,
-                    penalize_second_think=args.penalize_second_think,
                     surgery=args.surgery,
                     debug=args.debug
                 )
@@ -270,7 +226,6 @@ if __name__ == '__main__':
                     use_tgt_prompt=args.use_tgt_prompt,
                     use_tgt_thinking=args.use_tgt_thinking,
                     safe_infer=args.safe_infer,
-                    penalize_second_think=args.penalize_second_think,
                     surgery=args.surgery,
                     debug=args.debug
                 )

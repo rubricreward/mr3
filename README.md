@@ -326,7 +326,7 @@ content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("
 print(content)
 ```
 
-#### ⚡ Using `vLLM`
+### ⚡ Using `vLLM`
 
 Alternatively, you may also use `vLLM` for faster inference (here, showing an example of forcing thinking in Korean):
 
