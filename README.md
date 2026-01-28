@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/diagram.png" alt="mR3 Diagram" width="90%"/>
+  <img src="./assets/example.png" alt="mR3 Diagram" width="90%"/>
 </p>
 
 **TL;DR**: **mR3** is the rubric-agnostic reward reasoning (R3) model that is expanded to **72 languages**.
