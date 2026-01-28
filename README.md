@@ -162,7 +162,7 @@ For documentation purposes, these are the 72 languages used for training:
 
 
 <p align="center">
-  <img src="./assets/result_preview.png" alt="mR3 Result Breakdown by Multilingual Training Strategy" width="80%"/>
+  <img src="./assets/plot_result.png" alt="mR3 Result Breakdown by Multilingual Training Strategy" width="80%"/>
 </p>
 
 The figure illustrates the performance change in base models following mR3 training across different multilingual environments. Interestingly, mR3 not only improved general performance but also successfully recovered non-English reasoning, **including surpassing the base model's original English reasoning capacity.** Consequently, mR3 offers improved interpretability for non-English speakers.
